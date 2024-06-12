@@ -1,0 +1,52 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 127px;
+  background-color: #fdfdfd;
+  border-bottom: 4px dotted #dcdcdc;
+}
+nav .navContainer {
+  display: flex;
+  width: 1280px;
+  margin: auto;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 4px dotted #dcdcdc;
+  border-right: 4px dotted #dcdcdc;
+}
+nav .navContainer__logoContainer {
+  margin-left: 100px;
+}
+nav .navContainer img {
+  height: 28px;
+  margin-right: 12px;
+}
+nav .navContainer a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+nav .navContainer a p {
+  margin-right: 1rem;
+}
+nav .navContainer ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  margin-right: 100px;
+}
+nav .navContainer ul li {
+  margin-left: 4rem;
+}
+nav .navContainer ul li p {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+nav .navContainer ul li p:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=styles.css.map */

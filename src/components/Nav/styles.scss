@@ -1,0 +1,54 @@
+@use "../../utils/variables/colors" as c;
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 127px;
+  background-color: c.$third_grey;
+  border-bottom: 4px dotted c.$second_grey;
+  & .navContainer {
+    display: flex;
+    width: 1280px;
+    margin: auto;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px dotted c.$second_grey;
+    border-right: 4px dotted c.$second_grey;
+    &__logoContainer {
+      margin-left: 100px;
+    }
+    & img {
+      height: 28px;
+      margin-right: 12px;
+    }
+    & a {
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      & p {
+        margin-right: 1rem;
+      }
+    }
+    & ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      align-items: center;
+      margin-right: 100px;
+      & li {
+        margin-left: 4rem;
+        & p {
+            text-decoration: none;
+            transition: all 0.3s ease;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+      }
+    }
+  }
+}

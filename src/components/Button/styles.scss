@@ -1,0 +1,17 @@
+@use '../../utils/variables/colors' as c;
+
+.contactButton {
+    background-color: c.$dark;
+    color: c.$white;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    &:hover {
+        background-color: c.$white;
+        color: c.$dark;
+        border: 1px solid c.$second_grey;
+    }
+}

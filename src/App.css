@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+@charset "UTF-8";
+/* Réinitialisation CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Fira Mono", monospace;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #292D30;
+  background-color: #fdfdfd;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  font-weight: 400;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  letter-spacing: 0.2cap;
 }
 
-.App-link {
-  color: #61dafb;
+/* Style par défaut pour les liens */
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* Style par défaut pour les images */
+img {
+  max-width: 100%;
+  height: auto;
+}/*# sourceMappingURL=App.css.map */
