@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../Button";
 import logo from "../../assets/images/logo_black.png";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "../../utils/variables/fontStyles.css";
 import "./styles.css";
 
@@ -21,24 +21,24 @@ export default function Nav() {
         </Link>
         <ul>
           <li>
-            <Link to="/projects" className="link">
+            <NavLink to="/projects" className="NavLink">
               <p>Projects</p>
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/aboutme" className="link">
+            <NavLink to="/aboutme" className="NavLink">
               <p>About me</p>
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/contact">
+            <NavLink to="/contact">
               <Button
                 className="contactButton"
                 onClick={() => console.log("clicked")}
               >
                 Contact
               </Button>
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>

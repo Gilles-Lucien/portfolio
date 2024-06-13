@@ -22,6 +22,9 @@ nav .navContainer {
   border-image-repeat: round;
   border-image-source: url(../../assets/images/border_left_right_bottom.png);
 }
+nav .navContainer .active {
+  text-decoration: underline;
+}
 nav .navContainer__logoContainer {
   margin-left: 100px;
 }

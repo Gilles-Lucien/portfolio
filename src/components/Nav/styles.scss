@@ -16,7 +16,10 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    @include m.dashedBorder('left_right_bottom'); 
+    @include m.dashedBorder('left_right_bottom');
+    & .active {
+      text-decoration: underline;
+    } 
     &__logoContainer {
       margin-left: 100px;
     }
