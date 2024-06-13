@@ -4,7 +4,10 @@ nav {
   align-items: center;
   height: 127px;
   background-color: #fdfdfd;
-  border-bottom: 4px dotted #dcdcdc;
+  border-image-width: 1px;
+  border-image-slice: 1;
+  border-image-repeat: round;
+  border-image-source: url(../../assets/images/border_bottom.png);
 }
 nav .navContainer {
   display: flex;
@@ -14,8 +17,10 @@ nav .navContainer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-left: 4px dotted #dcdcdc;
-  border-right: 4px dotted #dcdcdc;
+  border-image-width: 1px;
+  border-image-slice: 1;
+  border-image-repeat: round;
+  border-image-source: url(../../assets/images/border_left_right_bottom.png);
 }
 nav .navContainer__logoContainer {
   margin-left: 100px;

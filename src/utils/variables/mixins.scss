@@ -1,0 +1,19 @@
+@mixin dashedBorder($side) {
+    border-image-width: 1px;    
+    border-image-slice: 1;
+    border-image-repeat: round;
+    @if $side == 'top' {
+        border-image-source: url(../../assets/images/border_top.png);
+    } @else if $side == 'bottom' {
+        border-image-source: url(../../assets/images/border_bottom.png);
+    } @else if $side == 'left' {
+        border-image-source: url(../../assets/images/border_left.png);
+    } @else if $side == 'right' {
+        border-image-source: url(../../assets/images/border_right.png);
+    } @else if $side == 'left_right' {
+        border-image-source: url(../../assets/images/border_left_right.png);
+    } @else if $side == 'left_right_bottom' {
+        border-image-source: url(../../assets/images/border_left_right_bottom.png);
+    }
+
+}

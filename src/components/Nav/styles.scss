@@ -1,4 +1,5 @@
 @use "../../utils/variables/colors" as c;
+@use "../../utils/variables/mixins" as m;
 
 nav {
   display: flex;
@@ -6,7 +7,7 @@ nav {
   align-items: center;
   height: 127px;
   background-color: c.$third_grey;
-  border-bottom: 4px dotted c.$second_grey;
+  @include m.dashedBorder('bottom'); 
   & .navContainer {
     display: flex;
     width: 1280px;
@@ -15,8 +16,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border-left: 4px dotted c.$second_grey;
-    border-right: 4px dotted c.$second_grey;
+    @include m.dashedBorder('left_right_bottom'); 
     &__logoContainer {
       margin-left: 100px;
     }
