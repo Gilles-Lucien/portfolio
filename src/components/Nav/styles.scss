@@ -17,8 +17,11 @@ nav {
     justify-content: space-between;
     align-items: center;
     @include m.dashedBorder('left_right_bottom');
-    & .active {
-      text-decoration: underline;
+    & .navLink p {
+      border-bottom: 1px transparent;
+    }
+    & .active p {
+      border-bottom: 1px solid;
     } 
     &__logoContainer {
       margin-left: 100px;
@@ -48,7 +51,7 @@ nav {
             text-decoration: none;
             transition: all 0.3s ease;
             &:hover {
-              text-decoration: underline;
+              border-bottom: 1px solid;
             }
           }
       }

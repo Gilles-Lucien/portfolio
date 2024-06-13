@@ -21,24 +21,23 @@ export default function Nav() {
         </Link>
         <ul>
           <li>
-            <NavLink to="/projects" className="NavLink">
+            <NavLink to="/projects" className="navLink">
               <p>Projects</p>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/aboutme" className="NavLink">
+            <NavLink to="/aboutme" className="navLink">
               <p>About me</p>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact">
+            <Link to="/contact">
               <Button
                 className="contactButton"
-                onClick={() => console.log("clicked")}
               >
                 Contact
               </Button>
-            </NavLink>
+            </Link>
           </li>
         </ul>
       </div>

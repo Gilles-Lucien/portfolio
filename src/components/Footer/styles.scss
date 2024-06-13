@@ -1,0 +1,71 @@
+@use "../../utils/variables/colors" as c;
+@use "../../utils/variables/mixins" as m;
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 271px;
+  position: relative;
+  bottom: 0;
+  background-color: c.$white;
+  @include m.dashedBorder("top");
+  & .footerContainer {
+    display: flex;
+    width: 1280px;
+    margin: auto;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @include m.dashedBorder("left_right_top");
+    & .active p {
+      text-decoration: underline;
+    }
+    &__logoContainer {
+      margin-left: 50px;
+      display: flex;
+      &__socialContainer {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        margin-top: 10px;
+        @include m.dashedBorder("top");
+        & .iconRs {
+          height: 40px;
+          margin-right: 10px;
+          margin-top: 12px;
+        }
+      }
+    }
+    & img {
+      height: 96px;
+      margin-right: 33px;
+    }
+    & a {
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      & p {
+        margin-right: 1rem;
+      }
+    }
+    & ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      align-items: center;
+      margin-right: 100px;
+      & li {
+        margin-left: 4rem;
+        & p {
+          text-decoration: none;
+          transition: all 0.3s ease;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

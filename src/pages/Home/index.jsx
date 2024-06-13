@@ -1,9 +1,12 @@
-import React from 'react';
+import React from "react";
+import Hero from "../../components/Hero";
+import ProjectsSection from "../../components/ProjectsSection";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Home</h1>
-    </div>
+    <main className="main">
+      <Hero />
+      <ProjectsSection />
+    </main>
   );
 }

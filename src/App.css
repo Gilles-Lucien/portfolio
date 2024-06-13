@@ -12,10 +12,29 @@ body {
   line-height: 1.6;
   color: #292D30;
   background-color: #fdfdfd;
+  height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
 
 p {
   font-weight: 400;
+}
+
+section {
+  width: 1280px;
+  margin: 0 auto;
 }
 
 button {
@@ -32,8 +51,14 @@ a {
   text-decoration: none;
 }
 
-/* Style par défaut pour les images */
-img {
-  max-width: 100%;
-  height: auto;
+.greenSpan {
+  color: #0b7764;
+}
+
+.blueSpan {
+  color: #1d7fd9;
+}
+
+.orangeSpan {
+  color: #ae582b;
 }/*# sourceMappingURL=App.css.map */
