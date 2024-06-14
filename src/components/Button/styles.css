@@ -13,4 +13,22 @@
   background-color: #fff;
   color: #292D30;
   border: 1px solid #dcdcdc;
+}
+
+.sendButton {
+  background-color: #0b7764;
+  display: inline-block;
+  color: #fff;
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+.sendButton:hover {
+  background-color: #fff;
+  color: #292D30;
+  border: 1px solid #dcdcdc;
 }/*# sourceMappingURL=styles.css.map */

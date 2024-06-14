@@ -1,0 +1,53 @@
+@use "../../utils/variables/colors" as c;
+@use "../../utils/variables/mixins" as m;
+
+.AboutMeContent {
+  @include m.dashedBorder("bottom");
+  width: 100%;
+  & .lastContainer {
+    padding-bottom: 130px;
+    @include m.dashedBorder("left_right_bottom");
+  }
+  &__container {
+    width: 1280px;
+    margin: 0 auto;
+    @include m.dashedBorder("left_right");
+    background-color: c.$white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 104px;
+    padding-right: 76px;
+    padding-bottom: 60px;
+    gap: 86px;
+    &__picture {
+      width: 421px;
+      height: 278px;
+      mask-image: url(../../assets/svg/curly_bracket_mask.svg);
+      mask-size: cover;
+    }
+    & h1 {
+      font-family: "Fira sans";
+      font-size: 86px;
+      font-weight: 700;
+      display: flex;
+      flex-direction: row;
+      margin-top: 94px;
+      & span {
+        font-size: 86px;
+        font-weight: 700;
+        color: c.$blue;
+      }
+    }
+    & h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+      & span {
+        font-weight: 400;
+      }
+    }
+  }
+}

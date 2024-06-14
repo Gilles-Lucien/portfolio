@@ -61,4 +61,16 @@ a {
 
 .orangeSpan {
   color: #ae582b;
+}
+
+.toolTip {
+  background-color: #dcdcdc;
+  padding: 10px 15px 10px 15px;
+  clip-path: inset(0 0 0 0 round 20px 20px 20px 0);
+}
+.toolTip--error {
+  background-color: #ae582b;
+  color: #fff;
+  padding: 10px 15px 10px 15px;
+  clip-path: inset(0 0 0 0 round 20px 20px 20px 0);
 }/*# sourceMappingURL=App.css.map */

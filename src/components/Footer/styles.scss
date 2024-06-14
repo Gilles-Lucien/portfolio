@@ -9,7 +9,7 @@ footer {
   position: relative;
   bottom: 0;
   background-color: c.$white;
-  @include m.dashedBorder("top");
+  // @include m.dashedBorder("top");
   & .footerContainer {
     display: flex;
     width: 1280px;

@@ -1,0 +1,66 @@
+.skillsSection {
+  border-image-width: 1px;
+  border-image-slice: 1;
+  border-image-repeat: round;
+  border-image-source: url(../../assets/images/border_bottom.png);
+  width: 100%;
+}
+.skillsSection__container {
+  width: 1280px;
+  margin: 0 auto;
+  border-image-width: 1px;
+  border-image-slice: 1;
+  border-image-repeat: round;
+  border-image-source: url(../../assets/images/border_left_right_bottom.png);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 104px;
+  padding-top: 63px;
+  padding-right: 104px;
+  padding-bottom: 80px;
+  gap: 44px;
+}
+.skillsSection__container__skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.skillsSection__container__skills img {
+  width: 20px;
+  margin-left: 5px;
+}
+.skillsSection__container__skills--skill {
+  width: 330px;
+  border-image-width: 1px;
+  border-image-slice: 1;
+  border-image-repeat: round;
+  border-image-source: url(../../assets/images/border_left.png);
+  padding-left: 41px;
+}
+.skillsSection__container__skills--skill h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.skillsSection__container__skills--skill ul {
+  list-style: none;
+}
+.skillsSection__container__skills--skill ul li {
+  display: flex;
+  align-items: center;
+}
+.skillsSection__container h2 {
+  font-family: "Fira mono";
+  font-size: 21px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+}
+.skillsSection__container h2 span {
+  font-size: 21px;
+  font-weight: 400;
+  color: #1d7fd9;
+  margin-left: 17px;
+}/*# sourceMappingURL=styles.css.map */

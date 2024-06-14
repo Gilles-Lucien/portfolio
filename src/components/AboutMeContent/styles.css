@@ -1,0 +1,59 @@
+.AboutMeContent {
+  border-image-width: 1px;
+  border-image-slice: 1;
+  border-image-repeat: round;
+  border-image-source: url(../../assets/images/border_bottom.png);
+  width: 100%;
+}
+.AboutMeContent .lastContainer {
+  padding-bottom: 130px;
+  border-image-width: 1px;
+  border-image-slice: 1;
+  border-image-repeat: round;
+  border-image-source: url(../../assets/images/border_left_right_bottom.png);
+}
+.AboutMeContent__container {
+  width: 1280px;
+  margin: 0 auto;
+  border-image-width: 1px;
+  border-image-slice: 1;
+  border-image-repeat: round;
+  border-image-source: url(../../assets/images/border_left_right.png);
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 104px;
+  padding-right: 76px;
+  padding-bottom: 60px;
+  gap: 86px;
+}
+.AboutMeContent__container__picture {
+  width: 421px;
+  height: 278px;
+  mask-image: url(../../assets/svg/curly_bracket_mask.svg);
+  mask-size: cover;
+}
+.AboutMeContent__container h1 {
+  font-family: "Fira sans";
+  font-size: 86px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  margin-top: 94px;
+}
+.AboutMeContent__container h1 span {
+  font-size: 86px;
+  font-weight: 700;
+  color: #1d7fd9;
+}
+.AboutMeContent__container h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.AboutMeContent__container h2 span {
+  font-weight: 400;
+}/*# sourceMappingURL=styles.css.map */
