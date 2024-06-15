@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles.css";
 import aboutMe1 from "../../assets/images/aboutMe1.png";
 import aboutMe2 from "../../assets/images/aboutMe2.png";
@@ -6,6 +6,16 @@ import aboutMe3 from "../../assets/images/aboutMe3.png";
 import aboutMe4 from "../../assets/images/aboutMe4.png";
 
 export default function AboutMeContent() {
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const [showimg1Tooltip, setShowimg1Tooltip] = useState(false);
+  const [showimg2Tooltip, setShowimg2Tooltip] = useState(false);
+  const [showimg3Tooltip, setShowimg3Tooltip] = useState(false);
+  const [showimg4Tooltip, setShowimg4Tooltip] = useState(false);
+
+  const handleMouseMove = (e) => {
+    setCursorPosition({ x: e.clientX + 20, y: e.clientY + 20 });
+  };
+
   return (
     <section className="AboutMeContent">
       <div className="AboutMeContent__container">
@@ -27,17 +37,51 @@ export default function AboutMeContent() {
           </p>
         </div>
         <img
+          id="img1"
+          onMouseEnter={() => setShowimg1Tooltip(true)}
+          onMouseLeave={() => setShowimg1Tooltip(false)}
+          onMouseMove={handleMouseMove}
           className="AboutMeContent__container__picture"
           src={aboutMe1}
           alt="Myself at Brussels. It does not show much but I am sick with a high fever. Only people who read alt attributes will know. It's a secret between you and me."
         />
+        {showimg1Tooltip && (
+          <div
+            className="toolTip--about1"
+            style={{
+              position: "fixed",
+              left: `${cursorPosition.x}px`,
+              top: `${cursorPosition.y}px`,
+            }}
+          >
+            In Brussels on the Grand Place.
+          </div>
+        )}
       </div>
       <div className="AboutMeContent__container">
         <img
+          id="img2"
+          onMouseEnter={() => setShowimg2Tooltip(true)}
+          onMouseLeave={() => setShowimg2Tooltip(false)}
+          onMouseMove={handleMouseMove}
           className="AboutMeContent__container__picture"
           src={aboutMe2}
           alt="Myself squating in front of a firecamp. Here I'm sorounded by longtime friends off-camera. I love them. They are part of what make me who I am today."
         />
+        {showimg2Tooltip && (
+          <div
+            className="toolTip--about2"
+            style={{
+              position: "fixed",
+              left: `${cursorPosition.x}px`,
+              top: `${cursorPosition.y}px`,
+            }}
+          >
+            Crouching in front of a fire camp. Here, I'm surrounded, off-camera,
+            by old friends. I love them. They are part of what makes me who I am
+            today.
+          </div>
+        )}
         <div className="AboutMeContent____container__txt">
           <h2>
             Design Expertise{" "}
@@ -89,17 +133,52 @@ export default function AboutMeContent() {
           </p>
         </div>
         <img
+          id="img3"
+          onMouseEnter={() => setShowimg3Tooltip(true)}
+          onMouseLeave={() => setShowimg3Tooltip(false)}
+          onMouseMove={handleMouseMove}
           className="AboutMeContent__container__picture"
           src={aboutMe3}
           alt="Myself on a pier at San Francisco, holding a crab we just fished. Our friends who hosted us took us to the port to fish crabs. We kept none because they were too small, and to be honnest I don't trust San Francisco's port water quality"
         />
+        {showimg3Tooltip && (
+          <div
+            className="toolTip--about3"
+            style={{
+              position: "fixed",
+              left: `${cursorPosition.x}px`,
+              top: `${cursorPosition.y}px`,
+            }}
+          >
+            On a pier in San Francisco, holding a crab we'd just caught.
+            The friends who had invited us took us to the harbour to fish for crabs.
+            Rest assured, we didn't keep any and put them back in the
+            water.
+          </div>
+        )}
       </div>
       <div className="AboutMeContent__container lastContainer">
         <img
+          id="img4"
+          onMouseEnter={() => setShowimg4Tooltip(true)}
+          onMouseLeave={() => setShowimg4Tooltip(false)}
+          onMouseMove={handleMouseMove}
           className="AboutMeContent__container__picture"
           src={aboutMe4}
           alt="Myself during a hike in the Alps. I'm wearing a cap. Here we just reached the summit. There's another secret behind this p-i-c-t-u-r-e. Maybe one day I'll tell you."
         />
+        {showimg4Tooltip && (
+          <div
+            className="toolTip--about1"
+            style={{
+              position: "fixed",
+              left: `${cursorPosition.x}px`,
+              top: `${cursorPosition.y}px`,
+            }}
+          >
+            During a hike in the Alps. Here we just reached the summit.
+          </div>
+        )}
         <div className="AboutMeContent____container__txt">
           <h2>
             Team Collaboration{" "}

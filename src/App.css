@@ -78,4 +78,25 @@ a {
   color: #fff;
   padding: 10px 15px 10px 15px;
   clip-path: inset(0 0 0 0 round 20px 20px 20px 0);
+}
+.toolTip--about1 {
+  background-color: #1d7fd9;
+  color: #fff;
+  padding: 10px 15px 10px 15px;
+  clip-path: inset(0 0 0 0 round 0px 20px 20px 20px);
+  max-width: 400px;
+}
+.toolTip--about2 {
+  background-color: #ae582b;
+  color: #fff;
+  padding: 10px 15px 10px 15px;
+  clip-path: inset(0 0 0 0 round 0px 20px 20px 20px);
+  max-width: 400px;
+}
+.toolTip--about3 {
+  background-color: #0b7764;
+  color: #fff;
+  padding: 10px 15px 10px 15px;
+  clip-path: inset(0 0 0 0 round 0px 20px 20px 20px);
+  max-width: 400px;
 }/*# sourceMappingURL=App.css.map */
