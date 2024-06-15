@@ -20,8 +20,8 @@ export default function Landing() {
   useEffect(() => {
     const handleMouseMove = (e) => {
       const { clientX, clientY } = e;
-      const xPosition = -clientX / 200; // adjust the divisor to control the speed
-      const yPosition = -clientY / 200; // adjust the divisor to control the speed
+      const xPosition = -clientX / 110; // adjust the divisor to control the speed
+      const yPosition = -clientY / 110; // adjust the divisor to control the speed
       imgRef.current.style.transform = `translate(${xPosition}px, ${yPosition}px)`;
 
     };
@@ -39,7 +39,7 @@ export default function Landing() {
       <a href="#nav">
         <div className="landingImgContainer">
           <h1 className="landingImgContainer__title">
-            Always renew
+          Boundless
           </h1>
           <div className="overlay"></div>
           <img src={gradient} ref={imgRef} alt="gradient landing" />

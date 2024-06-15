@@ -15,13 +15,13 @@ export default function Hero() {
           </h1>
           <p>
             I’m Lucien, senior &#123;
-            <span className="greenSpan">UX/UI & Graphic</span>&#125; designer,
-            and junior &#123;<span className="greenSpan">front-end</span>&#125;
+            <span className="blueSpan">UX/UI & Graphic</span>&#125; designer,
+            and junior &#123;<span className="blueSpan">front-end</span>&#125;
             developer. I have 10 years experience in user interface design, and
             have extended my skills to front-end coding. I can help you build
             fine digital products from UX design to prototyping and front-end
             coding, especially with the powerful{" "}
-            <span className="orangeSpan">React</span> library.
+            <span className="blueSpan">React</span> library.
           </p>
         </div>
         <img
