@@ -7,10 +7,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
-  border-image-width: 1px;
-  border-image-slice: 1;
-  border-image-repeat: round;
-  border-image-source: url(../../assets/images/border_bottom.png);
+  box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.05);
 }
 nav .navContainer {
   display: flex;
@@ -23,7 +20,7 @@ nav .navContainer {
   border-image-width: 1px;
   border-image-slice: 1;
   border-image-repeat: round;
-  border-image-source: url(../../assets/images/border_left_right_bottom.png);
+  border-image-source: url(../../assets/images/border_left_right.png);
 }
 nav .navContainer .navLink p {
   border-bottom: 1px transparent;

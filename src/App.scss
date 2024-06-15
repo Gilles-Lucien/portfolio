@@ -7,6 +7,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: "Fira Mono", monospace;
   font-size: 1.1rem;
@@ -14,12 +15,17 @@ body {
   color: c.$dark; // Couleur de texte par défaut
   background-color: c.$third_grey; // Couleur de fond par défaut
   height: 100vh;
+  position: relative;
+  z-index: -12;
+
 }
 
 #root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  position: relative;
+  z-index: -12;
 }
 
 .main {

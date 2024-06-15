@@ -8,7 +8,7 @@ import "./styles.css";
 export default function Nav() {
   return (
     <nav>
-      <div className="navContainer">
+      <div id="nav" className="navContainer">
         <Link className="navContainer__logoContainer" to="/">
           <img src={logo} alt="Logo" />
           <p>

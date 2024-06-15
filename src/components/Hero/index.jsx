@@ -15,7 +15,7 @@ export default function Hero() {
           </h1>
           <p>
             I’m Lucien, senior &#123;
-            <span className="greenSpan">UX/UI, Graphic</span>&#125; designer,
+            <span className="greenSpan">UX/UI & Graphic</span>&#125; designer,
             and junior &#123;<span className="greenSpan">front-end</span>&#125;
             developer. I have 10 years experience in user interface design, and
             have extended my skills to front-end coding. I can help you build

@@ -13,12 +13,16 @@ body {
   color: #292D30;
   background-color: #fdfdfd;
   height: 100vh;
+  position: relative;
+  z-index: -12;
 }
 
 #root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  position: relative;
+  z-index: -12;
 }
 
 .main {
