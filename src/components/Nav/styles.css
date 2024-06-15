@@ -4,6 +4,9 @@ nav {
   align-items: center;
   height: 127px;
   background-color: #fdfdfd;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   border-image-width: 1px;
   border-image-slice: 1;
   border-image-repeat: round;

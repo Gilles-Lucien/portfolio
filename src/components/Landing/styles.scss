@@ -1,0 +1,21 @@
+@use "../../utils/variables/colors" as c;
+@use "../../utils/variables/mixins" as m;
+
+.landingSection {
+  z-index: -10;
+  height: calc(100vh - 127px);
+  width: 100%;
+}
+
+.landingImgContainer {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
