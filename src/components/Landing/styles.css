@@ -12,9 +12,9 @@
 }
 .landingImgContainer__title {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
-  transform: translate(-50%, -70%);
+  transform: translate(-50%, -50%);
   box-sizing: border-box;
   text-align: center;
   color: #fff;
@@ -26,6 +26,9 @@
 }
 .landingImgContainer__title:hover {
   border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.landingImgContainer__title.clicked {
+  border: 1px solid rgba(255, 255, 255, 0);
 }
 .landingImgContainer img {
   position: absolute;

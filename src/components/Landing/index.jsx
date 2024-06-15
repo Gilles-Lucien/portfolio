@@ -5,7 +5,11 @@ import gradient from "../../assets/images/gradient_hero.avif";
 
 export default function Landing() {
   const imgRef = useRef(null);
+  const h1Ref = useRef(null);
 
+  const handleTitleClick = () => {
+    h1Ref.current.classList.add('clicked');
+  };
 
   useEffect(() => {
     const link = document.querySelector('a[href="#nav"]');
@@ -38,7 +42,7 @@ export default function Landing() {
     <section className="landingSection">
       <a href="#nav">
         <div className="landingImgContainer">
-          <h1 className="landingImgContainer__title">
+        <h1 ref={h1Ref} className="landingImgContainer__title" onClick={handleTitleClick}>
           Boundless
           </h1>
           <div className="overlay"></div>
