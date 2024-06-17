@@ -29,7 +29,7 @@
 .landingImgContainer__titleContainer.clickedContainer {
   transform: translate(-50%, -50%) scale(1);
   border: 1px solid white;
-  animation: scaleUp 1s ease-in-out forwards;
+  animation: scaleUp 0.5s ease-in-out forwards;
 }
 .landingImgContainer__titleContainer__title {
   position: absolute;
@@ -42,16 +42,22 @@
   font-weight: 700;
   z-index: -7;
 }
+.landingImgContainer__titleContainer__title span {
+  color: rgba(255, 255, 255, 0.3);
+}
 .landingImgContainer__titleContainer__title.clickedTitle {
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
-  animation: scaleDown 1s ease-in-out forwards;
+  animation: scaleDown 2s ease-in-out forwards;
+}
+.landingImgContainer__titleContainer__title.clickedTitle span {
+  color: white;
 }
 .landingImgContainer img {
   position: absolute;
   z-index: -9;
-  width: 101%;
-  height: 101%;
+  width: 111%;
+  height: 111%;
   object-fit: cover;
   object-position: center;
 }
@@ -89,7 +95,7 @@
     border: 1px solid rgba(255, 255, 255, 0.8);
   }
   100% {
-    transform: translate(-50%, -50%) scale(1.7);
+    transform: translate(-50%, -50%) scale(3);
     border: 1px solid rgba(255, 255, 255, 0);
   }
 }
@@ -100,7 +106,7 @@
   }
   20% {
     transform: translate(-50%, -50%) scale(1.1);
-    opacity: 0.8;
+    opacity: 1;
   }
   100% {
     transform: translate(-50%, -50%) scale(0.3);

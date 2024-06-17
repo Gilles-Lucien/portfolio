@@ -26,8 +26,8 @@ export default function Landing() {
   useEffect(() => {
     const handleMouseMove = (e) => {
       const { clientX, clientY } = e;
-      const xPosition = -clientX / 110; // adjust the divisor to control the backgroung speed
-      const yPosition = -clientY / 110; 
+      const xPosition = -clientX / 10; // adjust the divisor to control the backgroung speed
+      const yPosition = -clientY / 10; 
       imgRef.current.style.transform = `translate(${xPosition}px, ${yPosition}px)`;
       
       // const titleXPosition = -clientX / 110; // adjust the divisor to control title the speed
@@ -58,7 +58,7 @@ export default function Landing() {
             onClick={handleTitleClick}
           ></div>
           <h1 ref={title} className="landingImgContainer__titleContainer__title">
-            Boundless
+            Bound<span>less</span>
           </h1>
 
           <div className="overlay"></div>

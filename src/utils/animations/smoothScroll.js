@@ -1,4 +1,4 @@
-export function smoothScroll(e, href, duration = 2000) {
+export function smoothScroll(e, href, duration = 3000) {
   e.preventDefault();
 
   const targetElement = document.querySelector(href);

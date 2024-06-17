@@ -85,6 +85,7 @@ a {
   padding: 10px 15px 10px 15px;
   clip-path: inset(0 0 0 0 round 0px 20px 20px 20px);
   max-width: 400px;
+  margin: 20px;
 }
 .toolTip--about2 {
   background-color: #ae582b;
@@ -92,6 +93,7 @@ a {
   padding: 10px 15px 10px 15px;
   clip-path: inset(0 0 0 0 round 0px 20px 20px 20px);
   max-width: 400px;
+  margin: 20px;
 }
 .toolTip--about3 {
   background-color: #0b7764;
@@ -99,4 +101,5 @@ a {
   padding: 10px 15px 10px 15px;
   clip-path: inset(0 0 0 0 round 0px 20px 20px 20px);
   max-width: 400px;
+  margin: 20px;
 }/*# sourceMappingURL=App.css.map */
