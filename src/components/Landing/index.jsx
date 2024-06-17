@@ -6,9 +6,11 @@ import gradient from "../../assets/images/gradient_hero.avif";
 export default function Landing() {
   const imgRef = useRef(null);
   const titleContainer = useRef(null);
+  const title = useRef(null);
 
   const handleTitleClick = () => {
-    titleContainer.current.classList.add("clicked");
+    titleContainer.current.classList.add("clickedContainer");
+    title.current.classList.add("clickedTitle");
   };
 
   useEffect(() => {
@@ -24,9 +26,18 @@ export default function Landing() {
   useEffect(() => {
     const handleMouseMove = (e) => {
       const { clientX, clientY } = e;
-      const xPosition = -clientX / 110; // adjust the divisor to control the speed
-      const yPosition = -clientY / 110; // adjust the divisor to control the speed
+      const xPosition = -clientX / 110; // adjust the divisor to control the backgroung speed
+      const yPosition = -clientY / 110; 
       imgRef.current.style.transform = `translate(${xPosition}px, ${yPosition}px)`;
+      
+      // const titleXPosition = -clientX / 110; // adjust the divisor to control title the speed
+      // const titleYPosition = -clientY / 110;
+
+      // const xOffset = title.current.offsetWidth/2.25;
+      // const yOffset = title.current.offsetHeight/2.25;
+      // title.current.style.transform = `translate(${
+      //   titleXPosition - xOffset
+      // }px, ${titleYPosition - yOffset}px)`;
     };
 
     document.addEventListener("mousemove", handleMouseMove);
@@ -44,12 +55,9 @@ export default function Landing() {
           <div
             ref={titleContainer}
             className="landingImgContainer__titleContainer"
-          ></div>
-
-          <h1
-            className="landingImgContainer__titleContainer__title"
             onClick={handleTitleClick}
-          >
+          ></div>
+          <h1 ref={title} className="landingImgContainer__titleContainer__title">
             Boundless
           </h1>
 

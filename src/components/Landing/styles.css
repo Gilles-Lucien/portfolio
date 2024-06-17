@@ -14,30 +14,38 @@
   position: absolute;
   top: 45%;
   left: 50%;
-  z-index: -8;
   box-sizing: border-box;
   text-align: center;
-  border: 14px solid #fff;
+  border: 1px solid #fff;
   padding: 3.5rem 11rem;
   border-radius: 5px;
+  z-index: -6;
   transform: translate(-50%, -50%) scale(1);
+  transition: all 0.2s ease-in-out;
 }
-.landingImgContainer__titleContainer.clicked {
+.landingImgContainer__titleContainer:hover {
+  transform: translate(-50%, -50%) scale(0.95);
+}
+.landingImgContainer__titleContainer.clickedContainer {
   transform: translate(-50%, -50%) scale(1);
-  border: 14px solid white;
-  animation: scaleUp 0.5s ease-in-out forwards;
+  border: 1px solid white;
+  animation: scaleUp 1s ease-in-out forwards;
 }
 .landingImgContainer__titleContainer__title {
   position: absolute;
   top: 45%;
   left: 50%;
-  z-index: -7;
   transform: translate(-50%, -50%) scale(1);
   text-align: center;
   color: #fff;
   font-size: 3rem;
   font-weight: 700;
-  padding: 2rem 3.9rem;
+  z-index: -7;
+}
+.landingImgContainer__titleContainer__title.clickedTitle {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  animation: scaleDown 1s ease-in-out forwards;
 }
 .landingImgContainer img {
   position: absolute;
@@ -55,7 +63,7 @@
   background: linear-gradient(-45deg, #1e1826, #a5355b, #dbdcd6);
   background-size: 400% 400%;
   mix-blend-mode: exclusion;
-  animation: gradient 10s ease-in-out infinite;
+  animation: gradient 8s ease-in-out infinite;
   height: calc(100vh - 127px);
   width: 100%;
 }
@@ -73,11 +81,29 @@
 }
 @keyframes scaleUp {
   0% {
-    transform: translate(-50%, -50%) scale(1);
-    border: 14px solid white;
+    transform: translate(-50%, -50%) scale(0.95);
+    border: 1px solid white;
+  }
+  20% {
+    transform: translate(-50%, -50%) scale(0.9);
+    border: 1px solid rgba(255, 255, 255, 0.8);
   }
   100% {
     transform: translate(-50%, -50%) scale(1.7);
-    border: 14px solid rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0);
+  }
+}
+@keyframes scaleDown {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  20% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.3);
+    opacity: 0;
   }
 }/*# sourceMappingURL=styles.css.map */
