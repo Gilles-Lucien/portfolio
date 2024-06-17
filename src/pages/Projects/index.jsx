@@ -1,9 +1,10 @@
 import React from 'react';
+import ProjectsIntro from '../../components/ProjectsIntro';
 
 export default function Home() {
   return (
     <main className='main'>
-      <h1>projects</h1>
+      <ProjectsIntro/>
     </main>
   );
 }

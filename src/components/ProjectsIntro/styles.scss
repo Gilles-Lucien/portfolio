@@ -1,0 +1,36 @@
+@use "../../utils/variables/colors" as c;
+@use "../../utils/variables/mixins" as m;
+
+.projectsIntro {
+  width: 100%;
+  &__container {
+    width: 1280px;
+    margin: 0 auto;
+    @include m.dashedBorder("left_right");
+    background-color: c.$white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 104px;
+    padding-top: 94px;
+    padding-right: 76px;
+    padding-bottom: 80px;
+    gap: 86px;
+    & p {
+      width: 50%;
+    }
+    & h1 {
+      font-family: "Fira sans";
+      font-size: 86px;
+      font-weight: 700;
+      display: flex;
+      flex-direction: row;
+      & span {
+        font-size: 86px;
+        font-weight: 700;
+        color: c.$blue;
+      }
+    }
+  }
+}
