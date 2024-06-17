@@ -1,0 +1,25 @@
+.projectsArchive {
+  width: 100%;
+  border-image-width: 1px;
+  border-image-slice: 1;
+  border-image-repeat: round;
+  border-image-source: url(../../assets/images/border_left_right_bottom.png);
+}
+.projectsArchive__container {
+  width: 1280px;
+  margin: 0 auto;
+  border-image-width: 1px;
+  border-image-slice: 1;
+  border-image-repeat: round;
+  border-image-source: url(../../assets/images/border_left_right.png);
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 104px;
+  padding-top: 94px;
+  padding-right: 76px;
+  padding-bottom: 80px;
+  gap: 28px;
+}/*# sourceMappingURL=styles.css.map */

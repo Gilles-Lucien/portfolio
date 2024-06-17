@@ -1,0 +1,65 @@
+@use "../../utils/variables/colors" as c;
+
+@mixin filterStyle($color) {
+  background-color: c.$white;
+  color: $color;
+  border: 1px solid $color;
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: rgba($color: $color, $alpha: 0.1);
+  }
+}
+
+@mixin filterActiveStyle($color) {
+  background-color: $color;
+  color: c.$white;
+  border: 1px solid $color;
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: rgba($color: $color, $alpha: 0.7);
+  }
+}
+
+.filter--all {
+  @include filterStyle(c.$green);
+}
+
+.filter--all--active {
+  @include filterActiveStyle(c.$green);
+}
+
+.filter--graphic {
+  @include filterStyle(c.$orange);
+}
+
+.filter--graphic--active {
+  @include filterActiveStyle(c.$orange);
+}
+
+.filter--uxui {
+  @include filterStyle(c.$blue);
+}
+
+.filter--uxui--active {
+  @include filterActiveStyle(c.$blue);
+}
+
+.filter--frontend {
+  @include filterStyle(c.$yellow);
+}
+
+.filter--frontend--active {
+  @include filterActiveStyle(c.$yellow);
+}

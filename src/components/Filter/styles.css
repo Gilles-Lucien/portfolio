@@ -1,0 +1,127 @@
+.filter--all {
+  background-color: #fff;
+  color: #0b7764;
+  border: 1px solid #0b7764;
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.filter--all:hover {
+  background-color: rgba(11, 119, 100, 0.1);
+}
+
+.filter--all--active {
+  background-color: #0b7764;
+  color: #fff;
+  border: 1px solid #0b7764;
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.filter--all--active:hover {
+  background-color: rgba(11, 119, 100, 0.7);
+}
+
+.filter--graphic {
+  background-color: #fff;
+  color: #ae582b;
+  border: 1px solid #ae582b;
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.filter--graphic:hover {
+  background-color: rgba(174, 88, 43, 0.1);
+}
+
+.filter--graphic--active {
+  background-color: #ae582b;
+  color: #fff;
+  border: 1px solid #ae582b;
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.filter--graphic--active:hover {
+  background-color: rgba(174, 88, 43, 0.7);
+}
+
+.filter--uxui {
+  background-color: #fff;
+  color: #1d7fd9;
+  border: 1px solid #1d7fd9;
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.filter--uxui:hover {
+  background-color: rgba(29, 127, 217, 0.1);
+}
+
+.filter--uxui--active {
+  background-color: #1d7fd9;
+  color: #fff;
+  border: 1px solid #1d7fd9;
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.filter--uxui--active:hover {
+  background-color: rgba(29, 127, 217, 0.7);
+}
+
+.filter--frontend {
+  background-color: #fff;
+  color: #b4b005;
+  border: 1px solid #b4b005;
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.filter--frontend:hover {
+  background-color: rgba(180, 176, 5, 0.1);
+}
+
+.filter--frontend--active {
+  background-color: #b4b005;
+  color: #fff;
+  border: 1px solid #b4b005;
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.filter--frontend--active:hover {
+  background-color: rgba(180, 176, 5, 0.7);
+}/*# sourceMappingURL=styles.css.map */

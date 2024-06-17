@@ -1,0 +1,22 @@
+@use "../../utils/variables/colors" as c;
+@use "../../utils/variables/mixins" as m;
+
+.projectsArchive {
+  width: 100%;
+  @include m.dashedBorder("left_right_bottom");
+  &__container {
+    width: 1280px;
+    margin: 0 auto;
+    @include m.dashedBorder("left_right");
+    background-color: c.$white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 104px;
+    padding-top: 94px;
+    padding-right: 76px;
+    padding-bottom: 80px;
+    gap: 28px;
+  }
+}
