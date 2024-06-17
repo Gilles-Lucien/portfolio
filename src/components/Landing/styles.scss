@@ -12,34 +12,45 @@
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  &__title {
+  &__titleContainer {
     position: absolute;
     top: 45%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    z-index: -8;
     box-sizing: border-box;
     text-align: center;
-    color: c.$white;
-    font-size: 3rem;
-    font-weight: 700;
-    border: 1px solid c.$white;
-    padding: 20px 40px;
-    // text-transform: uppercase;
-    transition: all 0.3s ease;
-    &:hover {
-      // background-color: c.$white;
-      // color: c.$dark;
-      // opacity: 0.8;
-      // mix-blend-mode: overlay;
-      // padding: 17px 37px;
-      // border: 6px solid c.$white;
-      // padding: 15px 35px;
-      border: 1px solid rgba($color: c.$white, $alpha: 0.3);
-    }
+    border: 14px solid c.$white;
+    padding: 3.5rem 11rem;
+    border-radius: 5px;
+    // background-color: rgba($color: c.$white, $alpha: 0.4);
+    transform: translate(-50%, -50%) scale(1);
+    // transition: all 0.3s ease-in-out;
+    // &:hover {
+    //   transform: translate(-50%, -50%) scale(0.9);
+    // }
+
     &.clicked {
-      border: 1px solid rgba($color: c.$white, $alpha: 0);
+      transform: translate(-50%, -50%) scale(1);
+      border: 14px solid rgba($color: c.$white, $alpha: 1);
+      // background-color: rgba($color: c.$white, $alpha: 0.4);
+      animation: scaleUp 0.5s ease-in-out forwards;
+    }
+    &__title {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      z-index: -7;
+      transform: translate(-50%, -50%) scale(1);
+      text-align: center;
+      color: c.$white;
+      font-size: 3rem;
+      font-weight: 700;
+      padding: 2rem 3.9rem;
     }
   }
+  
+
+
   & img {
     position: absolute;
     z-index: -9;
@@ -52,6 +63,7 @@
 
 .overlay {
   position: absolute;
+  cursor: default;
   z-index: -8;
 	background: linear-gradient(-45deg, #1e1826, #a5355b, #dbdcd6);
 	background-size: 400% 400%;
@@ -71,4 +83,17 @@
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    border: 14px solid rgba($color: c.$white, $alpha: 1);
+    // background-color: rgba($color: c.$white, $alpha: 0.4);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.7);
+    border: 14px solid rgba($color: c.$white, $alpha: 0);
+    // background-color: rgba($color: c.$white, $alpha: 0);
+  }
 }

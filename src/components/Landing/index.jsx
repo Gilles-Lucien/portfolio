@@ -5,10 +5,10 @@ import gradient from "../../assets/images/gradient_hero.avif";
 
 export default function Landing() {
   const imgRef = useRef(null);
-  const h1Ref = useRef(null);
+  const titleContainer = useRef(null);
 
   const handleTitleClick = () => {
-    h1Ref.current.classList.add('clicked');
+    titleContainer.current.classList.add("clicked");
   };
 
   useEffect(() => {
@@ -27,7 +27,6 @@ export default function Landing() {
       const xPosition = -clientX / 110; // adjust the divisor to control the speed
       const yPosition = -clientY / 110; // adjust the divisor to control the speed
       imgRef.current.style.transform = `translate(${xPosition}px, ${yPosition}px)`;
-
     };
 
     document.addEventListener("mousemove", handleMouseMove);
@@ -42,9 +41,18 @@ export default function Landing() {
     <section className="landingSection">
       <a href="#nav">
         <div className="landingImgContainer">
-        <h1 ref={h1Ref} className="landingImgContainer__title" onClick={handleTitleClick}>
-          Boundless
+          <div
+            ref={titleContainer}
+            className="landingImgContainer__titleContainer"
+          ></div>
+
+          <h1
+            className="landingImgContainer__titleContainer__title"
+            onClick={handleTitleClick}
+          >
+            Boundless
           </h1>
+
           <div className="overlay"></div>
           <img src={gradient} ref={imgRef} alt="gradient landing" />
         </div>
