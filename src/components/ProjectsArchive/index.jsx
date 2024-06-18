@@ -33,6 +33,24 @@ export default function ProjectsArchive() {
     { id: "Front-end", class: "filter--frontend", name: "Front-end" },
   ];
 
+  const [activeFilters, setActiveFilters] = useState(["All"]);
+
+  const handleFilterClick = (filterId) => {
+    setActiveFilters((prevFilters) => {
+      if (filterId === "All") {
+        return ["All"];
+      }
+      if (prevFilters.includes("All")) {
+        return [filterId];
+      }
+      if (prevFilters.includes(filterId)) {
+        return prevFilters.filter((id) => id !== filterId);
+      } else {
+        return [...prevFilters, filterId];
+      }
+    });
+  };
+
   const [projectCards, setProjectCards] = useState([]);
 
   useEffect(() => {
@@ -51,7 +69,13 @@ export default function ProjectsArchive() {
       <div className="projectsArchive__container">
         <div className="projectsArchive__container__filters">
           {filters.map((filter) => (
-            <Filter key={filter.id} className={filter.class} id={filter.id}>
+            <Filter
+              key={filter.id}
+              className={filter.class}
+              id={filter.id}
+              onClick={() => handleFilterClick(filter.id)}
+              isActive={activeFilters.includes(filter.id)}
+            >
               {filter.name}
             </Filter>
           ))}

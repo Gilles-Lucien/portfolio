@@ -1,21 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import "./styles.css";
 
-const Filter = ({ onClick, children, className, id }) => {
-  const [isActive, setIsActive] = useState(false);
-
+const Filter = ({ onClick, children, className, id, isActive }) => {
   const handleClick = () => {
-    setIsActive(!isActive);
-  };
-
-  const handleCombinedClick = (event) => {
-    handleClick();
-    onClick && onClick(event);
+    onClick && onClick(id);
   };
 
   return (
-    <div className={`${className}${isActive ? '--active' : ''}`} 
-    onClick={handleCombinedClick} id={id}>
+    <div
+      className={`${className}${isActive ? '--active' : ''}`}
+      onClick={handleClick}
+      id={id}
+    >
       {children}
     </div>
   );
