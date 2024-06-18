@@ -10,13 +10,13 @@ export default function ProjectCard({ title, description, tags, image, link }) {
       <div className="projectCard__content">
         <div className="projectCard__content__titleAndTagsContainer">
           <h3 className="projectCard__content__titleAndTagsContainer--title">
-            {title} 
+            {title} -
           </h3>
           <div className="projectCard__content__titleAndTagsContainer__tags">
             {tags.map((tag) => (
               <span
                 key={tag}
-                className="projectCard__content__titleAndTagsContainer__tags--tag"
+                className={`projectCard__content__titleAndTagsContainer__tags--tag${tag === "Graphic" ? " orangeSpan" : ""}${tag === "UX/UI" ? " blueSpan" : ""}${tag === "Front-end" ? " yellowSpan" : ""}`}
               >
                 {tag}
               </span>
