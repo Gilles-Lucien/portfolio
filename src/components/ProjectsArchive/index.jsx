@@ -14,6 +14,7 @@ import pictureCard5 from "../../assets/cards_pictures/pictureCard-5.png";
 import pictureCard6 from "../../assets/cards_pictures/pictureCard-6.png";
 import pictureCard7 from "../../assets/cards_pictures/pictureCard-7.png";
 
+/// map des images dans un objet, temporaire
 const imageMap = {
   pictureCard0: pictureCard0,
   pictureCard1: pictureCard1,
@@ -35,6 +36,7 @@ export default function ProjectsArchive() {
 
   const [activeFilters, setActiveFilters] = useState(["All"]);
 
+
   const handleFilterClick = (filterId) => {
     setActiveFilters((prevFilters) => {
       if (filterId === "All") {
@@ -52,6 +54,15 @@ export default function ProjectsArchive() {
   };
 
   const [projectCards, setProjectCards] = useState([]);
+
+  const filteredProjectCards = projectCards.filter((card) => {
+    // Si "All" est actif, toutes les cartes sont affichées
+    if (activeFilters.includes("All")) {
+      return true;
+    }
+    // Sinon, une carte est affichée si l'un de ses tags correspond à l'un des filtres actifs
+    return card.tags.some(tag => activeFilters.includes(tag));
+  });
 
   useEffect(() => {
     fetchProjectCards().then((response) => {
@@ -81,17 +92,9 @@ export default function ProjectsArchive() {
           ))}
         </div>
         <div className="projectsArchive__container__cards">
-          {projectCards.map((card) => (
-            <ProjectCard
-              key={card.id}
-              id={card.id}
-              title={card.title}
-              description={card.description}
-              tags={card.tags}
-              image={card.image}
-              link={card.link}
-            />
-          ))}
+        {filteredProjectCards.map((card) => (
+  <ProjectCard key={card.id} {...card} />
+))}
         </div>
       </div>
     </section>
