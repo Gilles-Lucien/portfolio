@@ -1,0 +1,68 @@
+{
+  "projectCards": [
+    {
+      "id": "1",
+      "title": "WoodYou",
+      "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
+      "tags": ["Graphic", "UX/UI"],
+      "image": "pictureCard0",
+      "link": "/projects/woodyou"
+    },
+    {
+      "id": "2",
+      "title": "My French Chef",
+      "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
+      "tags": ["Graphic", "UX/UI"],
+      "image": "pictureCard1",
+      "link": "/projects/myfrenchchef"
+    },
+    {
+      "id": "3",
+      "title": "Stane",
+      "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
+      "tags": ["UX/UI"],
+      "image": "pictureCard2",
+      "link": "/projects/stane"
+    },
+    {
+      "id": "4",
+      "title": "TinyOffice",
+      "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu.",
+      "tags": ["UX/UI"],
+      "image": "pictureCard3",
+      "link": "/projects/tinyoffice"
+    },
+    { 
+      "id": "5",
+      "title": "Selaliqua",
+      "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
+      "tags": ["UX/UI"],
+      "image": "pictureCard4",
+      "link": "/projects/selaliqua"
+    },
+    {
+      "id": "6",
+      "title": "Odysium",
+      "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
+      "tags": ["UX/UI"],
+      "image": "pictureCard5",
+      "link": "/projects/odysium"
+    },
+    {
+      "id": "7",
+      "title": "Nuclear Medicine Center",
+      "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu.",
+      "tags": ["Graphic", "UX/UI"],
+      "image": "pictureCard6",
+      "link": "/projects/nuclearmedicinecenter"
+    },
+    {
+      "id": "8",
+      "title": "You're Home",
+      "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
+      "tags": ["Graphic"],
+      "image": "pictureCard7",
+      "link": "/projects/yourehome"
+    }
+  ]
+}

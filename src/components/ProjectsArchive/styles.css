@@ -3,7 +3,7 @@
   border-image-width: 1px;
   border-image-slice: 1;
   border-image-repeat: round;
-  border-image-source: url(../../assets/images/border_left_right_bottom.png);
+  border-image-source: url(../../assets/images/border_bottom.png);
 }
 .projectsArchive__container {
   width: 1280px;
@@ -14,12 +14,24 @@
   border-image-source: url(../../assets/images/border_left_right.png);
   background-color: #fff;
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 104px;
+  padding-right: 104px;
+  padding-bottom: 80px;
+  gap: 105px;
+}
+.projectsArchive__container__filters {
+  display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 104px;
-  padding-top: 94px;
-  padding-right: 76px;
-  padding-bottom: 80px;
   gap: 28px;
+}
+.projectsArchive__container__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=styles.css.map */

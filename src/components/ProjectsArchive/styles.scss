@@ -3,20 +3,32 @@
 
 .projectsArchive {
   width: 100%;
-  @include m.dashedBorder("left_right_bottom");
+  @include m.dashedBorder("bottom");
   &__container {
     width: 1280px;
     margin: 0 auto;
     @include m.dashedBorder("left_right");
     background-color: c.$white;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     padding-left: 104px;
-    padding-top: 94px;
-    padding-right: 76px;
+    padding-right: 104px;
     padding-bottom: 80px;
-    gap: 28px;
+    gap: 105px;
+    &__filters {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 28px;
+    }
+    &__cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
   }
 }
