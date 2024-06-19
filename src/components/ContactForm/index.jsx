@@ -14,6 +14,29 @@ export default function ContactForm() {
 
   const email = "gpeltier2@gmail.com";
 
+  ///// ajout pour netlify form
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", emailInput, messageInput }),
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
+  };
+
+  ///// fin ajout pour netlify form
+
   const handleMouseMove = (e) => {
     setCursorPosition({ x: e.clientX + 20, y: e.clientY - 60 });
   };
@@ -90,7 +113,11 @@ export default function ContactForm() {
             <p>Or use this form:</p>
             <form
               className="contactForm"
-              onSubmit={submit}
+              onSubmit={(e) => {
+                e.preventDefault();
+                handleSubmit(emailInput, messageInput);
+                submit();
+              }}
               name="contact"
               netlify
             >
