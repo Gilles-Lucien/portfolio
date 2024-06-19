@@ -39,17 +39,23 @@ export default function ProjectsArchive() {
 
   const handleFilterClick = (filterId) => {
     setActiveFilters((prevFilters) => {
+      let newFilters;
       if (filterId === "All") {
-        return ["All"];
-      }
-      if (prevFilters.includes("All")) {
-        return [filterId];
-      }
-      if (prevFilters.includes(filterId)) {
-        return prevFilters.filter((id) => id !== filterId);
+        newFilters = ["All"];
+      } else if (prevFilters.includes("All")) {
+        newFilters = [filterId];
+      } else if (prevFilters.includes(filterId)) {
+        newFilters = prevFilters.filter((id) => id !== filterId);
       } else {
-        return [...prevFilters, filterId];
+        newFilters = [...prevFilters, filterId];
       }
+  
+      // Si aucun filtre n'est actif, activez le filtre "All"
+      if (newFilters.length === 0) {
+        newFilters = ["All"];
+      }
+  
+      return newFilters;
     });
   };
 

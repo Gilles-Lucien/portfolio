@@ -13,14 +13,24 @@ export default function ProjectCard({ title, description, tags, image, link }) {
             {title} -
           </h3>
           <div className="projectCard__content__titleAndTagsContainer__tags">
-            {tags.map((tag) => (
-              <span
-                key={tag}
-                className={`projectCard__content__titleAndTagsContainer__tags--tag${tag === "Graphic" ? " orangeSpan" : ""}${tag === "UX/UI" ? " blueSpan" : ""}${tag === "Front-end" ? " yellowSpan" : ""}`}
-              >
-                {tag}
-              </span>
-            ))}
+          {tags.map((tag) => {
+              if (tag === "All") {
+                return null;
+              }
+
+              return (
+                <span
+                  key={tag}
+                  className={`projectCard__content__titleAndTagsContainer__tags--tag${
+                    tag === "Graphic" ? " orangeSpan" : ""
+                  }${tag === "UX/UI" ? " blueSpan" : ""}${
+                    tag === "Front-end" ? " yellowSpan" : ""
+                  }`}
+                >
+                  {tag}
+                </span>
+              );
+            })}
           </div>
           <img className="projectCard__content__titleAndTagsContainer__arrow" src={arrowRight} alt="arrow right" />
         </div>
