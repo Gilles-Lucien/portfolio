@@ -88,7 +88,7 @@ export default function ContactForm() {
           </div>
           <div className="contactSection__container__mailAndForm--form">
             <p>Or use this form:</p>
-            <form className="contactForm" onSubmit={submit}>
+            <form className="contactForm" onSubmit={submit} netlify>
               <label htmlFor="email">Email</label>
               <input
                 type="email"
@@ -130,7 +130,7 @@ export default function ContactForm() {
                   Please enter a valid email.
                 </div>
               )}
-              <Button onClick={submit} className="sendButton">
+              <Button type="submit" onClick={submit} className="sendButton">
                 Send
               </Button>
             </form>
