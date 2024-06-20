@@ -48,25 +48,28 @@ export default function ProjectsArchive() {
       if (filterId === "All" && prevFilters.includes("All")) {
         return prevFilters;
       }
-  
+
       if (filterId === "All") {
-        return prevFilters.length === 0 || prevFilters.includes("All") ? [] : ["All"];
+        return prevFilters.length === 0 || prevFilters.includes("All")
+          ? []
+          : ["All"];
       }
-  
+
       const newFilters = prevFilters.includes(filterId)
         ? prevFilters.filter((id) => id !== filterId)
         : [...prevFilters, filterId];
-  
+
       // If no filters are selected, select "All"
       if (newFilters.length === 0) {
         return ["All"];
       }
-  
+
       // If filters other than "All" are selected, remove "All"
       return newFilters.filter((id) => id !== "All");
     });
+    // Go back to the first page whenever a filter is changed
+    setCurrentPage(1);
   };
-
 
   const filteredProjectCards = projectCards.filter((card) => {
     if (activeFilters.length === 0) {
