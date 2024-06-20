@@ -7,7 +7,7 @@ const fetchProjectCards = () => {
             setTimeout(() => {
                 resolve(projectCardsData);
                 console.log(projectCardsData);
-            }, 1000);
+            }, 1);
         } catch (error) {
             reject(error);
         }

@@ -3,6 +3,7 @@ import "./styles.css";
 import Filter from "../Filter";
 import fetchProjectCards from "../../utils/api/api";
 import ProjectCard from "../ProjectCard";
+import PageCounter from "../PageCounter";
 
 /// import temporaire des images
 import pictureCard0 from "../../assets/cards_pictures/pictureCard-0.png";
@@ -36,7 +37,6 @@ export default function ProjectsArchive() {
 
   const [activeFilters, setActiveFilters] = useState(["All"]);
 
-
   const handleFilterClick = (filterId) => {
     setActiveFilters((prevFilters) => {
       let newFilters;
@@ -49,12 +49,12 @@ export default function ProjectsArchive() {
       } else {
         newFilters = [...prevFilters, filterId];
       }
-  
+
       // Si aucun filtre n'est actif, activez le filtre "All"
       if (newFilters.length === 0) {
         newFilters = ["All"];
       }
-  
+
       return newFilters;
     });
   };
@@ -67,7 +67,7 @@ export default function ProjectsArchive() {
       return true;
     }
     // Sinon, une carte est affichée si l'un de ses tags correspond à l'un des filtres actifs
-    return card.tags.some(tag => activeFilters.includes(tag));
+    return card.tags.some((tag) => activeFilters.includes(tag));
   });
 
   useEffect(() => {
@@ -98,10 +98,11 @@ export default function ProjectsArchive() {
           ))}
         </div>
         <div className="projectsArchive__container__cards">
-        {filteredProjectCards.map((card) => (
-  <ProjectCard key={card.id} {...card} />
-))}
+          {filteredProjectCards.map((card) => (
+            <ProjectCard key={card.id} {...card} />
+          ))}
         </div>
+        <PageCounter currentPage={3} totalPage={3} />
       </div>
     </section>
   );

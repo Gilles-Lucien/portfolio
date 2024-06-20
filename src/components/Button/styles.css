@@ -1,6 +1,4 @@
-.contactButton {
-  background-color: #292D30;
-  color: #fff;
+.button, .paginationButton, .sendButton, .contactButton {
   padding: 10px 25px;
   font-size: 1.1rem;
   border-radius: 5px;
@@ -9,29 +7,35 @@
   transition: all 0.3s ease;
   border: 1px solid transparent;
 }
-.contactButton:hover {
+.button:hover, .paginationButton:hover, .sendButton:hover, .contactButton:hover {
   background-color: #fff;
   color: #292D30;
   border: 1px solid #dcdcdc;
 }
 
+.contactButton {
+  background-color: #292D30;
+  color: #fff;
+}
+
 .sendButton {
   background-color: #0b7764;
-  display: inline-block;
   color: #fff;
-  padding: 10px 25px;
-  font-size: 1.1rem;
-  border-radius: 5px;
-  text-decoration: none;
+  display: inline-block;
   font-family: "Fira Mono", monospace;
   font-weight: 400;
   font-style: normal;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border: 1px solid transparent;
 }
-.sendButton:hover {
-  background-color: #fff;
-  color: #292D30;
-  border: 1px solid #dcdcdc;
+
+.paginationButton {
+  background-color: #0b7764;
+  display: flex;
+  color: #fff;
+}
+.paginationButton:hover {
+  background-color: rgba(11, 119, 100, 0.5);
+}
+
+.invisibleButton {
+  visibility: hidden;
 }/*# sourceMappingURL=styles.css.map */

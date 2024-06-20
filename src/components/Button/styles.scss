@@ -1,8 +1,6 @@
 @use "../../utils/variables/colors" as c;
 
-.contactButton {
-  background-color: c.$dark;
-  color: c.$white;
+.button {
   padding: 10px 25px;
   font-size: 1.1rem;
   border-radius: 5px;
@@ -17,23 +15,32 @@
   }
 }
 
-.sendButton {
-  background-color: c.$green;
-  display: inline-block;
+.contactButton {
+  @extend .button;
+  background-color: c.$dark;
   color: c.$white;
-  padding: 10px 25px;
-  font-size: 1.1rem;
-  border-radius: 5px;
-  text-decoration: none;
+}
+
+.sendButton {
+  @extend .button;
+  background-color: c.$green;
+  color: c.$white;
+  display: inline-block;
   font-family: "Fira Mono", monospace;
   font-weight: 400;
   font-style: normal;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border: 1px solid transparent;
+}
+
+.paginationButton {
+  @extend .button;
+  background-color: c.$green;
+  display: flex;
+  color: c.$white;
   &:hover {
-    background-color: c.$white;
-    color: c.$dark;
-    border: 1px solid c.$second_grey;
+    background-color: rgba(c.$green, 0.5);
   }
+}
+
+.invisibleButton {
+  visibility: hidden;
 }

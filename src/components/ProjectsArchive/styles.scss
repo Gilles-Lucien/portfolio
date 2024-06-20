@@ -16,19 +16,20 @@
     padding-left: 104px;
     padding-right: 104px;
     padding-bottom: 80px;
-    gap: 105px;
     &__filters {
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
       gap: 28px;
+      margin-bottom: 80px;
     }
     &__cards {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       flex-wrap: wrap;
+      margin-bottom: 25px;
     }
   }
 }

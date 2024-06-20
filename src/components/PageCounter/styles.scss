@@ -1,0 +1,21 @@
+@use "../../utils/variables/colors" as c;
+@use "../../utils/variables/mixins" as m;
+
+.pageCounterContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.pageCounter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 35%;
+}
+
+.rotate180 {
+    transform: rotate(180deg);
+  }

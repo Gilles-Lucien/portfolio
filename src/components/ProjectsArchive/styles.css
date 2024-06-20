@@ -20,7 +20,6 @@
   padding-left: 104px;
   padding-right: 104px;
   padding-bottom: 80px;
-  gap: 105px;
 }
 .projectsArchive__container__filters {
   display: flex;
@@ -28,10 +27,12 @@
   justify-content: flex-start;
   align-items: center;
   gap: 28px;
+  margin-bottom: 80px;
 }
 .projectsArchive__container__cards {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 25px;
 }/*# sourceMappingURL=styles.css.map */
