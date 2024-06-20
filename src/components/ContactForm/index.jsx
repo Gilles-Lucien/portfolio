@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
 import copy from "../../assets/svg/copy.svg";
-import Button from "../Button";
+// import Button from "../Button";
 
 export default function ContactForm() {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
