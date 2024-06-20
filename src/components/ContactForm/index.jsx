@@ -24,14 +24,12 @@ export default function ContactForm() {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", emailInput, messageInput }),
     })
-      .then(() => alert("Success!"))
+      .then(() => console.log("form submited successfully"))
       .catch((error) => alert(error));
   };
 
@@ -113,13 +111,13 @@ export default function ContactForm() {
             <p>Or use this form:</p>
             <form
               className="contactForm"
+              name="contact"
               onSubmit={(e) => {
                 e.preventDefault();
-                handleSubmit(emailInput, messageInput);
-                submit();
+                handleSubmit(e, emailInput, messageInput);
+                submit(e);
               }}
-              name="contact"
-              netlify
+              data-netlify="true"
             >
               <input type="hidden" name="form-name" value="contact" />
               <label htmlFor="email">Email</label>
@@ -163,9 +161,9 @@ export default function ContactForm() {
                   Please enter a valid email.
                 </div>
               )}
-              <Button type="submit" onClick={submit} className="sendButton">
+              <button type="submit" className="sendButton">
                 Send
-              </Button>
+              </button>
             </form>
           </div>
         </div>
