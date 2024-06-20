@@ -8,7 +8,7 @@
   border-image-slice: 1;
   border-image-repeat: round;
   border-image-source: url(../../assets/images/border_left_right.png);
-  background-color: #fff;
+  background-color: #fdfdfd;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

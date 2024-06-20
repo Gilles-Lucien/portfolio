@@ -40,7 +40,7 @@ export default function ProjectsArchive() {
   const [activeFilters, setActiveFilters] = useState(["All"]);
   const [projectCards, setProjectCards] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 8;
+  const itemsPerPage = 9;
 
   const handleFilterClick = (filterId) => {
     setActiveFilters((prevFilters) => {

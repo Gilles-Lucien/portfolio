@@ -1,3 +1,7 @@
+* {
+  break-inside: avoid;
+}
+
 .projectsArchive {
   width: 100%;
   border-image-width: 1px;
@@ -12,7 +16,7 @@
   border-image-slice: 1;
   border-image-repeat: round;
   border-image-source: url(../../assets/images/border_left_right.png);
-  background-color: #fff;
+  background-color: #fdfdfd;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -30,10 +34,17 @@
   margin-bottom: 80px;
 }
 .projectsArchive__container__cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  column-count: 3;
+  column-gap: 24px;
   margin-bottom: 25px;
   margin-top: 40px;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  break-inside: avoid;
+}
+.projectsArchive__container__cards::after {
+  content: "";
+  display: block;
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */

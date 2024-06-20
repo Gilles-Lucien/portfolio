@@ -9,30 +9,36 @@ export default function ProjectCard({ title, description, tags, image, link }) {
     <Link to={link} className="projectCard">
       <div className="projectCard__content">
         <div className="projectCard__content__titleAndTagsContainer">
-          <h3 className="projectCard__content__titleAndTagsContainer--title">
-            {title} -
-          </h3>
-          <div className="projectCard__content__titleAndTagsContainer__tags">
-          {tags.map((tag) => {
-              if (tag === "All") {
-                return null;
-              }
+          <div>
+            <h3 className="projectCard__content__titleAndTagsContainer--title">
+              {title}
+            </h3>
+            <div className="projectCard__content__titleAndTagsContainer__tags">
+              {tags.map((tag) => {
+                if (tag === "All") {
+                  return null;
+                }
 
-              return (
-                <span
-                  key={tag}
-                  className={`projectCard__content__titleAndTagsContainer__tags--tag${
-                    tag === "Graphic" ? " orangeSpan" : ""
-                  }${tag === "UX/UI" ? " blueSpan" : ""}${
-                    tag === "Front-end" ? " yellowSpan" : ""
-                  }`}
-                >
-                  {tag}
-                </span>
-              );
-            })}
+                return (
+                  <span
+                    key={tag}
+                    className={`projectCard__content__titleAndTagsContainer__tags--tag${
+                      tag === "Graphic" ? " orangeSpan" : ""
+                    }${tag === "UX/UI" ? " blueSpan" : ""}${
+                      tag === "Front-end" ? " yellowSpan" : ""
+                    }`}
+                  >
+                    {tag}
+                  </span>
+                );
+              })}
+            </div>
           </div>
-          <img className="projectCard__content__titleAndTagsContainer__arrow" src={arrowRight} alt="arrow right" />
+          <img
+            className="projectCard__content__titleAndTagsContainer__arrow"
+            src={arrowRight}
+            alt="arrow right"
+          />
         </div>
         <p className="projectCard__description">{description}</p>
       </div>

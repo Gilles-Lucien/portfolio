@@ -7,7 +7,7 @@
     width: 1280px;
     margin: 0 auto;
     @include m.dashedBorder("left_right");
-    background-color: c.$white;
+    background-color: c.$third_grey;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
