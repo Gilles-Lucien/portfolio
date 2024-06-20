@@ -15,6 +15,15 @@ import pictureCard5 from "../../assets/cards_pictures/pictureCard-5.png";
 import pictureCard6 from "../../assets/cards_pictures/pictureCard-6.png";
 import pictureCard7 from "../../assets/cards_pictures/pictureCard-7.png";
 import pictureCard8 from "../../assets/cards_pictures/pictureCard-8.jpg";
+import pictureCard9 from "../../assets/cards_pictures/pictureCard-9.png";
+import pictureCard10 from "../../assets/cards_pictures/pictureCard-10.png";
+import pictureCard11 from "../../assets/cards_pictures/pictureCard-11.png";
+import pictureCard12 from "../../assets/cards_pictures/pictureCard-12.png";
+import pictureCard13 from "../../assets/cards_pictures/pictureCard-13.png";
+import pictureCard14 from "../../assets/cards_pictures/pictureCard-14.png";
+import pictureCard15 from "../../assets/cards_pictures/pictureCard-15.png";
+import pictureCard16 from "../../assets/cards_pictures/pictureCard-16.png";
+import pictureCard17 from "../../assets/cards_pictures/pictureCard-17.png";
 
 /// map des images dans un objet, temporaire
 const imageMap = {
@@ -27,6 +36,15 @@ const imageMap = {
   pictureCard6: pictureCard6,
   pictureCard7: pictureCard7,
   pictureCard8: pictureCard8,
+  pictureCard9: pictureCard9,
+  pictureCard10: pictureCard10,
+  pictureCard11: pictureCard11,
+  pictureCard12: pictureCard12,
+  pictureCard13: pictureCard13,
+  pictureCard14: pictureCard14,
+  pictureCard15: pictureCard15,
+  pictureCard16: pictureCard16,
+  pictureCard17: pictureCard17,
 };
 
 export default function ProjectsArchive() {

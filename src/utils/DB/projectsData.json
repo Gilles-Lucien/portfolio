@@ -70,7 +70,79 @@
       "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
       "tags": [ "All", "Graphic", "UX/UI"],
       "image": "pictureCard8",
-      "link": "/projects/yourehome"
+      "link": "/projects/belron"
+    },
+    {
+      "id": "10",
+      "title": "L'atelier en boîte",
+      "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
+      "tags": [ "All", "Graphic", "UX/UI"],
+      "image": "pictureCard9",
+      "link": "/projects/atelierenboite"
+    },
+    {
+      "id": "11",
+      "title": "Mustela",
+      "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
+      "tags": [ "All", "Graphic", "UX/UI"],
+      "image": "pictureCard10",
+      "link": "/projects/mustela"
+    },
+    {
+      "id": "12",
+      "title": "Alchemist Chocolate",
+      "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
+      "tags": [ "All", "Graphic"],
+      "image": "pictureCard11",
+      "link": "/projects/alchemistchocolate"
+    },
+    {
+      "id": "13",
+      "title": "Stane press kit",
+      "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
+      "tags": [ "All", "Graphic"],
+      "image": "pictureCard12",
+      "link": "/projects/stanepresskit"
+    },
+    {
+      "id": "14",
+      "title": "Haptic Radar",
+      "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
+      "tags": [ "All", "UX/UI"],
+      "image": "pictureCard13",
+      "link": "/projects/hapticradar"
+    },
+    {
+      "id": "15",
+      "title": "Paris Saint Germain national soccer team's shop",
+      "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
+      "tags": [ "All", "UX/UI"],
+      "image": "pictureCard14",
+      "link": "/projects/psgshop"
+    },
+    {
+      "id": "16",
+      "title": "Fovéa",
+      "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
+      "tags": [ "All", "UX/UI", "Graphic"],
+      "image": "pictureCard15",
+      "link": "/projects/fovea"
+    },
+    {
+      "id": "17",
+      "title": "Bone hunt",
+      "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
+      "tags": [ "All", "UX/UI", "Graphic"],
+      "image": "pictureCard16",
+      "link": "/projects/bonehunt"
+    },
+    {
+      "id": "18",
+      "title": "Personal identity",
+      "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
+      "tags": [ "All", "Graphic"],
+      "image": "pictureCard17",
+      "link": "/projects/personalidentity"
     }
   ]
 }

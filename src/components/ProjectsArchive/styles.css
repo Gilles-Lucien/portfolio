@@ -4,6 +4,7 @@
 
 .projectsArchive {
   width: 100%;
+  background-color: #fdfdfd;
   border-image-width: 1px;
   border-image-slice: 1;
   border-image-repeat: round;
@@ -16,7 +17,7 @@
   border-image-slice: 1;
   border-image-repeat: round;
   border-image-source: url(../../assets/images/border_left_right.png);
-  background-color: #fdfdfd;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

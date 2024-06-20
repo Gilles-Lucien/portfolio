@@ -3,11 +3,12 @@
 
 .projectsIntro {
   width: 100%;
+  background-color: c.$third_grey;
   &__container {
     width: 1280px;
     margin: 0 auto;
     @include m.dashedBorder("left_right");
-    background-color: c.$third_grey;
+    background-color: c.$white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

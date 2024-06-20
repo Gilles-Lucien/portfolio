@@ -1,5 +1,6 @@
 .projectsIntro {
   width: 100%;
+  background-color: #fdfdfd;
 }
 .projectsIntro__container {
   width: 1280px;
@@ -8,7 +9,7 @@
   border-image-slice: 1;
   border-image-repeat: round;
   border-image-source: url(../../assets/images/border_left_right.png);
-  background-color: #fdfdfd;
+  background-color: #fff;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
