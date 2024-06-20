@@ -118,6 +118,12 @@ export default function ProjectsArchive() {
             </Filter>
           ))}
         </div>
+        <PageCounter
+          currentPage={currentPage}
+          totalPage={totalPage}
+          next={next}
+          previous={previous}
+        />
         <div className="projectsArchive__container__cards">
           {currentCards.map((card) => (
             <ProjectCard key={card.id} {...card} />
