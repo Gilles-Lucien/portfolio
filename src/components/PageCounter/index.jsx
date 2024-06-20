@@ -4,6 +4,9 @@ import Button from "../Button";
 import arrow_right_long from "../../assets/svg/arrow_right_long.svg";
 
 const PageCounter = ({ currentPage, totalPage, next, previous }) => {
+    if (totalPage === 0) return null;
+
+
   return (
     <div className="pageCounterContainer">
       {currentPage === 1 ? (
