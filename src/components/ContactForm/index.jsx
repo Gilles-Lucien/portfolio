@@ -29,7 +29,7 @@ export default function ContactForm() {
         message: messageInput,
       }),
     })
-      .then(() => console.log("form submited successfully"))
+      .then(() => setEmailInput(""), setMessageInput(""))
       .catch((error) => alert(error));
   };
 
@@ -51,8 +51,6 @@ export default function ContactForm() {
       }, 2500);
       return;
     }
-    setEmailInput("");
-    setMessageInput("");
     setCursorPosition({ x: event.clientX + 20, y: event.clientY - 60 });
     document.addEventListener("mousemove", handleMouseMove);
     setShowSubmitTooltip(true);
