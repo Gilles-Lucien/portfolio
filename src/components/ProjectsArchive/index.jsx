@@ -44,6 +44,11 @@ export default function ProjectsArchive() {
 
   const handleFilterClick = (filterId) => {
     setActiveFilters((prevFilters) => {
+      // If "All" is clicked and it's already active, ignore the click
+      if (filterId === "All" && prevFilters.includes("All")) {
+        return prevFilters;
+      }
+  
       if (filterId === "All") {
         return prevFilters.length === 0 || prevFilters.includes("All") ? [] : ["All"];
       }
