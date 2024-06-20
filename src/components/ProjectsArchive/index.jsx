@@ -14,6 +14,7 @@ import pictureCard4 from "../../assets/cards_pictures/pictureCard-4.png";
 import pictureCard5 from "../../assets/cards_pictures/pictureCard-5.png";
 import pictureCard6 from "../../assets/cards_pictures/pictureCard-6.png";
 import pictureCard7 from "../../assets/cards_pictures/pictureCard-7.png";
+import pictureCard8 from "../../assets/cards_pictures/pictureCard-8.jpg";
 
 /// map des images dans un objet, temporaire
 const imageMap = {
@@ -25,6 +26,7 @@ const imageMap = {
   pictureCard5: pictureCard5,
   pictureCard6: pictureCard6,
   pictureCard7: pictureCard7,
+  pictureCard8: pictureCard8,
 };
 
 export default function ProjectsArchive() {
@@ -70,6 +72,8 @@ export default function ProjectsArchive() {
     return card.tags.some((tag) => activeFilters.includes(tag));
   });
 
+  
+
   useEffect(() => {
     fetchProjectCards().then((response) => {
       const updatedProjectCards = response.projectCards.map((card) => ({
@@ -102,7 +106,7 @@ export default function ProjectsArchive() {
             <ProjectCard key={card.id} {...card} />
           ))}
         </div>
-        <PageCounter currentPage={3} totalPage={3} />
+        <PageCounter currentPage={1} totalPage={5} />
       </div>
     </section>
   );
