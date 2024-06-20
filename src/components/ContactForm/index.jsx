@@ -1,18 +1,14 @@
 import React, { useState } from "react";
 import "./styles.css";
-import copy from "../../assets/svg/copy.svg";
 // import Button from "../Button";
 
 export default function ContactForm() {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
-  const [showTooltip, setShowTooltip] = useState(false);
   const [showSubmitTooltip, setShowSubmitTooltip] = useState(false);
   const [showErrorTooltip, setShowErrorTooltip] = useState(false);
 
   const [emailInput, setEmailInput] = useState("");
   const [messageInput, setMessageInput] = useState("");
-
-  const email = "gpeltier2@gmail.com";
 
   ///// ajout pour netlify form
   const encode = (data) => {
@@ -27,7 +23,11 @@ export default function ContactForm() {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", "email": emailInput, "message": messageInput }),
+      body: encode({
+        "form-name": "contact",
+        email: emailInput,
+        message: messageInput,
+      }),
     })
       .then(() => console.log("form submited successfully"))
       .catch((error) => alert(error));
@@ -40,7 +40,6 @@ export default function ContactForm() {
   };
 
   const submit = (event) => {
-    event.preventDefault();
     const emailRegex = /.+@.+/;
     if (!emailRegex.test(emailInput)) {
       setCursorPosition({ x: event.clientX + 20, y: event.clientY - 60 });
@@ -60,19 +59,7 @@ export default function ContactForm() {
     setTimeout(() => {
       setShowSubmitTooltip(false);
       document.removeEventListener("mousemove", handleMouseMove);
-    }, 2000);
-  };
-
-  const copyToClipboard = (e) => {
-    navigator.clipboard.writeText(email);
-    e.target.focus();
-    setCursorPosition({ x: e.clientX + 20, y: e.clientY - 60 });
-    document.addEventListener("mousemove", handleMouseMove);
-    setShowTooltip(true);
-    setTimeout(() => {
-      setShowTooltip(false);
-      document.removeEventListener("mousemove", handleMouseMove);
-    }, 2000);
+    }, 4000);
   };
 
   return (
@@ -82,40 +69,14 @@ export default function ContactForm() {
           Contact <span>to keep in touch</span>
         </h2>
         <div className="contactSection__container__mailAndForm">
-          <div className="contactSection__container__mailAndForm--mail">
-            <p>Copy my email:</p>
-            <div>
-              <p id="contactMail" onClick={copyToClipboard}>
-                gpeltier2@gmail.com
-              </p>{" "}
-              <img
-                src={copy}
-                alt="copy email to clipboard"
-                onClick={copyToClipboard}
-              />
-            </div>
-            {showTooltip && (
-              <div
-                className="toolTip"
-                style={{
-                  position: "fixed",
-                  top: cursorPosition.y,
-                  left: cursorPosition.x,
-                }}
-              >
-                Copied to clipboard!
-              </div>
-            )}
-          </div>
           <div className="contactSection__container__mailAndForm--form">
-            <p>Or use this form:</p>
+            <p>Let me know what you think:</p>
             <form
               className="contactForm"
               name="contact"
               onSubmit={(e) => {
                 e.preventDefault();
                 handleSubmit(e, emailInput, messageInput);
-                submit(e);
               }}
               data-netlify="true"
             >
@@ -146,7 +107,7 @@ export default function ContactForm() {
                     left: cursorPosition.x,
                   }}
                 >
-                  reminder : connect the form to a backend to send the email.
+                  Form submitted! I will get back to you soon.
                 </div>
               )}
               {showErrorTooltip && (
@@ -161,7 +122,7 @@ export default function ContactForm() {
                   Please enter a valid email.
                 </div>
               )}
-              <button type="submit" className="sendButton">
+              <button type="submit" className="sendButton" onClick={submit}>
                 Send
               </button>
             </form>
