@@ -63,6 +63,14 @@
       "tags": [ "All", "Graphic"],
       "image": "pictureCard7",
       "link": "/projects/yourehome"
+    },
+    {
+      "id": "9",
+      "title": "Belron Ressources",
+      "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
+      "tags": [ "All", "Graphic", "UX/UI"],
+      "image": "pictureCard8",
+      "link": "/projects/yourehome"
     }
   ]
 }
