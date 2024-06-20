@@ -38,41 +38,51 @@ export default function ProjectsArchive() {
   ];
 
   const [activeFilters, setActiveFilters] = useState(["All"]);
+  const [projectCards, setProjectCards] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 8;
 
   const handleFilterClick = (filterId) => {
     setActiveFilters((prevFilters) => {
-      let newFilters;
       if (filterId === "All") {
-        newFilters = ["All"];
-      } else if (prevFilters.includes("All")) {
-        newFilters = [filterId];
-      } else if (prevFilters.includes(filterId)) {
-        newFilters = prevFilters.filter((id) => id !== filterId);
-      } else {
-        newFilters = [...prevFilters, filterId];
+        return prevFilters.length === 0 || prevFilters.includes("All") ? [] : ["All"];
       }
-
-      // Si aucun filtre n'est actif, activez le filtre "All"
+  
+      const newFilters = prevFilters.includes(filterId)
+        ? prevFilters.filter((id) => id !== filterId)
+        : [...prevFilters, filterId];
+  
+      // If no filters are selected, select "All"
       if (newFilters.length === 0) {
-        newFilters = ["All"];
+        return ["All"];
       }
-
-      return newFilters;
+  
+      // If filters other than "All" are selected, remove "All"
+      return newFilters.filter((id) => id !== "All");
     });
   };
 
-  const [projectCards, setProjectCards] = useState([]);
 
   const filteredProjectCards = projectCards.filter((card) => {
-    // Si "All" est actif, toutes les cartes sont affichées
-    if (activeFilters.includes("All")) {
+    if (activeFilters.length === 0) {
       return true;
     }
-    // Sinon, une carte est affichée si l'un de ses tags correspond à l'un des filtres actifs
     return card.tags.some((tag) => activeFilters.includes(tag));
   });
 
-  
+  const totalPage = Math.ceil(filteredProjectCards.length / itemsPerPage);
+
+  const next = () => {
+    setCurrentPage((prevPage) => Math.min(prevPage + 1, totalPage));
+  };
+
+  const previous = () => {
+    setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
+  };
+
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentCards = filteredProjectCards.slice(startIndex, endIndex);
 
   useEffect(() => {
     fetchProjectCards().then((response) => {
@@ -81,7 +91,6 @@ export default function ProjectsArchive() {
         image: imageMap[card.image],
       }));
       setProjectCards(updatedProjectCards);
-      console.log(updatedProjectCards);
     });
   }, []);
 
@@ -102,11 +111,16 @@ export default function ProjectsArchive() {
           ))}
         </div>
         <div className="projectsArchive__container__cards">
-          {filteredProjectCards.map((card) => (
+          {currentCards.map((card) => (
             <ProjectCard key={card.id} {...card} />
           ))}
         </div>
-        <PageCounter currentPage={1} totalPage={5} />
+        <PageCounter
+          currentPage={currentPage}
+          totalPage={totalPage}
+          next={next}
+          previous={previous}
+        />
       </div>
     </section>
   );
