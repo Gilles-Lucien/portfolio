@@ -8,6 +8,7 @@ import sass from "../../assets/svg/sass-avatar.svg";
 import git from "../../assets/svg/git.svg";
 import github from "../../assets/svg/github.svg";
 import vscode from "../../assets/svg/visual-studio.svg";
+import react from "../../assets/svg/react.svg";
 
 export default function Skills() {
   return (
@@ -18,11 +19,12 @@ export default function Skills() {
         </h2>
         <div className="skillsSection__container__skills">
           <div className="skillsSection__container__skills--skill">
-            <h3>Languages</h3>
+            <h3>Languages & library</h3>
             <ul>
               <li>HTML5 <img src={html5} alt="HTML5" /></li>
               <li>CSS3 <img src={css3} alt="CSS3" /></li>
               <li>JavaScript <img src={javascript} alt="JavaScript" /></li>
+              <li>React <img className="rotateAnimation" src={react} alt="React" /></li>
             </ul>
           </div>
           <div className="skillsSection__container__skills--skill">

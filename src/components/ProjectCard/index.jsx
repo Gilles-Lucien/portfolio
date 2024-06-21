@@ -9,7 +9,7 @@ export default function ProjectCard({ title, description, tags, image, link }) {
     <Link to={link} className="projectCard">
       <div className="projectCard__content">
         <div className="projectCard__content__titleAndTagsContainer">
-          <div>
+          <div className="titleAndTagsContainerDiv">
             <h3 className="projectCard__content__titleAndTagsContainer--title">
               {title}
             </h3>
@@ -28,7 +28,7 @@ export default function ProjectCard({ title, description, tags, image, link }) {
                       tag === "frontend" ? " yellowSpan" : ""
                     }`}
                   >
-                    {tag}
+                    {tag === 'graphic' ? 'Graphic Design' : tag === 'uxui' ? 'UX/UI' : tag === 'frontend' ? 'Front-end' : tag}
                   </span>
                 );
               })}

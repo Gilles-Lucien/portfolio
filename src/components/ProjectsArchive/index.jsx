@@ -14,7 +14,7 @@ import pictureCard4 from "../../assets/cards_pictures/pictureCard-4.png";
 import pictureCard5 from "../../assets/cards_pictures/pictureCard-5.png";
 import pictureCard6 from "../../assets/cards_pictures/pictureCard-6.png";
 import pictureCard7 from "../../assets/cards_pictures/pictureCard-7.png";
-import pictureCard8 from "../../assets/cards_pictures/pictureCard-8.jpg";
+import pictureCard8 from "../../assets/cards_pictures/pictureCard-8.png";
 import pictureCard9 from "../../assets/cards_pictures/pictureCard-9.png";
 import pictureCard10 from "../../assets/cards_pictures/pictureCard-10.png";
 import pictureCard11 from "../../assets/cards_pictures/pictureCard-11.png";
@@ -24,6 +24,15 @@ import pictureCard14 from "../../assets/cards_pictures/pictureCard-14.png";
 import pictureCard15 from "../../assets/cards_pictures/pictureCard-15.png";
 import pictureCard16 from "../../assets/cards_pictures/pictureCard-16.png";
 import pictureCard17 from "../../assets/cards_pictures/pictureCard-17.png";
+import pictureCard18 from "../../assets/cards_pictures/pictureCard-18.png";
+import pictureCard19 from "../../assets/cards_pictures/pictureCard-19.png";
+import pictureCard20 from "../../assets/cards_pictures/pictureCard-20.png";
+import pictureCard21 from "../../assets/cards_pictures/pictureCard-21.png";
+import pictureCard22 from "../../assets/cards_pictures/pictureCard-22.png";
+import pictureCard23 from "../../assets/cards_pictures/pictureCard-23.png";
+import pictureCard24 from "../../assets/cards_pictures/pictureCard-24.png";
+import pictureCard25 from "../../assets/cards_pictures/pictureCard-25.png";
+import pictureCard26 from "../../assets/cards_pictures/pictureCard-26.png";
 
 /// map des images dans un objet, temporaire
 const imageMap = {
@@ -45,9 +54,16 @@ const imageMap = {
   pictureCard15: pictureCard15,
   pictureCard16: pictureCard16,
   pictureCard17: pictureCard17,
+  pictureCard18: pictureCard18,
+  pictureCard19: pictureCard19,
+  pictureCard20: pictureCard20,
+  pictureCard21: pictureCard21,
+  pictureCard22: pictureCard22,
+  pictureCard23: pictureCard23,
+  pictureCard24: pictureCard24,
+  pictureCard25: pictureCard25,
+  pictureCard26: pictureCard26,
 };
-
-
 
 export default function ProjectsArchive({ filterId }) {
   const filters = [
@@ -57,7 +73,9 @@ export default function ProjectsArchive({ filterId }) {
     { id: "frontend", class: "filter--frontend", name: "Front-end" },
   ];
 
-  const [activeFilters, setActiveFilters] = useState([filterId ? filterId : "all"]);
+  const [activeFilters, setActiveFilters] = useState([
+    filterId ? filterId : "all",
+  ]);
   const [projectCards, setProjectCards] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 9;

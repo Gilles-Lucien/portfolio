@@ -43,9 +43,4 @@
   width: 100%;
   box-sizing: border-box;
   break-inside: avoid;
-}
-.projectsArchive__container__cards::after {
-  content: "";
-  display: block;
-  width: 100%;
 }/*# sourceMappingURL=styles.css.map */

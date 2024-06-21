@@ -6,7 +6,6 @@ const fetchProjectCards = () => {
             // Simulate an asynchronous API call
             setTimeout(() => {
                 resolve(projectCardsData);
-                console.log(projectCardsData);
             }, 1);
         } catch (error) {
             reject(error);

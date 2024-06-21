@@ -39,11 +39,12 @@
       width: 100%;
       box-sizing: border-box;
       break-inside: avoid;
-      &::after {
-        content: '';
-        display: block;
-        width: 100%;
-      }
+      // &::after {
+      //   content: '';
+      //   display: block;
+      //   width: 100%;
+      //   height: 420px;
+      // }
     }
   }
 }
