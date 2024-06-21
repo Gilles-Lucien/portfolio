@@ -16,7 +16,7 @@ export default function ProjectsSection() {
           <div className="projectsSection__container__categories__category">
             <Link
               className="projectsSection__container__categories__category-graphic"
-              to="/projects:graphic"
+              to="/projects/graphic"
             >
               <img src={graphic} alt="an open book" />
               <p>Graphic design</p>
@@ -25,7 +25,7 @@ export default function ProjectsSection() {
           <div className="projectsSection__container__categories__category">
             <Link
               className="projectsSection__container__categories__category-uxui"
-              to="/projects:uxui"
+              to="/projects/uxui"
             >
               <img src={uxui} alt="a flowchart" />
               <p>UX/UI</p>
@@ -34,7 +34,7 @@ export default function ProjectsSection() {
           <div className="projectsSection__container__categories__category">
             <Link
               className="projectsSection__container__categories__category-frontend"
-              to="/projects:frontend"
+              to="/projects/frontend"
             >
               <img src={frontend} alt="lines of code" />
               <p>Front-end</p>

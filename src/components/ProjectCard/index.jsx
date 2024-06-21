@@ -15,7 +15,7 @@ export default function ProjectCard({ title, description, tags, image, link }) {
             </h3>
             <div className="projectCard__content__titleAndTagsContainer__tags">
               {tags.map((tag) => {
-                if (tag === "All") {
+                if (tag === "all") {
                   return null;
                 }
 
@@ -23,9 +23,9 @@ export default function ProjectCard({ title, description, tags, image, link }) {
                   <span
                     key={tag}
                     className={`projectCard__content__titleAndTagsContainer__tags--tag${
-                      tag === "Graphic" ? " orangeSpan" : ""
-                    }${tag === "UX/UI" ? " blueSpan" : ""}${
-                      tag === "Front-end" ? " yellowSpan" : ""
+                      tag === "graphic" ? " orangeSpan" : ""
+                    }${tag === "uxui" ? " blueSpan" : ""}${
+                      tag === "frontend" ? " yellowSpan" : ""
                     }`}
                   >
                     {tag}

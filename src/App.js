@@ -28,7 +28,8 @@ function MainContent() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/:id" element={<Projects />} />
+        <Route path="/projects/" element={<Projects />} />
         <Route path="/aboutme" element={<AboutMe />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

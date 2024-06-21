@@ -47,15 +47,17 @@ const imageMap = {
   pictureCard17: pictureCard17,
 };
 
-export default function ProjectsArchive() {
+
+
+export default function ProjectsArchive({ filterId }) {
   const filters = [
-    { id: "All", class: "filter--all", name: "All" },
-    { id: "Graphic", class: "filter--graphic", name: "Graphic" },
-    { id: "UX/UI", class: "filter--uxui", name: "UX/UI" },
-    { id: "Front-end", class: "filter--frontend", name: "Front-end" },
+    { id: "all", class: "filter--all", name: "All" },
+    { id: "graphic", class: "filter--graphic", name: "Graphic" },
+    { id: "uxui", class: "filter--uxui", name: "UX/UI" },
+    { id: "frontend", class: "filter--frontend", name: "Front-end" },
   ];
 
-  const [activeFilters, setActiveFilters] = useState(["All"]);
+  const [activeFilters, setActiveFilters] = useState([filterId ? filterId : "all"]);
   const [projectCards, setProjectCards] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 9;
@@ -63,14 +65,14 @@ export default function ProjectsArchive() {
   const handleFilterClick = (filterId) => {
     setActiveFilters((prevFilters) => {
       // If "All" is clicked and it's already active, ignore the click
-      if (filterId === "All" && prevFilters.includes("All")) {
+      if (filterId === "all" && prevFilters.includes("all")) {
         return prevFilters;
       }
 
-      if (filterId === "All") {
-        return prevFilters.length === 0 || prevFilters.includes("All")
+      if (filterId === "all") {
+        return prevFilters.length === 0 || prevFilters.includes("all")
           ? []
-          : ["All"];
+          : ["all"];
       }
 
       const newFilters = prevFilters.includes(filterId)
@@ -79,11 +81,11 @@ export default function ProjectsArchive() {
 
       // If no filters are selected, select "All"
       if (newFilters.length === 0) {
-        return ["All"];
+        return ["all"];
       }
 
       // If filters other than "All" are selected, remove "All"
-      return newFilters.filter((id) => id !== "All");
+      return newFilters.filter((id) => id !== "all");
     });
     // Go back to the first page whenever a filter is changed
     setCurrentPage(1);

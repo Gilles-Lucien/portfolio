@@ -4,7 +4,7 @@
       "id": "1",
       "title": "WoodYou",
       "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
-      "tags": [ "All", "Graphic", "UX/UI"],
+      "tags": [ "all", "graphic", "uxui"],
       "image": "pictureCard0",
       "link": "/projects/woodyou"
     },
@@ -12,7 +12,7 @@
       "id": "2",
       "title": "My French Chef",
       "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
-      "tags": [ "All", "Graphic", "UX/UI"],
+      "tags": [ "all", "graphic", "uxui"],
       "image": "pictureCard1",
       "link": "/projects/myfrenchchef"
     },
@@ -20,7 +20,7 @@
       "id": "3",
       "title": "Stane",
       "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
-      "tags": [ "All", "UX/UI"],
+      "tags": [ "all", "uxui"],
       "image": "pictureCard2",
       "link": "/projects/stane"
     },
@@ -28,7 +28,7 @@
       "id": "4",
       "title": "TinyOffice",
       "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu.",
-      "tags": [ "All", "UX/UI"],
+      "tags": [ "all", "uxui"],
       "image": "pictureCard3",
       "link": "/projects/tinyoffice"
     },
@@ -36,7 +36,7 @@
       "id": "5",
       "title": "Selaliqua",
       "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
-      "tags": [ "All", "UX/UI"],
+      "tags": [ "all", "uxui"],
       "image": "pictureCard4",
       "link": "/projects/selaliqua"
     },
@@ -44,7 +44,7 @@
       "id": "6",
       "title": "Odysium",
       "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
-      "tags": [ "All", "UX/UI"],
+      "tags": [ "all", "uxui"],
       "image": "pictureCard5",
       "link": "/projects/odysium"
     },
@@ -52,7 +52,7 @@
       "id": "7",
       "title": "Nuclear Medicine Center",
       "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu.",
-      "tags": [ "All", "Graphic", "UX/UI"],
+      "tags": [ "all", "graphic", "uxui"],
       "image": "pictureCard6",
       "link": "/projects/nuclearmedicinecenter"
     },
@@ -60,7 +60,7 @@
       "id": "8",
       "title": "You're Home",
       "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
-      "tags": [ "All", "Graphic"],
+      "tags": [ "all", "graphic"],
       "image": "pictureCard7",
       "link": "/projects/yourehome"
     },
@@ -68,7 +68,7 @@
       "id": "9",
       "title": "Belron Ressources",
       "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
-      "tags": [ "All", "Graphic", "UX/UI"],
+      "tags": [ "all", "graphic", "uxui"],
       "image": "pictureCard8",
       "link": "/projects/belron"
     },
@@ -76,7 +76,7 @@
       "id": "10",
       "title": "L'atelier en boîte",
       "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
-      "tags": [ "All", "Graphic", "UX/UI"],
+      "tags": [ "all", "graphic", "uxui"],
       "image": "pictureCard9",
       "link": "/projects/atelierenboite"
     },
@@ -84,7 +84,7 @@
       "id": "11",
       "title": "Mustela",
       "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
-      "tags": [ "All", "Graphic", "UX/UI"],
+      "tags": [ "all", "graphic", "uxui"],
       "image": "pictureCard10",
       "link": "/projects/mustela"
     },
@@ -92,7 +92,7 @@
       "id": "12",
       "title": "Alchemist Chocolate",
       "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
-      "tags": [ "All", "Graphic"],
+      "tags": [ "all", "graphic"],
       "image": "pictureCard11",
       "link": "/projects/alchemistchocolate"
     },
@@ -100,7 +100,7 @@
       "id": "13",
       "title": "Stane press kit",
       "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
-      "tags": [ "All", "Graphic"],
+      "tags": [ "all", "graphic"],
       "image": "pictureCard12",
       "link": "/projects/stanepresskit"
     },
@@ -108,7 +108,7 @@
       "id": "14",
       "title": "Haptic Radar",
       "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
-      "tags": [ "All", "UX/UI"],
+      "tags": [ "all", "uxui"],
       "image": "pictureCard13",
       "link": "/projects/hapticradar"
     },
@@ -116,7 +116,7 @@
       "id": "15",
       "title": "Paris Saint Germain national soccer team's shop",
       "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
-      "tags": [ "All", "UX/UI"],
+      "tags": [ "all", "uxui"],
       "image": "pictureCard14",
       "link": "/projects/psgshop"
     },
@@ -124,7 +124,7 @@
       "id": "16",
       "title": "Fovéa",
       "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
-      "tags": [ "All", "UX/UI", "Graphic"],
+      "tags": [ "all", "uxui", "graphic"],
       "image": "pictureCard15",
       "link": "/projects/fovea"
     },
@@ -132,7 +132,7 @@
       "id": "17",
       "title": "Bone hunt",
       "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
-      "tags": [ "All", "UX/UI", "Graphic"],
+      "tags": [ "all", "uxui", "graphic"],
       "image": "pictureCard16",
       "link": "/projects/bonehunt"
     },
@@ -140,7 +140,7 @@
       "id": "18",
       "title": "Personal identity",
       "description": "Lorem ipsum dolor sit amet consectetur. Pellentesque orci vitae arcu eget maecenas eu. Et sit amet.",
-      "tags": [ "All", "Graphic"],
+      "tags": [ "all", "graphic"],
       "image": "pictureCard17",
       "link": "/projects/personalidentity"
     }
