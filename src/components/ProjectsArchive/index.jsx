@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./styles.css";
 import Filter from "../Filter";
-import fetchProjectCards from "../../utils/api/api";
+import { fetchProjectCards } from "../../utils/api/api";
 import ProjectCard from "../ProjectCard";
 import PageCounter from "../PageCounter";
 

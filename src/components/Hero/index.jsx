@@ -4,8 +4,6 @@ import hero_picture from "../../assets/images/hero_picture.png";
 
 export default function Hero() {
 
-
-
   return (
     <section className="hero">
       <div className="hero__container">

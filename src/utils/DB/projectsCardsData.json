@@ -1,0 +1,220 @@
+{
+  "projectCards": [
+    {
+      "id": "1",
+      "title": "WoodYou",
+      "description": "Creation of a logotype for WoodYou, a specialist in made-to-measure wooden objects, based on the Tangram principle.",
+      "tags": [ "all", "graphic", "uxui"],
+      "image": "pictureCard0",
+      "link": "/single/1"
+    },
+    {
+      "id": "2",
+      "title": "My French Chef",
+      "description": "Chefs' recipes, family nutritional monitoring, video cooking lessons.",
+      "tags": [ "all", "graphic", "uxui"],
+      "image": "pictureCard1",
+      "link": "/single/2"
+    },
+    {
+      "id": "3",
+      "title": "Stane",
+      "description": "Creating modern health centres",
+      "tags": [ "all", "uxui"],
+      "image": "pictureCard2",
+      "link": "/single/3"
+    },
+    {
+      "id": "4",
+      "title": "TinyOffice",
+      "description": "UX/UI design and graphic identity for a manufacturer of garden office modules.",
+      "tags": [ "all", "uxui"],
+      "image": "pictureCard3",
+      "link": "/single/4"
+    },
+    { 
+      "id": "5",
+      "title": "Selaliqua",
+      "description": "UX overhaul of Selaliqua's home page to increase the conversion rate via a dialogue interface",
+      "tags": [ "all", "uxui"],
+      "image": "pictureCard4",
+      "link": "/single/5"
+    },
+    {
+      "id": "6",
+      "title": "Odysium",
+      "description": "UX/UI design of multiservice PWA for medical concierge and training programmes.",
+      "tags": [ "all", "uxui"],
+      "image": "pictureCard5",
+      "link": "/single/6"
+    },
+    {
+      "id": "7",
+      "title": "Nuclear Medicine Center",
+      "description": "Medical nuclear centers logotype and website: appointments, procedure details, and institutional info.",
+      "tags": [ "all", "graphic", "uxui"],
+      "image": "pictureCard6",
+      "link": "/single/7"
+    },
+    {
+      "id": "8",
+      "title": "You're Home",
+      "description": "Graphic exploration of mysterious messages on city posters",
+      "tags": [ "all", "graphic"],
+      "image": "pictureCard7",
+      "link": "/single/8"
+    },
+    {
+      "id": "9",
+      "title": "Belron Ressources",
+      "description": "UX/UI for an online platform to coordinate communication materials, designed for ease of use.",
+      "tags": [ "all", "graphic", "uxui"],
+      "image": "pictureCard8",
+      "link": "/single/9"
+    },
+    {
+      "id": "10",
+      "title": "L'atelier en boîte",
+      "description": "Art sale event 'L'atelier en boite': intimate artist studio experience in a curated box.",
+      "tags": [ "all", "graphic", "uxui"],
+      "image": "pictureCard9",
+      "link": "/single/10"
+    },
+    {
+      "id": "11",
+      "title": "Mustela",
+      "description": "Pregnancy tracking app promoting Mustela's skincare products for expecting parents.",
+      "tags": [ "all", "graphic", "uxui"],
+      "image": "pictureCard10",
+      "link": "/single/11"
+    },
+    {
+      "id": "12",
+      "title": "Alchemist Chocolate",
+      "description": "Graphic identity for Swiss artisan chocolatier Alchemist Chocolate, including packaging and shop design.",
+      "tags": [ "all", "graphic"],
+      "image": "pictureCard11",
+      "link": "/single/12"
+    },
+    {
+      "id": "13",
+      "title": "Stane press kit",
+      "description": "Press kit for the stane company.",
+      "tags": [ "all", "graphic"],
+      "image": "pictureCard12",
+      "link": "/single/13"
+    },
+    {
+      "id": "14",
+      "title": "Haptic Radar",
+      "description": "Haptic prosthetic project Fo/Va for the visually impaired and industrial applications.",
+      "tags": [ "all", "uxui"],
+      "image": "pictureCard13",
+      "link": "/single/14"
+    },
+    {
+      "id": "15",
+      "title": "Paris Saint Germain national soccer team's shop",
+      "description": "Interactive kiosk design for Paris Saint-Germain soccer club's retail store",
+      "tags": [ "all", "uxui"],
+      "image": "pictureCard14",
+      "link": "/single/15"
+    },
+    {
+      "id": "16",
+      "title": "Fovéa",
+      "description": "Thesis layout and design: 'Prosthesis through the lens of interaction design.",
+      "tags": [ "all", "uxui", "graphic"],
+      "image": "pictureCard15",
+      "link": "/single/16"
+    },
+    {
+      "id": "17",
+      "title": "Bone hunt",
+      "description": "Interactive museum exploration project 'Bone hunt' for Musée d'Anatomie Comparée in Paris.",
+      "tags": [ "all", "uxui", "graphic"],
+      "image": "pictureCard16",
+      "link": "/single/17"
+    },
+    {
+      "id": "18",
+      "title": "Personal identity",
+      "description": "Monogram based identity, from 2012",
+      "tags": [ "all", "graphic"],
+      "image": "pictureCard17",
+      "link": "/single/18"
+    },
+    {
+      "id": "19",
+      "title": "Booki",
+      "description": "HTML/CSS integration of responsive homepage for a travel agency, based on Figma designs.",
+      "tags": [ "all", "frontend"],
+      "image": "pictureCard18",
+      "link": "/single/19"
+    },
+    {
+      "id": "20",
+      "title": "Oh my food",
+      "description": "Mobile-first interface integration for a startup's website using Sass and CSS animations.",
+      "tags": [ "all", "frontend"],
+      "image": "pictureCard19",
+      "link": "/single/20"
+    },
+    {
+      "id": "21",
+      "title": "Print it",
+      "description": "JavaScript enhancement of a static printing company website with interactive carousel.",
+      "tags": [ "all", "frontend"],
+      "image": "pictureCard20",
+      "link": "/single/21"
+    },
+    {
+      "id": "22",
+      "title": "Architect's portfolio",
+      "description": "Development of dynamic web pages for an interior architect's website using JavaScript and API integration.",
+      "tags": [ "all", "frontend"],
+      "image": "pictureCard21",
+      "link": "/single/22"
+    },
+    {
+      "id": "23",
+      "title": "Kasa",
+      "description": "Front-end development of a modern and responsive application using React and React Router.",
+      "tags": [ "all", "frontend"],
+      "image": "pictureCard22",
+      "link": "/single/23"
+    },
+    {
+      "id": "24",
+      "title": "Photographer's portfolio",
+      "description": "Optimizing website SEO, performance, and accessibility.",
+      "tags": [ "all", "frontend"],
+      "image": "pictureCard23",
+      "link": "/single/24"
+    },
+    {
+      "id": "25",
+      "title": "724 Events",
+      "description": "Debugging and finalizing development of a one-page website using React and JavaScript",
+      "tags": [ "all", "frontend"],
+      "image": "pictureCard24",
+      "link": "/single/25"
+    },
+    {
+      "id": "26",
+      "title": "ArgentBank",
+      "description": "Front-end development of a banking application using React and Redux, integrating with a RESTful API.",
+      "tags": [ "all", "frontend"],
+      "image": "pictureCard25",
+      "link": "/single/26"
+    },
+    {
+      "id": "27",
+      "title": "This Portfolio",
+      "description": "This very portfolio, developed using React",
+      "tags": [ "all", "frontend", "graphic", "uxui"],
+      "image": "pictureCard26",
+      "link": "/single/27"
+    }
+  ]
+}
