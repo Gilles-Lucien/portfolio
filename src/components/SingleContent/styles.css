@@ -1,8 +1,8 @@
-.singleTitle {
+.singleContent {
   width: 100%;
   background-color: #fdfdfd;
 }
-.singleTitle__container {
+.singleContent__container {
   width: 1280px;
   margin: 0 auto;
   border-image-width: 1px;
@@ -11,47 +11,52 @@
   border-image-source: url(../../assets/images/border_left_right.png);
   background-color: #fff;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding-left: 104px;
   padding-top: 94px;
-  padding-right: 76px;
+  padding-right: 104px;
   padding-bottom: 80px;
   gap: 86px;
 }
-.singleTitle__container__txt {
+.singleContent__container img {
+  width: 100%;
+  height: 444px;
+  object-fit: cover;
+}
+.singleContent__container__txt {
   border-image-width: 1px;
   border-image-slice: 1;
   border-image-repeat: round;
   border-image-source: url(../../assets/images/border_bottom.png);
   padding-bottom: 55px;
 }
-.singleTitle__container__txt--tags span {
+.singleContent__container__txt--tags span {
   font-family: "Fira sans";
   text-decoration: underline;
   margin-right: 20px;
 }
-.singleTitle__container__txt--arrow {
+.singleContent__container__txt--arrow {
   transform: scale(1) rotate(180deg);
   transition: all 0.3s ease;
   cursor: pointer;
 }
-.singleTitle__container__txt--arrow:hover {
+.singleContent__container__txt--arrow:hover {
   transform: scale(1.3) rotate(180deg);
 }
-.singleTitle__container p {
+.singleContent__container p {
   width: 50%;
   margin-bottom: 20px;
 }
-.singleTitle__container h1 {
+.singleContent__container h1 {
   font-family: "Fira sans";
   font-size: 86px;
   font-weight: 700;
   display: flex;
   flex-direction: row;
 }
-.singleTitle__container h1 span {
+.singleContent__container h1 span {
   font-size: 86px;
   font-weight: 700;
   color: #1d7fd9;

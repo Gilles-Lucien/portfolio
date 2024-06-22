@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import SingleTitle from "../../components/SingleTitle";
+import SingleContent from "../../components/SingleContent";
 import { fetchProjects } from "../../utils/api/api";
 
 export default function Single() {
@@ -23,6 +24,7 @@ export default function Single() {
   return (
     <main className="main">
       {matchingProject ? <SingleTitle {...matchingProject} /> : null}
+      {matchingProject ? <SingleContent {...matchingProject} /> : null}
     </main>
   );
 }
