@@ -1,17 +1,14 @@
-.hero {
-  border-image-width: 1px;
-  border-image-slice: 1;
-  border-image-repeat: round;
-  border-image-source: url(../../assets/images/border_bottom.png);
+.singleTitle {
   width: 100%;
+  background-color: #fdfdfd;
 }
-.hero__container {
+.singleTitle__container {
   width: 1280px;
   margin: 0 auto;
   border-image-width: 1px;
   border-image-slice: 1;
   border-image-repeat: round;
-  border-image-source: url(../../assets/images/border_left_right_bottom.png);
+  border-image-source: url(../../assets/images/border_left_right.png);
   background-color: #fff;
   display: flex;
   flex-direction: row;
@@ -20,23 +17,20 @@
   padding-left: 104px;
   padding-top: 94px;
   padding-right: 76px;
-  padding-bottom: 130px;
+  padding-bottom: 80px;
   gap: 86px;
 }
-.hero__container__picture {
-  width: 421px;
-  height: 278px;
-  mask-image: url(../../assets/svg/curly_bracket_mask.svg);
-  mask-size: cover;
+.singleTitle__container p {
+  width: 50%;
 }
-.hero__container h1 {
+.singleTitle__container h1 {
   font-family: "Fira sans";
   font-size: 86px;
   font-weight: 700;
   display: flex;
   flex-direction: row;
 }
-.hero__container h1 span {
+.singleTitle__container h1 span {
   font-size: 86px;
   font-weight: 700;
   color: #1d7fd9;

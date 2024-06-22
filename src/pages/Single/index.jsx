@@ -11,24 +11,18 @@ export default function Single() {
   const matchingProject =
     projects.length > 0 ? projects.find((project) => project.id === id) : null;
 
-
   useEffect(() => {
     fetchProjects().then((data) => {
       const updatedProjects = data.projects.map((project) => ({
         ...project,
       }));
       setProjects(updatedProjects);
-      
     });
   }, [id]);
 
   return (
     <main className="main">
-      {matchingProject ? (
-        <SingleTitle {...matchingProject} />
-      ) : (
-        null
-      )}
+      {matchingProject ? <SingleTitle {...matchingProject} /> : null}
     </main>
   );
 }

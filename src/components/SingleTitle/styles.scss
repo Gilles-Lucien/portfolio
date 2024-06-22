@@ -2,12 +2,12 @@
 @use "../../utils/variables/mixins" as m;
 
 .singleTitle {
-  @include m.dashedBorder("bottom");
   width: 100%;
+  background-color: c.$third_grey;
   &__container {
     width: 1280px;
     margin: 0 auto;
-    @include m.dashedBorder("left_right_bottom");
+    @include m.dashedBorder("left_right");
     background-color: c.$white;
     display: flex;
     flex-direction: row;
@@ -16,13 +16,10 @@
     padding-left: 104px;
     padding-top: 94px;
     padding-right: 76px;
-    padding-bottom: 130px;
+    padding-bottom: 80px;
     gap: 86px;
-    &__picture {
-      width: 421px;
-      height: 278px;
-      mask-image: url(../../assets/svg/curly_bracket_mask.svg);
-      mask-size: cover;
+    & p {
+      width: 50%;
     }
     & h1 {
       font-family: "Fira sans";
