@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.css";
 import { useParams } from "react-router-dom";
+import ImageViewer from "../ImageViewer";
 
 /// import et map des images sans backend
 
@@ -21,6 +22,7 @@ export default function SingleContent(project) {
     <section className="singleContent">
       <div className="singleContent__container">
         <img
+          className="bodyImg"
           src={imageMap.img1}
           alt={project.title + project.id + imageMap.img1}
         />
@@ -32,6 +34,7 @@ export default function SingleContent(project) {
           <p className="twoColumns">{project.section1.description}</p>
         </div>
         <img
+          className="bodyImg"
           src={imageMap.img2}
           alt={project.title + project.id + imageMap.img2}
         />
@@ -44,20 +47,22 @@ export default function SingleContent(project) {
             <p>{project.section2.description}</p>
           </div>
           <img
+            className="bodyImg"
             src={imageMap.img3}
             alt={project.title + project.id + imageMap.img3}
           />
         </div>
         <div className="singleContent__container__gallery">
-          {Array.from({ length: project.imageNumber - 3 }, (_, index) => (
+          {/* {Array.from({ length: project.imageNumber - 3 }, (_, index) => (
             <img
               key={index}
-              src={imageMap[`img${index + 4}`]} // Commence à img4 car vous soustrayez 3
+              src={imageMap[`img${index + 4}`]} // Commence à img4
               alt={`${project.title}${project.id}${
                 imageMap[`img${index + 4}`]
               }`}
             />
-          ))}
+          ))} */}
+          <ImageViewer images={Object.values(imageMap)} />
         </div>
       </div>
     </section>
