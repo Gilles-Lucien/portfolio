@@ -4,8 +4,7 @@ import Button from "../Button";
 import arrow_right_long from "../../assets/svg/arrow_right_long.svg";
 
 const ProjectNav = ({ projectId, totalProjects, next, previous }) => {
-  console.log("projectId: ", projectId, "totalProjects :", totalProjects);
-  console.log("Type of projectId:", typeof projectId);
+
   const projectIdNumber = parseInt(projectId, 10);
   const totalProjectsNumber = parseInt(totalProjects, 10);
 
