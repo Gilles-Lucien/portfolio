@@ -15,7 +15,6 @@ export default function SingleContent({ project, totalProjects }) {
   const next = () => navigate(`/single/${nextId}`);
   const previous = () => navigate(`/single/${previousId}`);
 
-
   // import des images en fonction du nombre d'images dans le dossier du projet
   for (let i = 0; i <= project.imageNumber - 1; i++) {
     const key = `img${i + 1}`;
@@ -23,6 +22,8 @@ export default function SingleContent({ project, totalProjects }) {
       i + 1
     }.webp`);
   }
+
+const projectIdNumber = parseInt(project.id, 10);
 
   return (
     <section className="singleContent">
@@ -44,7 +45,7 @@ export default function SingleContent({ project, totalProjects }) {
           src={imageMap.img2}
           alt={project.title + project.id + imageMap.img2}
         />
-        <div className="displayRow">
+        <div className={projectIdNumber === 5 ? "displayColumnReverse" : "displayRow"}>
           <div className="singleContent__container__txt--section2">
             <h2>
               {project.section2.title}

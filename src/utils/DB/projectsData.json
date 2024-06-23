@@ -4,7 +4,7 @@
       "id": "1",
       "title": "WoodYou",
       "description": "Creation of a logotype for WoodYou, a specialist in made-to-measure wooden objects, based on the Tangram principle.",
-      "tags": ["all", "graphic", "uxui"],
+      "tags": ["all", "graphic"],
       "imageNumber": 41,
       "section1": {
         "title": "Enjoyable",
@@ -41,7 +41,7 @@
       "tags": ["all", "graphic", "uxui"],
       "imageNumber": 12,
       "section1": {
-        "title": " Facilitator",
+        "title": "Facilitator",
         "subtitle": " of Modern Health Centers",
         "description": "Stane, formerly known as Osanté, is a versatile group dedicated to creating health centers throughout France. Their mission is to forge connections between various local entities, whether public, private, or healthcare practitioners, to realize projects for modern and innovative health centers. Acting as a facilitator and catalyst, Stane contributes to improving access to healthcare by promoting infrastructures that meet the contemporary needs of both patients and healthcare professionals."
       },
@@ -49,6 +49,40 @@
         "title": "My Role:",
         "subtitle": " Artistic Direction, UX, and UI",
         "description": "As part of this mission, I had the opportunity to play a crucial role as the head of artistic direction, user experience (UX), and user interface (UI). My involvement was essential to ensure that Stane's projects were not only functional but also aesthetically pleasing and intuitive for users. My work focused on designing a virtuel spaces that is both welcoming and efficient, meeting the expectations of practitioners and patients alike, to create environments conducive to high-quality care."
+      }
+    },
+    {
+      "id": "4",
+      "title": "Tiny Office",
+      "description": "Design and manufacture of stand-alone garden offices",
+      "tags": ["all", "uxui"],
+      "imageNumber": 8,
+      "section1": {
+        "title": "Innovating",
+        "subtitle": " Home Office Solutions",
+        "description": "TinyOffice is an innovative company specializing in designing and manufacturing autonomous office units to be installed in private gardens. These office units are designed to provide a private, practical, and aesthetic workspace, addressing the growing need for remote work and flexibility. By incorporating modern design solutions and advanced technologies, TinyOffice enables users to enjoy an optimal work environment directly at home while benefiting from the calming surroundings of their garden."
+      },
+      "section2": {
+        "title": "My Role:",
+        "subtitle": " UX and UI",
+        "description": "In this project, I played a crucial role as the head of user experience (UX), user interface (UI), and the creation of a comprehensive visual identity, excluding the logo. My work involved designing an intuitive and user-friendly interface and developing a cohesive and attractive visual identity for TinyOffice units. The goal was to ensure a smooth and enjoyable user experience while enhancing the company's brand image and attracting quality and aesthetics-conscious clients."
+      }
+    },
+    {
+      "id": "5",
+      "title": "Selaliqua",
+      "description": "Selaliqua's e-commerce homepage redesign focuses on enhancing user engagement and conversion rates through a dialogue-driven approach that streamlines information and aligns with users' online reading behaviors.",
+      "tags": ["all", "uxui"],
+      "imageNumber": 3,
+      "section1": {
+        "title": "Through Dialogue:",
+        "subtitle": " Selaliqua's Homepage Redesign",
+        "description": "Selaliqua, an e-commerce client, sought to increase the conversion rate of their website traffic through a homepage redesign. The chosen approach was the \"dialogue\" method, treating the interface as an interlocutor that users engage with by asking questions. This method aimed to enhance the user dialogue by logically and smoothly organizing information. By simulating a natural conversation, the redesign ensures that users can easily find what they need, improving overall navigation and user satisfaction."
+      },
+      "section2": {
+        "title": "Reducing Informational Noise",
+        "subtitle": " and Enhancing User Flow",
+        "description": "The dialogue approach effectively reduces informational noise that previously cluttered the homepage. This strategy considers the online reading habits of users, who typically scan pages in an \"F\" pattern, focusing on information placed at the top left, titles, and the initial words of paragraphs. By prioritizing key information in these areas, the redesigned homepage guides users efficiently, making important content more accessible and thereby improving the likelihood of conversions."
       }
     }
   ]
