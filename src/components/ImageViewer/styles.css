@@ -20,20 +20,35 @@
 
 .viewerButton--left {
   position: absolute;
-  left: 40px;
+  left: 3.2rem;
   top: 50%;
+  z-index: 1001;
+}
+.viewerButton--left img {
+  transform: rotate(180deg) scale(2.5);
+  filter: brightness(0.5) invert(1);
 }
 
 .viewerButton--right {
   position: absolute;
-  right: 40px;
+  right: 3.2rem;
   top: 50%;
+  z-index: 1001;
+}
+.viewerButton--right img {
+  transform: scale(2.5);
+  filter: brightness(0.5) invert(1);
 }
 
 .viewerButton--close {
   position: absolute;
   top: 40px;
   right: 40px;
+  z-index: 1001;
+}
+.viewerButton--close img {
+  width: 50px;
+  filter: brightness(0.9);
 }
 
 .viewerGallery {

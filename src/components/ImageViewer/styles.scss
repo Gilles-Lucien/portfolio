@@ -1,43 +1,63 @@
+@use "../../utils/variables/colors" as c;
+@use "../../utils/variables/mixins" as m;
+
 .viewerOverlay {
-    position: fixed
-    ;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  .viewerImage {
-    border-radius: 10px;
-    max-width: 90vw;
-    max-height: 90vh;
-    object-fit: contain;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
 
-  .viewerButton--left {
-    position: absolute;
-    left: 40px;
-    top: 50%;
-  }
-  .viewerButton--right {
-    position: absolute;
-    right: 40px;
-      top: 50%;
-  }
-  .viewerButton--close {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-  }
+.viewerImage {
+  border-radius: 10px;
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+}
 
-  .viewerGallery {
-    column-count: 4;
-    column-gap: 25px;
-    box-sizing: border-box;
-    break-inside: avoid;
+.viewerButton--left {
+  position: absolute;
+  left: 3.2rem;
+  top: 50%;
+  z-index: 1001;
+
+  & img {
+    transform: rotate(180deg) scale(2.5);
+    filter: brightness(0.5) invert(1);
   }
+}
+.viewerButton--right {
+  position: absolute;
+  right: 3.2rem;
+  top: 50%;
+  z-index: 1001;
+
+  & img {
+    transform: scale(2.5);
+    filter: brightness(0.5) invert(1);
+  }
+}
+.viewerButton--close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  z-index: 1001;
+
+  & img {
+    width: 50px;
+    filter: brightness(0.9);
+  }
+}
+
+.viewerGallery {
+  column-count: 4;
+  column-gap: 25px;
+  box-sizing: border-box;
+  break-inside: avoid;
+}

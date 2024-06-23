@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import arrowRight from "../../assets/svg/arrow_right.svg";
+import close from "../../assets/svg/close.svg";
 import "./styles.css";
 
 const ImageViewer = ({ images }) => {
@@ -28,21 +29,26 @@ const ImageViewer = ({ images }) => {
   return (
     <div className="viewerGallery">
       {images.map((src, index) => (
-        <img className="galleryImg" key={index} src={src} alt="" onClick={() => openViewer(index)} />
+        <img
+          className="galleryImg"
+          key={index}
+          src={src}
+          alt=""
+          onClick={() => openViewer(index)}
+        />
       ))}
 
       {viewerOpen && (
-        <div className="viewerOverlay">
-          <button className="viewerButton--previous" onClick={goToPrevious}>
-          <img src={arrowRight} alt="arrow left" />
+        <div className="viewerOverlay" onClick={closeViewer}>
+          <button className="viewerButton--left" onClick={(e) => { e.stopPropagation(); goToPrevious(); }}>
+            <img src={arrowRight} alt="arrow left" />
           </button>
-          <img src={images[currentIndex]} alt="" className="viewerImage" />
+          <img src={images[currentIndex]} alt="" className="viewerImage"  onClick={(e) => e.stopPropagation()} />
           <button className="viewerButton--close" onClick={closeViewer}>
-            Fermer
+            <img src={close} alt="close" />
           </button>
-
-          <button className="viewerButton--next" onClick={goToNext}>
-          <img src={arrowRight} alt="arrow right" />
+          <button className="viewerButton--right" onClick={(e) => { e.stopPropagation(); goToNext(); }}>
+            <img src={arrowRight} alt="arrow right" />
           </button>
         </div>
       )}
