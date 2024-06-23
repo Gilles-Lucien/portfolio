@@ -19,7 +19,7 @@
     padding-bottom: 80px;
     gap: 70px;
     &__gallery {
-      margin-top: 40px;
+      margin-top: 60px;
     }
     &__txt {
       padding-bottom: 55px;
@@ -84,7 +84,6 @@
   transition: transform 0.3s ease;
   &:hover {
     transform: scale(0.95);
-
   }
 }
 
@@ -93,4 +92,10 @@
   height: 444px;
   object-fit: cover;
   border-radius: 10px;
+  border: 1px dashed rgba(c.$second_grey, $alpha: 0.6);
 }
+
+.bodyImg3 {
+  max-width: 50%;
+}
+

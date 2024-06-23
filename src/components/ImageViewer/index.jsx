@@ -44,6 +44,9 @@ const ImageViewer = ({ images }) => {
             <img src={arrowRight} alt="arrow left" />
           </button>
           <img src={images[currentIndex]} alt="" className="viewerImage"  onClick={(e) => e.stopPropagation()} />
+          <p className="viewerCounter">
+            {currentIndex + 1} / {images.length}
+            </p>
           <button className="viewerButton--close" onClick={closeViewer}>
             <img src={close} alt="close" />
           </button>

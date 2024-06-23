@@ -61,3 +61,16 @@
   box-sizing: border-box;
   break-inside: avoid;
 }
+
+
+.viewerCounter {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1001;
+    color: c.$white;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Fira mono";
+}

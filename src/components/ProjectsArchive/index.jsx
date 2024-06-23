@@ -16,7 +16,7 @@ for (let i = 0; i <= 26; i++) {
 export default function ProjectsArchive({ filterId }) {
   const filters = [
     { id: "all", class: "filter--all", name: "All" },
-    { id: "graphic", class: "filter--graphic", name: "Graphic" },
+    { id: "graphic", class: "filter--graphic", name: "Graphic design" },
     { id: "uxui", class: "filter--uxui", name: "UX/UI" },
     { id: "frontend", class: "filter--frontend", name: "Front-end" },
   ];
