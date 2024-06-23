@@ -1,9 +1,9 @@
 .loader {
   margin: 0 0 2em;
-  height: 100px;
+  height: 100vh;
   width: 20%;
   text-align: center;
-  padding: 1em;
+  padding: 5em;
   margin: 0 auto 1em;
   display: inline-block;
   vertical-align: top;

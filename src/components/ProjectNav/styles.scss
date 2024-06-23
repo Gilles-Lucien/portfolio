@@ -1,0 +1,27 @@
+@use "../../utils/variables/colors" as c;
+@use "../../utils/variables/mixins" as m;
+
+.projectNavContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.projectCounter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rotate180 {
+    transform: rotate(180deg);
+  }
+
+  .buttonNavContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }

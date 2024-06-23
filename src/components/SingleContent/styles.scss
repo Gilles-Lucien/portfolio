@@ -4,6 +4,7 @@
 .singleContent {
   width: 100%;
   background-color: c.$third_grey;
+  @include m.dashedBorder("bottom");
   &__container {
     width: 1280px;
     margin: 0 auto;

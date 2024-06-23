@@ -5,7 +5,6 @@ import "./styles.css";
 import arrowRight from "../../assets/svg/arrow_right.svg";
 
 export default function SingleTitle(project) {
-  console.log("project:", project);
 
   return (
     <section className="singleTitle">

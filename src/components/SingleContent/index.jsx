@@ -1,16 +1,20 @@
 import React from "react";
 import "./styles.css";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import ImageViewer from "../ImageViewer";
-// import Loader from "../../components/Loader";
+import ProjectNav from "../ProjectNav";
 
-
-
-export default function SingleContent(project) {
+export default function SingleContent({ project, totalProjects }) {
   const projectNumber = useParams().id;
   const imageMap = {};
-  // const [imagesLoaded, setImagesLoaded] = useState(false);
-  // const [loadedImagesCount, setLoadedImagesCount] = useState(0);
+  const navigate = useNavigate();
+
+  const currentId = parseInt(projectNumber, 10);
+  const nextId = currentId + 1;
+  const previousId = currentId - 1;
+  const next = () => navigate(`/single/${nextId}`);
+  const previous = () => navigate(`/single/${previousId}`);
+
 
   // import des images en fonction du nombre d'images dans le dossier du projet
   for (let i = 0; i <= project.imageNumber - 1; i++) {
@@ -20,10 +24,8 @@ export default function SingleContent(project) {
     }.webp`);
   }
 
-
   return (
     <section className="singleContent">
-
       <div className="singleContent__container">
         <img
           className="bodyImg"
@@ -68,6 +70,12 @@ export default function SingleContent(project) {
           ))} */}
           <ImageViewer images={Object.values(imageMap)} />
         </div>
+        <ProjectNav
+          projectId={projectNumber}
+          totalProjects={totalProjects}
+          next={next}
+          previous={previous}
+        />
       </div>
     </section>
   );
