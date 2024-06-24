@@ -58,6 +58,10 @@
     position: relative;
   }
 }
+.projectsSection__container__categories__category a img {
+  width: 330px;
+  border-radius: 5px;
+}
 @media screen and (max-width: 768px) {
   .projectsSection__container__categories__category a img {
     margin-bottom: 20px;
