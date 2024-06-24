@@ -11,7 +11,6 @@ nav {
   top: 0;
   z-index: 100;
   box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.05);
-  
 
   // @include m.dashedBorder('bottom');
   & .navContainer {
@@ -88,5 +87,63 @@ nav {
 #navJob {
   @media screen and (max-width: 768px) {
     width: 170px;
+  }
+}
+
+#navDesktop {
+  @media screen and (max-width: 430px) {
+    display: none;
+  }
+}
+
+#navMobile {
+  display: none;
+  @media screen and (max-width: 430px) {
+    display: flex;
+    height: 0;
+    width: 0;
+  }
+}
+
+.mobileNavContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(c.$white, $alpha: 0);
+  z-index: 100;
+  color: c.$dark;
+  overflow: hidden;
+  &__logoButton {
+    padding: 30px 30px 25px 30px;
+    border-radius: 0 0 0 10px;
+    background-color: c.$white;
+    box-shadow: 8px 8px 14px rgba(0, 0, 0, 0.07);
+    &--logo {
+      height: 42px;
+    }
+  }
+  &__navBar {
+    background-color: c.$white;
+    width: calc(100% - 96px);
+    padding: 35px 48px 48px 48px;
+    height: 100vh;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
+    & ul {
+      list-style-type: none;
+      margin-top: 20px;
+      @include m.dashedBorder("top");
+      & li {
+        padding-top: 40px;
+        display: flex;
+      }
+    }
+    &__name {
+      content: "";
+    }
   }
 }

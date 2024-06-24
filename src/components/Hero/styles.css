@@ -35,6 +35,11 @@
   mask-image: url(../../assets/svg/curly_bracket_mask.svg);
   mask-size: cover;
 }
+@media screen and (max-width: 430px) {
+  .hero__container__picture {
+    width: 100%;
+  }
+}
 .hero__container h1 {
   font-family: "Fira sans";
   font-size: 86px;

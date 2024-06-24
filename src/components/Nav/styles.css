@@ -94,4 +94,67 @@ nav .navContainer ul li p:hover {
   #navJob {
     width: 170px;
   }
+}
+
+@media screen and (max-width: 430px) {
+  #navDesktop {
+    display: none;
+  }
+}
+
+#navMobile {
+  display: none;
+}
+@media screen and (max-width: 430px) {
+  #navMobile {
+    display: flex;
+    height: 0;
+    width: 0;
+  }
+}
+
+.mobileNavContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 100;
+  color: #292D30;
+  overflow: hidden;
+}
+.mobileNavContainer__logoButton {
+  padding: 30px 30px 25px 30px;
+  border-radius: 0 0 0 10px;
+  background-color: #fff;
+  box-shadow: 8px 8px 14px rgba(0, 0, 0, 0.07);
+}
+.mobileNavContainer__logoButton--logo {
+  height: 42px;
+}
+.mobileNavContainer__navBar {
+  background-color: #fff;
+  width: calc(100% - 96px);
+  padding: 35px 48px 48px 48px;
+  height: 100vh;
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
+}
+.mobileNavContainer__navBar ul {
+  list-style-type: none;
+  margin-top: 20px;
+  border-image-width: 1px;
+  border-image-slice: 1;
+  border-image-repeat: round;
+  border-image-source: url(../../assets/images/border_top.png);
+}
+.mobileNavContainer__navBar ul li {
+  padding-top: 40px;
+  display: flex;
+}
+.mobileNavContainer__navBar__name {
+  content: "";
 }/*# sourceMappingURL=styles.css.map */
