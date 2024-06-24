@@ -19,6 +19,7 @@
     gap: 44px;
     @media screen and (max-width: 768px) {
       width: 100%;
+      padding-bottom: 50px;
     }
     &__skills {
       display: flex;
@@ -35,6 +36,12 @@
         width: 330px;
         @include m.dashedBorder("left");
         padding-left: 41px;
+        @media screen and (max-width: 768px) {
+          @include m.dashedBorder("top");
+          padding-top: 20px;
+          margin-bottom: 40px;
+          width: 100%;
+        }
         & h3 {
           font-size: 1.1rem;
           margin-bottom: 10px;

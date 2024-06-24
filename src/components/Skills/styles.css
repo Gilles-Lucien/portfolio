@@ -25,6 +25,7 @@
 @media screen and (max-width: 768px) {
   .skillsSection__container {
     width: 100%;
+    padding-bottom: 50px;
   }
 }
 .skillsSection__container__skills {
@@ -48,6 +49,17 @@
   border-image-repeat: round;
   border-image-source: url(../../assets/images/border_left.png);
   padding-left: 41px;
+}
+@media screen and (max-width: 768px) {
+  .skillsSection__container__skills--skill {
+    border-image-width: 1px;
+    border-image-slice: 1;
+    border-image-repeat: round;
+    border-image-source: url(../../assets/images/border_top.png);
+    padding-top: 20px;
+    margin-bottom: 40px;
+    width: 100%;
+  }
 }
 .skillsSection__container__skills--skill h3 {
   font-size: 1.1rem;

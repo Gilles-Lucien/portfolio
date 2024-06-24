@@ -44,3 +44,16 @@
 .invisibleButton {
   visibility: hidden;
 }
+
+.responsiveButton {
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background-color: c.$white;
+    box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.07);
+  }
+}

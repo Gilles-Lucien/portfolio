@@ -40,6 +40,29 @@
 .projectsSection__container__categories__category {
   width: 330px;
 }
+@media screen and (max-width: 768px) {
+  .projectsSection__container__categories__category {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .projectsSection__container__categories__category a {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+}
+@media screen and (max-width: 768px) {
+  .projectsSection__container__categories__category a img {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .projectsSection__container__categories__category a p {
+    display: none;
+  }
+}
 .projectsSection__container__categories__category-graphic p {
   color: #ae582b;
   border-bottom: 2px solid #ae582b;
@@ -55,11 +78,11 @@
   border-bottom: 2px solid #b4b005;
   display: inline-block;
 }
-.projectsSection__container__picture {
+.projectsSection__picture {
   width: 330px;
   height: 222px;
 }
-.projectsSection__container h2 {
+.projectsSection h2 {
   font-family: "Fira mono";
   font-size: 21px;
   font-weight: 700;
@@ -67,7 +90,7 @@
   flex-direction: row;
   text-transform: uppercase;
 }
-.projectsSection__container h2 span {
+.projectsSection h2 span {
   font-size: 21px;
   font-weight: 400;
   color: #1d7fd9;
