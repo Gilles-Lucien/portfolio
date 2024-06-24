@@ -9,6 +9,9 @@ footer {
   position: relative;
   bottom: 0;
   background-color: c.$white;
+  @media screen and (max-width: 768px){
+    height: 100%;
+  }
   // @include m.dashedBorder("top");
   & .footerContainer {
     display: flex;
@@ -29,6 +32,11 @@ footer {
     &__logoContainer {
       margin-left: 50px;
       display: flex;
+      @media screen and (max-width: 768px){
+        margin-left: 0;
+        margin-top: 60px;
+        margin-bottom: 60px;
+      }
       &__socialContainer {
         display: flex;
         flex-direction: row;
@@ -60,6 +68,10 @@ footer {
       list-style: none;
       align-items: center;
       margin-right: 100px;
+      @media screen and (max-width: 768px) {
+        display: none;
+        
+      }
       & li {
         margin-left: 4rem;
         & p {
