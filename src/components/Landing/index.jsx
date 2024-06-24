@@ -38,13 +38,11 @@ export default function Landing() {
       }
     };
 
-    // Vérifier immédiatement en cas de rechargement de la page
     checkScreenSize();
 
     // Ajouter l'écouteur d'événement
     window.addEventListener("resize", checkScreenSize);
 
-    // Cleanup function pour retirer l'écouteur
     return () => {
       window.removeEventListener("resize", checkScreenSize);
     };
@@ -57,22 +55,14 @@ export default function Landing() {
       const yPosition = -clientY / 10; 
       imgRef.current.style.transform = `translate(${xPosition}px, ${yPosition}px)`;
       
-      // const titleXPosition = -clientX / 110; // adjust the divisor to control title the speed
-      // const titleYPosition = -clientY / 110;
-
-      // const xOffset = title.current.offsetWidth/2.25;
-      // const yOffset = title.current.offsetHeight/2.25;
-      // title.current.style.transform = `translate(${
-      //   titleXPosition - xOffset
-      // }px, ${titleYPosition - yOffset}px)`;
     };
 
-    document.addEventListener("mousemove", handleMouseMove);
-
-    // Cleanup function to remove the event listener when the component unmounts
-    return () => {
-      document.removeEventListener("mousemove", handleMouseMove);
-    };
+    if (window.innerWidth > 430) {
+      document.addEventListener("mousemove", handleMouseMove);
+      return () => {
+        document.removeEventListener("mousemove", handleMouseMove);
+      };
+    }
   }, []);
 
   return (

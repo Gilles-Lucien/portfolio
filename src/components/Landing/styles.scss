@@ -31,9 +31,9 @@
     // background-color: rgba($color: c.$white, $alpha: 0.4);
     transform: translate(-50%, -50%) scale(1);
     transition: all 0.2s ease-in-out;
-    // @media screen and (max-width: 768px){
-    //   padding: 5.5rem 18rem;
-    // }
+    @media screen and (max-width: 768px){
+      padding: 2.5rem 9rem;
+    }
     &:hover {
       transform: translate(-50%, -50%) scale(0.95);
     }
@@ -42,6 +42,7 @@
       border: 1px solid rgba($color: c.$white, $alpha: 1);
       // background-color: rgba($color: c.$white, $alpha: 0.4);
       animation: scaleUp 0.5s ease-in-out forwards;
+
     }
     &__title {
       position: absolute;
@@ -53,9 +54,9 @@
       font-size: 3rem;
       font-weight: 700;
       z-index: -7;
-      // @media screen and (max-width: 768px){
-      //   font-size: 5rem;
-      // }
+      @media screen and (max-width: 430px){
+        font-size: 2rem;
+      }
       & span {
         color: rgba($color: c.$white, $alpha: 0.3);
       }
@@ -92,18 +93,27 @@
   width: 100%;
   @media screen and (max-width: 430px){
     height: 100vh;
+    background-size: 400% 400%;
+    animation: gradient 6s ease-in-out infinite;
   }
 }
 
+
 @keyframes gradient {
   0% {
-    background-position: 0% 50%;
+    background-position: 50% 0%;
+  }
+  25% {
+    background-position: 100% 100%;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 50% 100%;
+  }
+  75% {
+    background-position: 0% 0%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 50% 0%;
   }
 }
 

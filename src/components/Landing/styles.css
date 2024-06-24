@@ -33,6 +33,11 @@
   transform: translate(-50%, -50%) scale(1);
   transition: all 0.2s ease-in-out;
 }
+@media screen and (max-width: 768px) {
+  .landingImgContainer__titleContainer {
+    padding: 2.5rem 9rem;
+  }
+}
 .landingImgContainer__titleContainer:hover {
   transform: translate(-50%, -50%) scale(0.95);
 }
@@ -51,6 +56,11 @@
   font-size: 3rem;
   font-weight: 700;
   z-index: -7;
+}
+@media screen and (max-width: 430px) {
+  .landingImgContainer__titleContainer__title {
+    font-size: 2rem;
+  }
 }
 .landingImgContainer__titleContainer__title span {
   color: rgba(255, 255, 255, 0.3);
@@ -86,18 +96,26 @@
 @media screen and (max-width: 430px) {
   .overlay {
     height: 100vh;
+    background-size: 400% 400%;
+    animation: gradient 6s ease-in-out infinite;
   }
 }
 
 @keyframes gradient {
   0% {
-    background-position: 0% 50%;
+    background-position: 50% 0%;
+  }
+  25% {
+    background-position: 100% 100%;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 50% 100%;
+  }
+  75% {
+    background-position: 0% 0%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 50% 0%;
   }
 }
 @keyframes scaleUp {
