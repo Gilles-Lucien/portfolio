@@ -22,6 +22,11 @@
   padding-bottom: 80px;
   gap: 44px;
 }
+@media screen and (max-width: 768px) {
+  .contactSection__container {
+    width: 100%;
+  }
+}
 .contactSection__container h2 {
   font-family: "Fira mono";
   font-size: 21px;

@@ -1,7 +1,6 @@
 @use "../../utils/variables/colors" as c;
 @use "../../utils/variables/mixins" as m;
 
-
 .skillsSection {
   @include m.dashedBorder("bottom");
   width: 100%;
@@ -18,31 +17,36 @@
     padding-right: 104px;
     padding-bottom: 80px;
     gap: 44px;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
     &__skills {
-        display: flex;
-        flex-direction: row;
-        justify-content:space-between;
-
-        & img {
-          width: 20px;
-          margin-left: 5px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+      & img {
+        width: 20px;
+        margin-left: 5px;
+      }
+      &--skill {
+        width: 330px;
+        @include m.dashedBorder("left");
+        padding-left: 41px;
+        & h3 {
+          font-size: 1.1rem;
+          margin-bottom: 10px;
         }
-        &--skill {
-            width: 330px;
-            @include m.dashedBorder("left");
-            padding-left: 41px;
-            & h3 {
-              font-size: 1.1rem;
-              margin-bottom: 10px;
-            }
-            & ul {
-              list-style: none;
-              & li {
-                display: flex;
-                align-items: center;
-              }
-            }
+        & ul {
+          list-style: none;
+          & li {
+            display: flex;
+            align-items: center;
+          }
         }
+      }
     }
     & h2 {
       font-family: "Fira mono";

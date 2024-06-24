@@ -20,6 +20,12 @@ footer .footerContainer {
   border-image-repeat: round;
   border-image-source: url(../../assets/images/border_left_right_top.png);
 }
+@media screen and (max-width: 768px) {
+  footer .footerContainer {
+    width: 100%;
+    flex-direction: column;
+  }
+}
 footer .footerContainer .active p {
   text-decoration: underline;
 }

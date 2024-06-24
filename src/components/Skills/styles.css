@@ -22,10 +22,20 @@
   padding-bottom: 80px;
   gap: 44px;
 }
+@media screen and (max-width: 768px) {
+  .skillsSection__container {
+    width: 100%;
+  }
+}
 .skillsSection__container__skills {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .skillsSection__container__skills {
+    flex-direction: column;
+  }
 }
 .skillsSection__container__skills img {
   width: 20px;
