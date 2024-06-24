@@ -120,13 +120,13 @@ nav {
   z-index: 100;
   color: c.$dark;
   overflow: hidden;
-  transform: translatex(calc(100% - 96px));
+  transform: translateX(calc(100% - 96px));
   transition: transform 0.3s ease-in-out;
   &__logoButton {
-    padding: 30px 30px 25px 30px;
+    padding: 15px 15px 7px 15px;
     border-radius: 0 0 0 10px;
     background-color: c.$white;
-    box-shadow: 8px 8px 14px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.18);
     &--logo {
       height: 42px;
     }
@@ -158,4 +158,47 @@ nav {
 
 #navClose {
   height: 106px;
+}
+
+.fadeIn {
+  animation: fadeIn 0.3s ease-in-out forwards;
+  height: 42px;
+}
+
+.fadeOut {
+  animation: fadeOut 0.3s ease-in-out forwards;
+  height: 42px;
+}
+
+.fadeOutAndIn {
+  animation: fadeOutAndIn 0.3s ease-in-out forwards;
+}
+
+.scaleOutAndIn {
+  height: 42px;
+  animation: scaleOutAndIn 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeOutAndIn {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleOutAndIn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
