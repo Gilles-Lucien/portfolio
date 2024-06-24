@@ -1,7 +1,6 @@
 @use "../../utils/variables/colors" as c;
 @use "../../utils/variables/mixins" as m;
 
-
 // .toolTip is defined in App.scss
 
 .contactSection {
@@ -65,6 +64,9 @@
       &--form {
         width: 50%;
         align-items: flex-end;
+        @media screen and (max-width: 768px) {
+          width: 80%;
+        }
         & p {
           margin-bottom: 20px;
         }

@@ -71,6 +71,11 @@
   width: 50%;
   align-items: flex-end;
 }
+@media screen and (max-width: 768px) {
+  .contactSection__container__mailAndForm--form {
+    width: 80%;
+  }
+}
 .contactSection__container__mailAndForm--form p {
   margin-bottom: 20px;
 }
