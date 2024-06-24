@@ -110,6 +110,7 @@ nav .navContainer ul li p:hover {
     display: flex;
     height: 0;
     width: 0;
+    overflow: hidden;
   }
 }
 
@@ -122,10 +123,13 @@ nav .navContainer ul li p:hover {
   top: 0;
   right: 0;
   width: 100%;
+  height: 100vh;
   background-color: rgba(255, 255, 255, 0);
   z-index: 100;
   color: #292D30;
   overflow: hidden;
+  transform: translatex(calc(100% - 96px));
+  transition: transform 0.3s ease-in-out;
 }
 .mobileNavContainer__logoButton {
   padding: 30px 30px 25px 30px;
@@ -157,4 +161,12 @@ nav .navContainer ul li p:hover {
 }
 .mobileNavContainer__navBar__name {
   content: "";
+}
+
+#navOpen {
+  transform: translateX(0);
+}
+
+#navClose {
+  height: 106px;
 }/*# sourceMappingURL=styles.css.map */

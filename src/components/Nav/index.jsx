@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Button from "../Button";
 import logo from "../../assets/images/logo_black.png";
 import { NavLink, Link } from "react-router-dom";
@@ -10,6 +10,8 @@ export default function Nav() {
   const logoContainerRef = useRef(null);
   const navBarRef = useRef(null);
 
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
   // const handleLogoClick = () => {
   //   if (navBarRef.current && logoContainerRef.current) {
   //     const navWidth = navBarRef.current.offsetWidth;
@@ -19,13 +21,26 @@ export default function Nav() {
   //   }
   // };
 
-
+  const handleLogoClick = () => {
+    if (isNavOpen) {
+        setIsNavOpen(false);
+        navMobileRef.current.removeAttribute("id");
+        setTimeout(() => {
+          if (navMobileRef.current) {
+              navMobileRef.current.setAttribute("id", "navClose");
+          }
+      }, 300);
+    } else {
+        setIsNavOpen(true);
+        navMobileRef.current.setAttribute("id", "navOpen");
+    }
+};
 
   return (
     <>
-      <nav id="navDesktop" >
+      <nav id="navDesktop">
         <div id="nav" className="navContainer">
-          <Link  className="navContainer__logoContainer" to="/">
+          <Link className="navContainer__logoContainer" to="/">
             <img src={logo} alt="Logo" />
             <p id="navName">
               Lucien Peltier <strong className="fira-mono-bold">|</strong>
@@ -55,9 +70,13 @@ export default function Nav() {
         </div>
       </nav>
 
-      <nav id="navMobile" ref={navMobileRef}>
-        <div id="nav" className="mobileNavContainer">
-          <div ref={logoContainerRef} className="mobileNavContainer__logoButton" >
+      <nav id="navMobile" >
+        <div id="nav" ref={navMobileRef} className="mobileNavContainer">
+          <div
+            ref={logoContainerRef}
+            className="mobileNavContainer__logoButton"
+            onClick={handleLogoClick}
+          >
             <img
               src={logo}
               alt="Logo"
