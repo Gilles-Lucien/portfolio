@@ -54,9 +54,31 @@
     right: 50%;
     transform: translate(50%, -50%);
     background-color: c.$white;
-    box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.07);
+    box-shadow: 0.5px 0.5px 2.4px rgba(0, 0, 0, 0.11),
+      4px 4px 19px rgba(0, 0, 0, 0.22);
   }
-  @media screen and (max-width: 430px){
+  @media screen and (max-width: 430px) {
     white-space: nowrap;
+  }
+}
+
+.graphicMobileButton {
+  @media screen and (max-width: 768px) {
+  color: c.$white;
+  background-color: c.$orange;
+  }
+}
+
+.uxuiMobileButton {
+  @media screen and (max-width: 768px) {
+  color: c.$white;
+  background-color: c.$blue;
+  }
+}
+
+.frontendMobileButton {
+  @media screen and (max-width: 768px) {
+  color: c.$white;
+  background-color: c.$yellow;
   }
 }

@@ -21,7 +21,7 @@ export default function ProjectsSection() {
             >
               <img src={graphic} alt="an open book" />
               <p>Graphic design</p>
-              <Button className="responsiveButton button">
+              <Button className="responsiveButton button graphicMobileButton">
                 Graphic design
               </Button>
             </Link>
@@ -33,7 +33,7 @@ export default function ProjectsSection() {
             >
               <img src={uxui} alt="a flowchart" />
               <p>UX/UI</p>
-              <Button className="responsiveButton button">
+              <Button className="responsiveButton button uxuiMobileButton">
                 UX/UI
               </Button>
             </Link>
@@ -45,7 +45,7 @@ export default function ProjectsSection() {
             >
               <img src={frontend} alt="lines of code" />
               <p>Front-end</p>
-              <Button className="responsiveButton button">
+              <Button className="responsiveButton button frontendMobileButton">
                 Front-end
               </Button>
             </Link>
