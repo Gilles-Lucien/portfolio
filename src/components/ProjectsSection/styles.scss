@@ -32,6 +32,11 @@
       }
       &__category {
         width: 330px;
+        transform: scale(1);
+        transition: all 0.3s ease;
+        &:hover {
+          transform: scale(1.03);
+        }
         @media screen and (max-width: 768px) {
           width: 100%;
           margin-bottom: 30px;
@@ -43,7 +48,6 @@
             position: relative;
           }
           & img {
-            width: 330px;
             border-radius: 5px;
             @media screen and (max-width: 768px) {
               margin-bottom: 20px;

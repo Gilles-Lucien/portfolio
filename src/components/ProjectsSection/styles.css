@@ -44,6 +44,11 @@
 }
 .projectsSection__container__categories__category {
   width: 330px;
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+.projectsSection__container__categories__category:hover {
+  transform: scale(1.03);
 }
 @media screen and (max-width: 768px) {
   .projectsSection__container__categories__category {
@@ -59,7 +64,6 @@
   }
 }
 .projectsSection__container__categories__category a img {
-  width: 330px;
   border-radius: 5px;
 }
 @media screen and (max-width: 768px) {
