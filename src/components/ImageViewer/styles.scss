@@ -26,7 +26,9 @@
   left: 3.2rem;
   top: 50%;
   z-index: 1001;
-
+  @media screen and (max-width: 768px){
+    top: 94%;
+  }
   & img {
     transform: rotate(180deg) scale(2.5);
     filter: brightness(0.5) invert(1);
@@ -37,7 +39,9 @@
   right: 3.2rem;
   top: 50%;
   z-index: 1001;
-
+  @media screen and (max-width: 768px){
+    top: 94%;
+  }
   & img {
     transform: scale(2.5);
     filter: brightness(0.5) invert(1);
@@ -60,6 +64,9 @@
   column-gap: 25px;
   box-sizing: border-box;
   break-inside: avoid;
+  @media screen and (max-width: 768px) {
+    column-count: 2;
+  }
 }
 
 

@@ -19,6 +19,16 @@
     padding-right: 104px;
     padding-bottom: 80px;
     gap: 70px;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 430px){
+      padding: 15px 30px;
+      gap: 50px;
+      & p {
+        font-size: 0.9rem;
+      }
+    }
     &__gallery {
       margin-top: 60px;
     }
@@ -42,6 +52,9 @@
           font-family: "Fira mono";
           column-count: 2;
           column-gap: 38px;
+          @media screen and (max-width: 768px){
+            column-count: 1;
+          }
         }
       }
       &--section2 {
@@ -65,10 +78,17 @@
 .displayRow {
   display: flex;
   flex-direction: row;
+  @media screen and (max-width: 768px){
+    flex-direction: column;
+  }
   & img {
     object-fit: cover;
     border-radius: 10px;
     margin-left: 4rem;
+    @media screen and (max-width: 768px){
+      margin-left: 0;
+      margin-top: 70px;
+    }
   }
 }
 
@@ -89,6 +109,9 @@
     & p {
       columns: 2;
       column-gap: 38px;
+      @media screen and (max-width: 768px){
+        columns: 1;
+      }
     }    
   }
 }
@@ -104,4 +127,7 @@
 
 .bodyImg3 {
   max-width: 50%;
+  @media screen and (max-width: 768px){
+    max-width: 100%;
+  }
 }

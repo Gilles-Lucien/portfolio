@@ -58,7 +58,7 @@ export default function AboutMeContent() {
           </div>
         )}
       </div>
-      <div className="AboutMeContent__container">
+      <div className="AboutMeContent__container mobileColumnReverse">
         <img
           id="img2"
           onMouseEnter={() => setShowimg2Tooltip(true)}
@@ -157,7 +157,7 @@ export default function AboutMeContent() {
           </div>
         )}
       </div>
-      <div className="AboutMeContent__container lastContainer">
+      <div className="AboutMeContent__container lastContainer mobileColumnReverse">
         <img
           id="img4"
           onMouseEnter={() => setShowimg4Tooltip(true)}

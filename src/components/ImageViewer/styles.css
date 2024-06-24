@@ -24,6 +24,11 @@
   top: 50%;
   z-index: 1001;
 }
+@media screen and (max-width: 768px) {
+  .viewerButton--left {
+    top: 94%;
+  }
+}
 .viewerButton--left img {
   transform: rotate(180deg) scale(2.5);
   filter: brightness(0.5) invert(1);
@@ -34,6 +39,11 @@
   right: 3.2rem;
   top: 50%;
   z-index: 1001;
+}
+@media screen and (max-width: 768px) {
+  .viewerButton--right {
+    top: 94%;
+  }
 }
 .viewerButton--right img {
   transform: scale(2.5);
@@ -56,6 +66,11 @@
   column-gap: 25px;
   box-sizing: border-box;
   break-inside: avoid;
+}
+@media screen and (max-width: 768px) {
+  .viewerGallery {
+    column-count: 2;
+  }
 }
 
 .viewerCounter {

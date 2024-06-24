@@ -20,7 +20,7 @@ const ProjectNav = ({ projectId, totalProjects, next, previous }) => {
           />
         </Button>
       ) : (
-        <div className="buttonNavContainer">
+        <div className="buttonNavContainer buttonNavColumnReverseMobile">
           <Button
             id="pagePrevious"
             className="paginationButton"

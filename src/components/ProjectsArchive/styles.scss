@@ -24,6 +24,9 @@
     padding-bottom: 80px;
     @media screen and (max-width: 768px) {
       width: 100%;
+    }
+    @media screen and (max-width: 430px){
+      padding: 0px 30px 50px;
       
     }
     &__filters {

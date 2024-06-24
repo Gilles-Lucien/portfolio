@@ -31,6 +31,11 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 430px) {
+  .projectsArchive__container {
+    padding: 0px 30px 50px;
+  }
+}
 .projectsArchive__container__filters {
   display: flex;
   flex-direction: row;

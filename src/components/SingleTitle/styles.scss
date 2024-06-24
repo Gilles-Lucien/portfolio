@@ -18,6 +18,13 @@
     padding-right: 104px;
     padding-bottom: 80px;
     gap: 86px;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 430px){
+      padding: 50px 30px;
+      
+    }
     &__txt {
       @include m.dashedBorder("bottom");
       width: 100%;
@@ -38,10 +45,13 @@
         }
       }
     }
-    
     & p {
       width: 70%;
       margin-bottom: 20px;
+      @media screen and (max-width: 430px){
+        width: 100%;
+        
+      }
     }
     & h1 {
       font-family: "Fira sans";
@@ -49,10 +59,20 @@
       font-weight: 700;
       display: flex;
       flex-direction: row;
+      @media screen and (max-width: 430px){
+        line-height: normal;
+        display: block;
+        font-size: 50px;
+        margin-top: 20px;
+      }
       & span {
         font-size: 86px;
         font-weight: 700;
         color: c.$blue;
+        @media screen and (max-width: 430px){
+          font-size: 50px;
+          
+        }
       }
     }
   }

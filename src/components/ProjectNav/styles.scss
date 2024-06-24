@@ -2,26 +2,41 @@
 @use "../../utils/variables/mixins" as m;
 
 .projectNavContainer {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
 }
 
 .projectCounter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .rotate180 {
-    transform: rotate(180deg);
-  }
+  transform: rotate(180deg);
+}
 
-  .buttonNavContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
+.buttonNavContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  @media screen and (max-width: 430px) {
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+    font-size: 0.9rem;
+    gap: 10px;
   }
+}
+
+.buttonNavColumnReverseMobile {
+  @media screen and (max-width: 430px) {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    text-align: start;
+  }
+}

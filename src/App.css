@@ -13,16 +13,16 @@ body {
   color: #292D30;
   background-color: #fdfdfd;
   height: 100vh;
-  position: relative;
   z-index: -12;
+  position: relative;
 }
 
 #root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  position: relative;
   z-index: -12;
+  position: relative;
 }
 
 .main {
@@ -77,12 +77,20 @@ a {
   background-color: #dcdcdc;
   padding: 10px 15px 10px 15px;
   clip-path: inset(0 0 0 0 round 20px 20px 20px 0);
+  z-index: 5;
 }
 .toolTip--error {
   background-color: #ae582b;
   color: #fff;
   padding: 10px 15px 10px 15px;
   clip-path: inset(0 0 0 0 round 20px 20px 20px 0);
+  z-index: 5;
+}
+@media screen and (max-width: 430px) {
+  .toolTip--error {
+    font-size: 0.8rem;
+    min-width: 150px;
+  }
 }
 .toolTip--about1 {
   background-color: #1d7fd9;
@@ -91,6 +99,13 @@ a {
   clip-path: inset(0 0 0 0 round 0px 20px 20px 20px);
   max-width: 400px;
   margin: 20px;
+  z-index: 5;
+}
+@media screen and (max-width: 430px) {
+  .toolTip--about1 {
+    font-size: 0.8rem;
+    min-width: 150px;
+  }
 }
 .toolTip--about2 {
   background-color: #ae582b;
@@ -99,6 +114,13 @@ a {
   clip-path: inset(0 0 0 0 round 0px 20px 20px 20px);
   max-width: 400px;
   margin: 20px;
+  z-index: 5;
+}
+@media screen and (max-width: 430px) {
+  .toolTip--about2 {
+    font-size: 0.8rem;
+    min-width: 150px;
+  }
 }
 .toolTip--about3 {
   background-color: #0b7764;
@@ -107,4 +129,11 @@ a {
   clip-path: inset(0 0 0 0 round 0px 20px 20px 20px);
   max-width: 400px;
   margin: 20px;
+  z-index: 5;
+}
+@media screen and (max-width: 430px) {
+  .toolTip--about3 {
+    font-size: 0.8rem;
+    min-width: 150px;
+  }
 }/*# sourceMappingURL=App.css.map */
