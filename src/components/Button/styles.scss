@@ -56,4 +56,7 @@
     background-color: c.$white;
     box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.07);
   }
+  @media screen and (max-width: 430px){
+    white-space: nowrap;
+  }
 }

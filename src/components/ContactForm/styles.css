@@ -27,6 +27,12 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 430px) {
+  .contactSection__container {
+    padding: 70px 30px;
+    gap: 0px;
+  }
+}
 .contactSection__container h2 {
   font-family: "Fira mono";
   font-size: 21px;

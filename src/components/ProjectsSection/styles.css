@@ -27,6 +27,11 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 430px) {
+  .projectsSection__container {
+    padding: 50px 30px 20px;
+  }
+}
 .projectsSection__container__categories {
   display: flex;
   flex-direction: row;

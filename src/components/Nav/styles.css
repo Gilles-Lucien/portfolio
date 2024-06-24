@@ -160,7 +160,7 @@ nav .navContainer ul li p:hover {
   display: flex;
 }
 .mobileNavContainer__navBar__name {
-  content: "";
+  font-size: 0.9rem;
 }
 
 #navOpen {
@@ -168,7 +168,7 @@ nav .navContainer ul li p:hover {
 }
 
 #navClose {
-  height: 106px;
+  height: 90px;
 }
 
 .fadeIn {

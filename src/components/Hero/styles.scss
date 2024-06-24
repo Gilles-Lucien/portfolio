@@ -22,6 +22,10 @@
       width: 100%;
       flex-direction: column;
     }
+    @media screen and (max-width: 430px){
+      padding: 10px 30px;
+      gap : 40px;      
+    }
     &__picture {
       width: 421px;
       height: 278px;
@@ -29,6 +33,9 @@
       mask-size: cover;
       @media screen and (max-width: 430px){
         width: 100%;
+        height: 100%;
+        margin-bottom: 40px;
+
       }
     }
     & h1 {
@@ -37,10 +44,16 @@
       font-weight: 700;
       display: flex;
       flex-direction: row;
+      @media screen and (max-width: 430px){
+        font-size: 50px;
+      }
       & span {
         font-size: 86px;
         font-weight: 700;
         color: c.$blue;
+        @media screen and (max-width: 430px){
+          font-size: 50px;
+        }
       }
     }
   }

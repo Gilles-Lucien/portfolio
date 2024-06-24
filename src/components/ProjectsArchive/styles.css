@@ -26,6 +26,11 @@
   padding-right: 104px;
   padding-bottom: 80px;
 }
+@media screen and (max-width: 768px) {
+  .projectsArchive__container {
+    width: 100%;
+  }
+}
 .projectsArchive__container__filters {
   display: flex;
   flex-direction: row;
@@ -33,6 +38,11 @@
   align-items: center;
   gap: 28px;
   margin-bottom: 80px;
+}
+@media screen and (max-width: 768px) {
+  .projectsArchive__container__filters {
+    flex-wrap: wrap;
+  }
 }
 .projectsArchive__container__cards {
   column-count: 3;
@@ -43,4 +53,9 @@
   width: 100%;
   box-sizing: border-box;
   break-inside: avoid;
+}
+@media screen and (max-width: 768px) {
+  .projectsArchive__container__cards {
+    column-count: 1;
+  }
 }/*# sourceMappingURL=styles.css.map */

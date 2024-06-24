@@ -21,6 +21,10 @@
       width: 100%;
       padding-bottom: 50px;
     }
+    @media screen and (max-width: 430px){
+      padding: 50px 30px 20px;
+      
+    }
     &__skills {
       display: flex;
       flex-direction: row;
@@ -60,13 +64,21 @@
       font-size: 21px;
       font-weight: 700;
       display: flex;
-      flex-direction: row;
+      flex-direction:row;
+      flex-wrap: wrap;
       text-transform: uppercase;
+      @media screen and (max-width: 430px){
+        white-space: nowrap;
+      }
       & span {
         font-size: 21px;
         font-weight: 400;
         color: c.$blue;
         margin-left: 17px;
+        @media screen and (max-width: 430px){
+          margin-left: 0;
+          
+        }
       }
     }
   }

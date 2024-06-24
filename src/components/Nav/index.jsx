@@ -23,11 +23,13 @@ export default function Nav() {
       setTimeout(() => {
         if (navMobileRef.current) {
           navMobileRef.current.setAttribute("id", "navClose");
+          navBarRef.current.setAttribute("id", "navClose");
         }
       }, 300);
     } else {
       setIsNavOpen(true);
       navMobileRef.current.setAttribute("id", "navOpen");
+      navBarRef.current.setAttribute("id", "navOpen");
     }
   };
 

@@ -10,6 +10,11 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
+@media screen and (max-width: 768px) {
+  .filter--all {
+    white-space: nowrap;
+  }
+}
 .filter--all:hover {
   background-color: rgba(11, 119, 100, 0.1);
 }
@@ -25,6 +30,11 @@
   box-sizing: border-box;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  .filter--all--active {
+    white-space: nowrap;
+  }
 }
 .filter--all--active:hover {
   background-color: rgba(11, 119, 100, 0.7);
@@ -42,6 +52,11 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
+@media screen and (max-width: 768px) {
+  .filter--graphic {
+    white-space: nowrap;
+  }
+}
 .filter--graphic:hover {
   background-color: rgba(174, 88, 43, 0.1);
 }
@@ -57,6 +72,11 @@
   box-sizing: border-box;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  .filter--graphic--active {
+    white-space: nowrap;
+  }
 }
 .filter--graphic--active:hover {
   background-color: rgba(174, 88, 43, 0.7);
@@ -74,6 +94,11 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
+@media screen and (max-width: 768px) {
+  .filter--uxui {
+    white-space: nowrap;
+  }
+}
 .filter--uxui:hover {
   background-color: rgba(29, 127, 217, 0.1);
 }
@@ -89,6 +114,11 @@
   box-sizing: border-box;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  .filter--uxui--active {
+    white-space: nowrap;
+  }
 }
 .filter--uxui--active:hover {
   background-color: rgba(29, 127, 217, 0.7);
@@ -106,6 +136,11 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
+@media screen and (max-width: 768px) {
+  .filter--frontend {
+    white-space: nowrap;
+  }
+}
 .filter--frontend:hover {
   background-color: rgba(180, 176, 5, 0.1);
 }
@@ -121,6 +156,11 @@
   box-sizing: border-box;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  .filter--frontend--active {
+    white-space: nowrap;
+  }
 }
 .filter--frontend--active:hover {
   background-color: rgba(180, 176, 5, 0.7);

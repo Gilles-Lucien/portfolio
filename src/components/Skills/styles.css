@@ -28,6 +28,11 @@
     padding-bottom: 50px;
   }
 }
+@media screen and (max-width: 430px) {
+  .skillsSection__container {
+    padding: 50px 30px 20px;
+  }
+}
 .skillsSection__container__skills {
   display: flex;
   flex-direction: row;
@@ -78,13 +83,24 @@
   font-weight: 700;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   text-transform: uppercase;
+}
+@media screen and (max-width: 430px) {
+  .skillsSection__container h2 {
+    white-space: nowrap;
+  }
 }
 .skillsSection__container h2 span {
   font-size: 21px;
   font-weight: 400;
   color: #1d7fd9;
   margin-left: 17px;
+}
+@media screen and (max-width: 430px) {
+  .skillsSection__container h2 span {
+    margin-left: 0;
+  }
 }
 
 .rotateAnimation {

@@ -31,6 +31,11 @@ footer .footerContainer {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 430px) {
+  footer .footerContainer {
+    padding: 0 30px;
+  }
+}
 footer .footerContainer .active p {
   text-decoration: underline;
 }
@@ -40,9 +45,13 @@ footer .footerContainer__logoContainer {
 }
 @media screen and (max-width: 768px) {
   footer .footerContainer__logoContainer {
-    margin-left: 0;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin: 60px 0 60px 0;
+  }
+}
+@media screen and (max-width: 430px) {
+  footer .footerContainer__logoContainer {
+    margin: 60px 0 40px 0;
+    font-size: 0.9rem;
   }
 }
 footer .footerContainer__logoContainer__socialContainer {
