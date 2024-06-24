@@ -11,10 +11,10 @@ export default function Nav() {
       <div id="nav" className="navContainer">
         <Link className="navContainer__logoContainer" to="/">
           <img src={logo} alt="Logo" />
-          <p>
+          <p id="navName">
             Lucien Peltier <strong className="fira-mono-bold">|</strong>
           </p>
-          <p className="fira-mono-bold">
+          <p className="fira-mono-bold" id="navJob">
             UX/UI/Graphic designer
             <br />& Front-end developer
           </p>

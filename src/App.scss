@@ -15,7 +15,6 @@ body {
   color: c.$dark; // Couleur de texte par défaut
   background-color: c.$third_grey; // Couleur de fond par défaut
   height: 100vh;
-  position: relative;
   z-index: -12;
 
 }
@@ -24,7 +23,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  position: relative;
   z-index: -12;
 }
 

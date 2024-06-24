@@ -17,10 +17,16 @@
     padding-right: 104px;
     padding-bottom: 80px;
     gap: 44px;
+    @media screen and (max-width: 768px){
+      width: 100%;      
+    }
     &__categories {
         display: flex;
         flex-direction: row;
         justify-content:space-between;
+        @media screen and (max-width: 768px){
+          flex-direction: column;
+        }
         &__category {
             width: 330px;
             &-graphic p {

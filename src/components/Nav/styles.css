@@ -22,6 +22,11 @@ nav .navContainer {
   border-image-repeat: round;
   border-image-source: url(../../assets/images/border_left_right.png);
 }
+@media screen and (max-width: 768px) {
+  nav .navContainer {
+    width: 100%;
+  }
+}
 nav .navContainer .navLink p {
   border-bottom: 1px transparent;
 }
@@ -30,6 +35,12 @@ nav .navContainer .active p {
 }
 nav .navContainer__logoContainer {
   margin-left: 100px;
+}
+@media screen and (max-width: 768px) {
+  nav .navContainer__logoContainer {
+    margin-left: 30px;
+    font-size: 0.8rem;
+  }
 }
 nav .navContainer img {
   height: 28px;
@@ -51,8 +62,19 @@ nav .navContainer ul {
   align-items: center;
   margin-right: 100px;
 }
+@media screen and (max-width: 768px) {
+  nav .navContainer ul {
+    margin-right: 35px;
+    font-size: 1rem;
+  }
+}
 nav .navContainer ul li {
   margin-left: 4rem;
+}
+@media screen and (max-width: 768px) {
+  nav .navContainer ul li {
+    margin-left: 1rem;
+  }
 }
 nav .navContainer ul li p {
   text-decoration: none;
@@ -60,4 +82,16 @@ nav .navContainer ul li p {
 }
 nav .navContainer ul li p:hover {
   border-bottom: 1px solid;
+}
+
+@media screen and (max-width: 768px) {
+  #navName {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #navJob {
+    width: 170px;
+  }
 }/*# sourceMappingURL=styles.css.map */

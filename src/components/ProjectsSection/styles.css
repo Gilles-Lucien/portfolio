@@ -22,10 +22,20 @@
   padding-bottom: 80px;
   gap: 44px;
 }
+@media screen and (max-width: 768px) {
+  .projectsSection__container {
+    width: 100%;
+  }
+}
 .projectsSection__container__categories {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .projectsSection__container__categories {
+    flex-direction: column;
+  }
 }
 .projectsSection__container__categories__category {
   width: 330px;

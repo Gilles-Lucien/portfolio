@@ -23,6 +23,12 @@
   padding-bottom: 130px;
   gap: 86px;
 }
+@media screen and (max-width: 768px) {
+  .hero__container {
+    width: 100%;
+    flex-direction: column;
+  }
+}
 .hero__container__picture {
   width: 421px;
   height: 278px;

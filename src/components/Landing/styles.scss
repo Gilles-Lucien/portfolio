@@ -12,6 +12,9 @@
   height: 100vh;
   width: 100%;
   overflow: hidden;
+  @media screen and (max-width: 768px) {
+    width: 100vw;
+  }
   &__titleContainer {
     position: absolute;
     top: 45%;
@@ -25,6 +28,9 @@
     // background-color: rgba($color: c.$white, $alpha: 0.4);
     transform: translate(-50%, -50%) scale(1);
     transition: all 0.2s ease-in-out;
+    // @media screen and (max-width: 768px){
+    //   padding: 5.5rem 18rem;
+    // }
     &:hover {
       transform: translate(-50%, -50%) scale(0.95);
     }
@@ -44,6 +50,9 @@
       font-size: 3rem;
       font-weight: 700;
       z-index: -7;
+      // @media screen and (max-width: 768px){
+      //   font-size: 5rem;
+      // }
       & span {
         color: rgba($color: c.$white, $alpha: 0.3);
       }
@@ -57,7 +66,7 @@
       }
     }
   }
-  
+
   & img {
     position: absolute;
     z-index: -9;
@@ -72,24 +81,29 @@
   position: absolute;
   cursor: default;
   z-index: -8;
-	background: linear-gradient(-45deg, #1e1826, #a5355b, #dbdcd6);
-	background-size: 400% 400%;
-  mix-blend-mode:exclusion;
-	animation: gradient 8s ease-in-out infinite;
+  background: linear-gradient(-45deg, #1e1826, #a5355b, #dbdcd6);
+  background-size: 400% 400%;
+  mix-blend-mode: exclusion;
+  animation: gradient 8s ease-in-out infinite;
   height: calc(100vh - 127px);
   width: 100%;
+  // @media screen and (max-width: 768px){
+  //   height: 170vh;
+  // }
 }
 
+
+
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes scaleUp {

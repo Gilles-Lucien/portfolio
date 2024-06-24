@@ -18,6 +18,10 @@
     padding-right: 76px;
     padding-bottom: 130px;
     gap: 86px;
+    @media screen and (max-width: 768px){
+      width: 100%;
+      flex-direction: column;
+    }
     &__picture {
       width: 421px;
       height: 278px;
