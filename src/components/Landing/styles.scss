@@ -5,6 +5,9 @@
   z-index: -10;
   height: calc(100vh - 127px);
   width: 100%;
+  @media screen and (max-width: 430px) {
+    height: 100vh;
+  }
 }
 
 .landingImgContainer {
@@ -87,12 +90,10 @@
   animation: gradient 8s ease-in-out infinite;
   height: calc(100vh - 127px);
   width: 100%;
-  // @media screen and (max-width: 768px){
-  //   height: 170vh;
-  // }
+  @media screen and (max-width: 430px){
+    height: 100vh;
+  }
 }
-
-
 
 @keyframes gradient {
   0% {

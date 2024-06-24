@@ -5,7 +5,7 @@ import hero_picture from "../../assets/images/hero_picture.png";
 export default function Hero() {
 
   return (
-    <section className="hero">
+    <section className="hero" id="mobileLandingAnchor">
       <div className="hero__container">
         <div className="hero____container__txt">
           <h1>

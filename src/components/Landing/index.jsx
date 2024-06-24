@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { smoothScroll } from "../../utils/animations/smoothScroll";
 import "./styles.css";
 import gradient from "../../assets/images/gradient_hero.avif";
@@ -7,6 +7,9 @@ export default function Landing() {
   const imgRef = useRef(null);
   const titleContainer = useRef(null);
   const title = useRef(null);
+  const LandingLink = useRef(null);
+
+  const [hrefValue, setHrefValue] = useState("#nav");
 
   const handleTitleClick = () => {
     titleContainer.current.classList.add("clickedContainer");
@@ -14,12 +17,36 @@ export default function Landing() {
   };
 
   useEffect(() => {
-    const link = document.querySelector('a[href="#nav"]');
-    link.addEventListener("click", (e) => smoothScroll(e, "#nav"));
+    const link = LandingLink.current;
+    if (link) {
+      const handleClick = (e) => smoothScroll(e, hrefValue);
+      link.addEventListener("click", handleClick);
+  
+      // Cleanup function to remove the event listener when the component unmounts
+      return () => {
+        link.removeEventListener("click", handleClick);
+      };
+    }
+  }, [hrefValue, LandingLink]);
 
-    // Cleanup function to remove the event listener when the component unmounts
+  useEffect(() => {
+    const checkScreenSize = () => {
+      if (window.innerWidth <= 430) {
+        setHrefValue("#mobileLandingAnchor");
+      } else {
+        setHrefValue("#nav");
+      }
+    };
+
+    // Vérifier immédiatement en cas de rechargement de la page
+    checkScreenSize();
+
+    // Ajouter l'écouteur d'événement
+    window.addEventListener("resize", checkScreenSize);
+
+    // Cleanup function pour retirer l'écouteur
     return () => {
-      link.removeEventListener("click", (e) => smoothScroll(e, "#nav"));
+      window.removeEventListener("resize", checkScreenSize);
     };
   }, []);
 
@@ -50,7 +77,7 @@ export default function Landing() {
 
   return (
     <section className="landingSection">
-      <a href="#nav">
+      <a href={hrefValue} ref={LandingLink}>
         <div className="landingImgContainer">
           <div
             ref={titleContainer}
