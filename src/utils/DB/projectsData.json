@@ -118,6 +118,213 @@
         "subtitle": " for Accessibility and Clarity",
         "description": "Following the graphic identity creation, the next step was to design a user-friendly website that addressed several key needs. The site was developed to facilitate appointment scheduling, providing detailed explanations of examination procedures, and presenting institutional information in a clear and organized manner. Given that the primary audience is predominantly elderly, the website's design focused on simplicity and readability, with intuitive navigation, larger text, and clear calls to action to ensure that users could easily access the information and services they needed."
       }
+    },
+    {
+      "id": "8",
+      "title": "You're Home",
+      "description": "This project features citywide posters with the messages \"You arrived\" and \"You're home,\". The posters use the Pilowlava typeface by Anton Moglia and Jérémy Landes of the Velvetyne Foundry, celebrating their unique and expressive design.",
+      "tags": ["all", "graphic"],
+      "imageNumber": 4,
+      "section1": {
+        "title": "Art project",
+        "subtitle": " citywide Poster Campaign",
+        "description": "This project involves a series of posters strategically placed throughout a city, featuring the impactful messages \"You arrived\" and \"You're home\" with the background \"in silence, contemplate.\". The aim is to create a sense introspection for the city's inhabitants and visitors, encouraging them to take a moment to reflect on their surroundings and the journey they are on. These simple statements are designed to evoke feelings of arrival and belonging, making public spaces feel more welcoming and intimate, and for what they are."
+      },
+      "section2": {
+        "title": "Design and Typography",
+        "subtitle": " Celebrating Pilowlava",
+        "description": "The graphic design of these posters is enhanced by the use of the Pilowlava typeface, created by Anton Moglia and Jérémy Landes of the Velvetyne Foundry. Pilowlava's unique and expressive style adds a layer of visual interest and sophistication to the project, making the messages stand out while also blending harmoniously with the urban environment. By crediting the creators and the foundry, the project not only showcases their innovative work but also highlights the importance of typography in conveying emotion and meaning in public art."
+      }
+    },
+    {
+      "id": "9",
+      "title": "Belron ressources",
+      "description": "I designed a mobile and desktop-compatible platform for Belron to help its branches coordinate and distribute communication materials, focusing on comprehensive content and user-friendliness for those less familiar with digital tools.",
+      "tags": ["all", "graphic", "uxui"],
+      "imageNumber": 4,
+      "section1": {
+        "title": "A Global",
+        "subtitle": " Automotive Repair Group",
+        "description": "Belron is a leading automotive repair group encompassing numerous brands such as Carglass, Autoglass, Safelite AutoGlass, and O'Brien, operating in 33 countries worldwide and employing over 25,000 people. The group required an online platform to help its branches coordinate the distribution of all their communication materials."
+      },
+      "section2": {
+        "title": "User-Friendly",
+        "subtitle": " Communication Platform",
+        "description": "In response to Belron's needs, we designed a mobile and desktop-compatible platform that combines comprehensive content with ease of use. This simplicity was crucial, as the platform is intended for users who are not very familiar with digital tools. The platform ensures that all communication materials are easily accessible and manageable, enhancing coordination across Belron's extensive network."
+      }
+    },
+    {
+      "id": "10",
+      "title": "L'atelier en boite",
+      "description": "\"L'atelier en boîte\" was a temporary online art sale featuring curated boxes by ten renowned artists, offering an intimate glimpse into their studios and personal creations. The website art direction was inspired by the graphic principles of Josef Müller-Brockmann.",
+      "tags": ["all", "graphic", "uxui"],
+      "imageNumber": 4,
+      "section1": {
+        "title": "The Concept",
+        "subtitle": " of \"L'atelier en boîte\"",
+        "description": "\"L'atelier en boîte\" was a temporary art sale featuring works by renowned artists invited to showcase their studios through curated boxes. Artists such as Diane Benoit Du Rey, Katia Bourdarel, Thierry Carrier, Sylvain Ciavaldini, Gael Davrinche, Richard Di Rosa, Nicolas Marciano, Olivier Masmonteil, Françoise Petrovitch, and Lionel Sabatté presented original artworks and personal artifacts, offering a unique glimpse into their creative environments. The initiative aimed to provide an intimate connection between the public and the artists' work, particularly during the successive lockdowns of 2020."
+      },
+      "section2": {
+        "title": "Graphic Aesthetic",
+        "subtitle": " and Inspiration",
+        "description": "The graphic aesthetic drew inspiration from the principles established by graphic designer Josef Müller-Brockmann, characterized by a minimalist approach with a focus on typography and structured layouts. This design choice aimed to evoke clarity and sophistication, echoing the meticulous presentation of the artists' studios within the curated boxes. The use of two distinct text styles emphasized readability and visual hierarchy, ensuring the artworks and their narratives were effectively communicated to the audience."
+      }
+    },
+    {
+      "id": "11",
+      "title": "Mustela",
+      "description": "Mustela, known for its baby and parental care products under Laboratoires Expanscience, launched a pregnancy tracking app in 2015. This app provides users with a comprehensive pregnancy overview, including medical appointment scheduling and product recommendations, earning it the \"Trophée des Apps\" from NPA Conseils for innovation in maternal health support.",
+      "tags": ["all", "uxui"],
+      "imageNumber": 3,
+      "section1": {
+        "title": "A Leader",
+        "subtitle": " in Baby and Parental Care",
+        "description": "Mustela is a brand specializing in baby and parental care products, owned by Laboratoires Expanscience. Their offerings cater to the needs of infants, expectant mothers, and young parents, providing essential skincare and hygiene solutions."
+      },
+      "section2": {
+        "title": "Designing",
+        "subtitle": " a Pregnancy Tracking App",
+        "description": "To promote its maternity care products, we developed a pregnancy tracking application that provides users with a comprehensive overview of their pregnancy progress. This free app includes features such as medical appointment scheduling and essential pregnancy milestones, with Mustela products recommended within relevant tracking guidelines. In 2015, the application was honored with the \"Trophée des Apps\" by NPA Conseils for its innovation and effectiveness in maternal health support. Find more about the app on the Youtube channel of Mustela : https://www.youtube.com/watch?v=MATSQvRMUAY."
+      }
+    },
+    {
+      "id": "12",
+      "title": "Alchemist Chocolate",
+      "description": "I designed the visual identity for Swiss artisan chocolatier Alchemist Chocolate, focusing on packaging and store branding with an artistic direction inspired by chocolate alchemy, featuring elements of ancient book engravings and esoteric symbolism.",
+      "tags": ["all", "uxui"],
+      "imageNumber": 22,
+      "section1": {
+        "title": "Crafting the Visual Identity",
+        "subtitle": " of Alchemist Chocolate",
+        "description": "I undertook the design of the visual identity for Swiss artisan chocolatier, Alchemist Chocolate, including packaging and store branding. The artistic direction revolves around the concept of chocolate alchemy, drawing inspiration from ancient book engravings and esoteric symbolism."
+      },
+      "section2": {
+        "title": "Aesthetic Influence",
+        "subtitle": " and Design Approach",
+        "description": "The aesthetic incorporates elements reminiscent of old book engravings and the mystique of esoteric symbols. This approach not only enhances the brand's allure but also aligns with the artisanal and transformative nature of chocolate-making at Alchemist Chocolate."
+      }
+    },
+    {
+      "id": "13",
+      "title": "Stane's press kit",
+      "description": "I designed Stane's press kit using InDesign, emphasizing their role in supporting healthcare professionals by managing auxiliary tasks. The collaborative process involved iterative feedback to ensure the final design effectively communicated Stane’s comprehensive services and commitment to allowing professionals to focus on their core medical duties.",
+      "tags": ["all", "graphic"],
+      "imageNumber": 15,
+      "section1": {
+        "title": "Press Kit Design",
+        "subtitle": " for Stane",
+        "description": "I designed and assembled the press kit for Stane using InDesign. Stane, a key partner for healthcare professionals, has supported the creation of over a hundred healthcare structures across France. As these structures became established, healthcare professionals sought continuous support for their daily operations. This led to the development of Stane’s management and coordination service, which includes an integrated management system based on the daily practices and needs of healthcare professionals. My goal was to highlight Stane's commitment to simplifying the workload for healthcare professionals, allowing them to focus on their core medical duties."
+      },
+      "section2": {
+        "title": "Collaborative",
+        "subtitle": " Design Process",
+        "description": "The creation of the press kit involved a collaborative process with Stane, characterized by back-and-forth iterations to ensure complete satisfaction. The design emphasized Stane’s comprehensive services, such as procurement management, HR and administrative support, continuous training, digitalization of workflows, incident management, and team coordination. By managing these auxiliary aspects, Stane provides healthcare professionals with significant financial and time savings, which they can reinvest into their medical practice and personal well-being. The press kit visually and textually communicated Stane’s mission to enable professionals to concentrate on their core duties, enhancing both their professional efficiency and personal quality of life."
+      }
+    },
+    {
+      "id": "14",
+      "title": "Haptic radar",
+      "description": "Fo/Va is a haptic prosthesis designed for visually impaired individuals, using an Arduino, infrared sensor, Raspberry Pi, and vibrators to provide spatial awareness through tactile feedback. Beyond visual impairment, it has broader applications, such as enhancing safety for workers in hazardous environments by detecting obstacles through vibrations.",
+      "tags": ["all", "uxui"],
+      "imageNumber": 5,
+      "section1": {
+        "title": "Development of the Fo/Va",
+        "subtitle": " Haptic Prosthesis",
+        "description": "Fo/Va is a haptic prosthesis project designed for visually impaired individuals. In 2015, I developed a prototype using an Arduino, an infrared sensor, a Raspberry Pi, and vibrators. The sensor's data is analyzed and converted into vibrations felt by the user. For instance, an obstacle on the left activates the left-side vibrators under the clothing, while an obstacle on the right triggers the right-side vibrators. The proximity of the obstacle is indicated by the intensity of the vibrations, providing users with spatial awareness through tactile feedback."
+      },
+      "section2": {
+        "title": "Broader Applications",
+        "subtitle": " Beyond Visual Impairment",
+        "description": "The application of the Fo/Va haptic prosthesis extends beyond aiding the visually impaired. It can be utilized in various fields, such as industry. For example, a worker on a hazardous construction site can use this device to augment their vision, sensing the presence of moving masses behind them. This additional sensory input can enhance safety and awareness, demonstrating the versatility and potential of haptic technology in diverse environments."
+      }
+    },
+    {
+      "id": "15",
+      "title": "Paris Saint Germain",
+      "description": "Enhancing the PSG store by designing interactive kiosks that provide visitors with real-time match results, club news, and upcoming schedules, creating a more engaging fan experience.",
+      "tags": ["all", "uxui", "graphic"],
+      "imageNumber": 8,
+      "section1": {
+        "title": "Enhancing",
+        "subtitle": " the PSG Store Experience",
+        "description": "The Paris-Saint-Germain soccer club's store sought to elevate its customer experience. To achieve this, we developed interactive kiosks within the retail space. These kiosks allow visitors to check the latest match results, stay updated with the club's social media news, and view the upcoming match schedule."
+      },
+      "section2": {
+        "title": "Integrating Technology",
+        "subtitle": " for Fan Engagement",
+        "description": "The interactive kiosks were designed to provide a seamless and engaging experience for PSG fans. By offering real-time information and easy access to club updates, these kiosks help create a dynamic shopping environment that strengthens the connection between the club and its supporters."
+      }
+    },
+    {
+      "id": "16",
+      "title": "Fovéa",
+      "description": "Layout of my dissertation \"of the prosthesis in the light of interaction design\".",
+      "tags": ["all", "uxui", "graphic"],
+      "imageNumber": 5,
+      "section1": {
+        "title": "Exploring the Intersection",
+        "subtitle": " of Design and Prosthetics",
+        "description": "The thesis delves into the evolving role of design in the development of prosthetics, highlighting how innovative design approaches can enhance the functionality and aesthetics of prosthetic devices. It examines the history and progression of prosthetic design, emphasizing the shift from purely functional devices to those that also consider the user’s comfort, psychological well-being, and social acceptance. By integrating principles of industrial design, ergonomics, and user-centered design, the research underscores the potential of well-designed prosthetics to significantly improve the quality of life for individuals with limb loss."
+      },
+      "section2": {
+        "title": "Technological Integration",
+        "subtitle": " in Prosthetic Design",
+        "description": "The thesis further explores contemporary case studies where advanced technology and creative design intersect in prosthetic development. It analyzes the use of materials like lightweight composites, the incorporation of sensors and microprocessors for enhanced movement, and the application of 3D printing for custom-fitted prosthetics. Additionally, the research discusses the collaborative processes between designers, engineers, and users, illustrating how interdisciplinary efforts lead to more effective and personalized prosthetic solutions. The thesis concludes with insights into future trends and the potential for further innovation in the field of prosthetic design."
+      }
+    },
+    {
+      "id": "17",
+      "title": "Bone Hunt",
+      "description": "Bone Hunt, a 2013 student project, transforms museum visits into an interactive scavenger hunt using QR codes and mini-games to educate visitors about anatomical specimens, encouraging repeated engagement through seasonal updates.",
+      "tags": ["all", "uxui", "graphic"],
+      "imageNumber": 11,
+      "section1": {
+        "title": "Concept and Design",
+        "subtitle": " of Bone Hunt",
+        "description": "Bone Hunt, a cherished student project from 2013, was created in response to a fictional call for proposals from the magnificent Musée d'Anatomie Comparée de Paris, my favorite Museum. This interactive exploration experience turns museum visits into an engaging scavenger hunt. Visitors search for small QR codes embedded in bone illustrations throughout the museum. Scanning these codes with an app triggers mini-games, which, when completed, unlock detailed information about the specimen near the discovered \"bone.\" This innovative approach aimed to make learning about anatomy fun and interactive."
+      },
+      "section2": {
+        "title": "Enhancing Visitor Engagement",
+        "subtitle": " Through Gamification",
+        "description": "The experience is designed to retain visitor interest by allowing them to collect and preserve the unlocked information across multiple visits. Additionally, the hunts can be divided into seasons, offering new discoveries and maintaining the attraction for repeat visitors. This gamification of museum exploration not only enriches the educational experience but also encourages continuous engagement with the museum’s exhibits. The project's creative use of technology to blend education with entertainment exemplifies how interactive design can enhance visitor engagement in cultural institutions."
+      }
+    },
+    {
+      "id": "18",
+      "title": "Monogram identity",
+      "description": "This 2012 graphic identity project features a monogram design using the initials \"GP\", showcasing geometric precision and versatile application across various formats and media.",
+      "tags": ["all", "graphic"],
+      "imageNumber": 6,
+      "section1": {
+        "title": "Concept and Design",
+        "subtitle": " Elements",
+        "description": "The showcased graphic identity is a monogram design centered around the initials \"GP\" for Gilles Peltier. The design process starts with a foundational red triangle, symbolizing stability and direction. The monogram combines geometric precision with overlapping shapes, reflecting a modern and dynamic visual language. Key design elements include a consistent color palette with primary hues of red, dark blue, and beige, as well as the strategic use of negative space to create a seamless and versatile logo. These elements are aligned with the principles of geometric design, ensuring both aesthetic appeal and functional adaptability."
+      },
+      "section2": {
+        "title": "Application",
+        "subtitle": " and Versatility",
+        "description": "The monogram is adapted into various formats, maintaining visual coherence across different backgrounds and applications. The color variations and pattern designs illustrate the monogram’s flexibility, showing its use in multiple contexts—from digital interfaces to printed materials. The repeated pattern of the monogram highlights its potential for creating visually engaging brand collateral. Additionally, the use of the monogram with the name \"Gilles Peltier\" in different color schemes demonstrates its effectiveness in reinforcing brand identity across diverse media."
+      }
+    },
+    {
+      "id": "19",
+      "title": "Booki",
+      "description": "In this training project, I learned to create a responsive travel agency homepage using HTML and CSS, mastering the fundamentals of structured coding, layout design, and responsive principles. These skills are essential for advancing my career as a front-end developer, equipping me to deliver user-friendly web experiences across various devices and enhancing my adaptability in a dynamic digital landscape.",
+      "tags": ["all", "frontend"],
+      "imageNumber": 4,
+      "repository": "https://github.com/Gilles-Lucien/booki-starter-code-master.git",
+      "gitPages": "https://gilles-lucien.github.io/booki-starter-code-master/",
+      "figma": "https://www.figma.com/design/B3eLowtWREc9YXzBcGRAHn/Maquettes-Booki?node-id=3-0&t=PcRf6ytILVnQRAhH-0",
+      "section1": {
+        "title": "What I Learned",
+        "subtitle": ".",
+        "description": "Creating a travel agency's homepage using HTML and CSS provided me with practical experience in web development fundamentals. I learned to structure the HTML content effectively, organizing sections such as headers, navigation bars, content areas, and footers to ensure clarity and accessibility in the codebase. This process not only improved my understanding of semantic HTML but also reinforced the importance of structured coding practices for maintainability and scalability in larger projects.\n\nCSS played a critical role in styling the webpage to mirror the design mockups accurately. Implementing layout techniques like flexbox and grid allowed me to create responsive designs that adapt seamlessly across different screen sizes—from mobile phones to large desktop monitors. Learning to use media queries enabled me to optimize the layout and styling based on device-specific characteristics, enhancing user experience by ensuring readability and usability across all devices.\n\nMoreover, integrating custom interface components using HTML and CSS was instrumental in achieving design fidelity. From creating responsive navigation menus to implementing image carousels and interactive elements, I honed my skills in translating static design concepts into dynamic and functional web interfaces. This hands-on experience not only improved my proficiency in front-end development but also deepened my appreciation for the intricate balance between design aesthetics and technical implementation."
+      },
+      "section2": {
+        "title": "Importance for My Career",
+        "subtitle": ".",
+        "description": "Mastering HTML and CSS integration for responsive web design is pivotal for advancing my career as a front-end developer. These foundational skills are essential for collaborating effectively with design teams and translating creative concepts into interactive web experiences that engage users across different devices.\n\nResponsive design principles, learned through this project, are critical in today's digital landscape where users access websites from diverse platforms. By ensuring that web pages render correctly on mobile, tablet, and desktop screens, I enhance usability and accessibility, thereby improving user satisfaction and retention. This capability not only demonstrates my technical proficiency but also underscores my commitment to delivering high-quality, user-centric solutions in web development projects.\n\nFurthermore, the ability to innovate with CSS frameworks and techniques underscores my adaptability and readiness to embrace new trends in web design. This agility is crucial for staying competitive in the fast-paced industry, where technological advancements continually redefine best practices and user expectations.\n\nIn conclusion, the skills acquired—HTML and CSS proficiency, responsive design expertise, and a meticulous approach to web development—are foundational for my career growth as a front-end developer. They empower me to create compelling, user-friendly web experiences that meet the demands of modern digital environments, positioning me for success in diverse roles within the web development ecosystem."
+      }
     }
   ]
 }

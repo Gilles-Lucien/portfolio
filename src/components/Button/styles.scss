@@ -82,3 +82,66 @@
   background-color: c.$yellow;
   }
 }
+
+.projectLinks--figma {
+  @extend .button;
+  background-color: c.$orange;
+  color: c.$white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  width: max-content;
+  & img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+  &:hover {
+    background-color: rgba(c.$orange, $alpha: 0.8);
+    color: c.$white;
+  }
+}
+
+.projectLinks--github {
+  @extend .button;
+  background-color: c.$blue;
+  color: c.$white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  width: max-content;
+  & img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    filter: brightness(0) invert(1);
+  }
+  &:hover {
+    background-color: rgba(c.$blue, $alpha: 0.8);
+    color: c.$white;
+  }
+}
+
+.projectLinks--githubPages {
+  @extend .button;
+  background-color: c.$yellow;
+  color: c.$white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  width: max-content;
+  & img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    filter: brightness(0) invert(1);
+  }
+  &:hover {
+    background-color: rgba(c.$yellow, $alpha: 0.8);
+    color: c.$white;
+  }
+}

@@ -84,7 +84,7 @@
       "id": "11",
       "title": "Mustela",
       "description": "Pregnancy tracking app promoting Mustela's skincare products for expecting parents.",
-      "tags": [ "all", "graphic", "uxui"],
+      "tags": [ "all", "uxui"],
       "image": "pictureCard10",
       "link": "/single/11"
     },
@@ -138,7 +138,7 @@
     },
     {
       "id": "18",
-      "title": "Personal identity",
+      "title": "Monogram identity",
       "description": "Monogram based identity, from 2012",
       "tags": [ "all", "graphic"],
       "image": "pictureCard17",

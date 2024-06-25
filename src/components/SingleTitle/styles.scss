@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     padding-left: 104px;
     padding-top: 94px;
     padding-right: 104px;
@@ -20,10 +20,33 @@
     gap: 86px;
     @media screen and (max-width: 768px) {
       width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
     }
     @media screen and (max-width: 430px){
       padding: 50px 30px;
       
+    }
+    &__projectLinks {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 50px;
+      // padding-left: 20px;
+      // @include m.dashedBorder("left");
+      @media screen and (max-width: 768px) {
+        flex-direction: row;
+        gap: 20px;
+        margin-top: 40px;
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-bottom: 30px;
+        @include m.dashedBorder("bottom");
+      }
+      @media screen and (max-width: 430px) {
+        flex-direction: column;        
+      }
+
     }
     &__txt {
       @include m.dashedBorder("bottom");

@@ -1,4 +1,4 @@
-.button, .paginationButton, .sendButton, .contactButton {
+.button, .projectLinks--githubPages, .projectLinks--github, .projectLinks--figma, .paginationButton, .sendButton, .contactButton {
   padding: 10px 25px;
   font-size: 1.1rem;
   border-radius: 5px;
@@ -7,7 +7,7 @@
   transition: all 0.3s ease;
   border: 1px solid transparent;
 }
-.button:hover, .paginationButton:hover, .sendButton:hover, .contactButton:hover {
+.button:hover, .projectLinks--githubPages:hover, .projectLinks--github:hover, .projectLinks--figma:hover, .paginationButton:hover, .sendButton:hover, .contactButton:hover {
   background-color: #fff;
   color: #292D30;
   border: 1px solid #dcdcdc;
@@ -79,4 +79,64 @@
     color: #fff;
     background-color: #b4b005;
   }
+}
+
+.projectLinks--figma {
+  background-color: #ae582b;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  width: max-content;
+}
+.projectLinks--figma img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+.projectLinks--figma:hover {
+  background-color: rgba(174, 88, 43, 0.8);
+  color: #fff;
+}
+
+.projectLinks--github {
+  background-color: #1d7fd9;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  width: max-content;
+}
+.projectLinks--github img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  filter: brightness(0) invert(1);
+}
+.projectLinks--github:hover {
+  background-color: rgba(29, 127, 217, 0.8);
+  color: #fff;
+}
+
+.projectLinks--githubPages {
+  background-color: #b4b005;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  width: max-content;
+}
+.projectLinks--githubPages img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  filter: brightness(0) invert(1);
+}
+.projectLinks--githubPages:hover {
+  background-color: rgba(180, 176, 5, 0.8);
+  color: #fff;
 }/*# sourceMappingURL=styles.css.map */
