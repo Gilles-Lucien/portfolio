@@ -309,12 +309,12 @@
     {
       "id": "19",
       "title": "Booki",
-      "description": "In this training project, I learned to create a responsive travel agency homepage using HTML and CSS, mastering the fundamentals of structured coding, layout design, and responsive principles. These skills are essential for advancing my career as a front-end developer, equipping me to deliver user-friendly web experiences across various devices and enhancing my adaptability in a dynamic digital landscape.",
+      "description": "My first contact with HTML and CSS. In this training project, I learned to create a responsive travel agency homepage using HTML and CSS, mastering the fundamentals of structured coding, layout design, and responsive principles. These skills are essential for advancing my career as a front-end developer, equipping me to deliver user-friendly web experiences across various devices and enhancing my adaptability in a dynamic digital landscape.",
       "tags": ["all", "frontend"],
       "imageNumber": 4,
       "repository": "https://github.com/Gilles-Lucien/booki-starter-code-master.git",
       "gitPages": "https://gilles-lucien.github.io/booki-starter-code-master/",
-      "figma": "https://www.figma.com/design/B3eLowtWREc9YXzBcGRAHn/Maquettes-Booki?node-id=3-0&t=PcRf6ytILVnQRAhH-0",
+      "figma": "https://www.figma.com/design/B3eLowtWREc9YXzBcGRAHn/Maquettes-Booki",
       "section1": {
         "title": "What I Learned",
         "subtitle": ".",
@@ -324,6 +324,26 @@
         "title": "Importance for My Career",
         "subtitle": ".",
         "description": "Mastering HTML and CSS integration for responsive web design is pivotal for advancing my career as a front-end developer. These foundational skills are essential for collaborating effectively with design teams and translating creative concepts into interactive web experiences that engage users across different devices.\n\nResponsive design principles, learned through this project, are critical in today's digital landscape where users access websites from diverse platforms. By ensuring that web pages render correctly on mobile, tablet, and desktop screens, I enhance usability and accessibility, thereby improving user satisfaction and retention. This capability not only demonstrates my technical proficiency but also underscores my commitment to delivering high-quality, user-centric solutions in web development projects.\n\nFurthermore, the ability to innovate with CSS frameworks and techniques underscores my adaptability and readiness to embrace new trends in web design. This agility is crucial for staying competitive in the fast-paced industry, where technological advancements continually redefine best practices and user expectations.\n\nIn conclusion, the skills acquired—HTML and CSS proficiency, responsive design expertise, and a meticulous approach to web development—are foundational for my career growth as a front-end developer. They empower me to create compelling, user-friendly web experiences that meet the demands of modern digital environments, positioning me for success in diverse roles within the web development ecosystem."
+      }
+    },
+    {
+      "id": "20",
+      "title": "Oh my food",
+      "description": "In this project, I learned to create a mobile-first startup website interface using Sass, CSS animations, and Git/GitHub, gaining essential skills for responsive design and effective project management.",
+      "tags": ["all", "frontend"],
+      "imageNumber": 5,
+      "repository": "https://github.com/Gilles-Lucien/Ohmyfood_code.git",
+      "gitPages": "https://gilles-lucien.github.io/Ohmyfood_code/",
+      "figma": "https://www.figma.com/design/t4449fzDnwGYmzuwQdu87V/Maquettes-Ohmyfood-(mobile-et-desktop)",
+      "section1": {
+        "title": "Concept",
+        "subtitle": " and Learning Objectives",
+        "description": "In this training project, I worked on creating a mobile-first interface for a startup’s website. The project required the use of Sass for CSS preprocessing, the implementation of CSS animations, and version control with Git and GitHub. My primary task was to integrate a mobile-first design using provided mockups for both mobile and desktop, as well as prototypes on Figma, along with necessary images and text.\n\nThis mobile-first approach emphasized the importance of designing adaptive and responsive websites. Through this, I learned to implement CSS animations, which enrich the user experience by making the interface more interactive and engaging. Using Sass allowed me to extend the basic functionalities of CSS, helping me to write more organized and maintainable styles. Additionally, versioning the project with Git and GitHub familiarized me with essential tools for project management and collaboration in web development."
+      },
+      "section2": {
+        "title": "Application",
+        "subtitle": " and Career Relevance",
+        "description": "The ability to create mobile-first web interfaces is increasingly in demand in modern web development. The skills I gained in integrating CSS animations not only enhance the visual appeal of websites but also improve user experience. Mastery of Sass for structuring and optimizing CSS is a valuable skill, as is the proficiency in using Git and GitHub for version control and project collaboration.\n\nThese combined skills strengthen my profile as a competent and versatile front-end developer. They enable me to deliver high-quality, user-centric web experiences that meet the expectations of today’s digital landscape, positioning me for success in various roles within the web development field. This project has equipped me with the practical knowledge and technical expertise needed to excel in my career and contribute effectively to any development team."
       }
     }
   ]

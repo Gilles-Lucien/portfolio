@@ -46,7 +46,7 @@ const ImageViewer = ({ images }) => {
 
 
   return (
-    <div className="viewerGallery" style={{ columnCount: images.length < 5 ? 2 : 4 }}>
+    <div className="viewerGallery" >
       {images.map((src, index) => (
         <img
           className="galleryImg"
