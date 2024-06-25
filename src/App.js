@@ -14,6 +14,7 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Landing from "./components/Landing";
 import Single from "./pages/Single";
+import Error from "./pages/Error";
 
 function MainContent() {
   const location = useLocation();
@@ -33,6 +34,7 @@ function MainContent() {
         <Route path="/aboutme" element={<AboutMe />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/single/:id" element={<Single />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </>
