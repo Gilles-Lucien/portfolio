@@ -7,14 +7,14 @@
       "tags": ["all", "graphic"],
       "imageNumber": 41,
       "section1": {
-        "title": "Enjoyable",
-        "subtitle": " and Nutritious",
-        "description": "MyFrenchef meets the need to closely monitor your diet while still enjoying your meals. It offers a wide selection of recipes presented by renowned chefs and allows you to track the nutritional intake of the whole family. By combining video cooking lessons, a recipe planner with a shopping list for ingredient purchases, and a nutrient dashboard, MyFrenchef simplifies daily meal management. Users can discover new recipes, learn sophisticated cooking techniques, and monitor their diet in a fun and enjoyable way."
+        "title": "Step 1:",
+        "subtitle": " Defining the Message and Image",
+        "description": "This is the logotype creation process for WoodYou, a company whose main activity is the creation of made-to-measure laser-cut wooden objects for toys, decoration and communication media. This is a two-stage process. The first wave of three proposals allows us to better define with the customer the message and image that the company needs to convey. After selecting a lead and refining the direction to be taken, the second wave of proposals is made. In this project, in the first wave, we were able to discard proposal no. 1 because it was more suggestive of luxury codes, which is not WoodYou's target. We also discarded proposal no. 2 because it only targeted the playful world of toys, where WoodYou wanted to reach beyond that."
       },
       "section2": {
-        "title": "My Role:",
-        "subtitle": " Artistic Direction, UX, and UI",
-        "description": "On this project, my work encompasses both artistic direction and UX (user experience) and UI (user interface). As the artistic director, I ensure that MyFrenchef's visual identity is cohesive and appealing, reflecting the quality and expertise of the chefs. For UX, I design intuitive and pleasant user journeys, making it easier to navigate and use the app's various features. Regarding UI, I create clear and aesthetic interfaces, making the user experience not only functional but also visually pleasing. My goal is to ensure a smooth and enjoyable use of MyFrenchef, so users can focus on the joy of cooking and eating well."
+        "title": "Step 2:",
+        "subtitle": " Refine and select the Final Proposal",
+        "description": "Proposal no. 3 was chosen as the basis for the rest of the project, because it evoked both playfulness, with its reference to the \"Tangram\" silhouette game, and tailor-made modularity, while at the same time benefiting from the appeal of a mascot animal. The bear was chosen to evoke nature and the forest in a more mature way than other small animals usually associated with childhood, and because it reflects the values of the company's founders: boldness, strength and determination. It was proposal no. 1 of the second wave that was chosen by the client, for its balance of elementary modular forms, retaining the Tangram reference."
       }
     },
     {
@@ -83,6 +83,40 @@
         "title": "Reducing Informational Noise",
         "subtitle": " and Enhancing User Flow",
         "description": "The dialogue approach effectively reduces informational noise that previously cluttered the homepage. This strategy considers the online reading habits of users, who typically scan pages in an \"F\" pattern, focusing on information placed at the top left, titles, and the initial words of paragraphs. By prioritizing key information in these areas, the redesigned homepage guides users efficiently, making important content more accessible and thereby improving the likelihood of conversions."
+      }
+    },
+    {
+      "id": "6",
+      "title": "Odysium",
+      "description": "Odysium is a company providing a medical concierge service and custom training programs for athletes. The project involved designing a PWA, it's flux and motion, from an existing graphic charter, to seamlessly integrate these two services.",
+      "tags": ["all", "uxui"],
+      "imageNumber": 5,
+      "section1": {
+        "title": "UX Process",
+        "subtitle": " for a Comprehensive PWA",
+        "description": "Building upon an existing graphic charter, the UX process for designing a Progressive Web App (PWA) for Odysium involved a meticulous and structured approach. The objective was to seamlessly combine the two primary services offered to Odysium's clients. The first service is a medical concierge tailored for athletes and their managers, providing them with personalized and accessible healthcare support. Understanding the unique needs and workflows of these users was crucial. Through user research, including interviews and surveys, we gathered insights into their daily routines, pain points, and preferences, which informed our design decisions."
+      },
+      "section2": {
+        "title": "Integrating Training Programs",
+        "subtitle": " for Enhanced User Experience",
+        "description": "The second service focuses on customized training programs created by Odysium's coaches for the athletes they monitor. To integrate this into the PWA, we conducted a detailed analysis of how athletes interact with their training regimens. We employed user personas and journey mapping to visualize their experience and identify opportunities for improvement. Prototyping and user testing were essential to ensure that the interface was intuitive and engaging, allowing athletes to easily access and follow their training plans. By combining these two services into a cohesive PWA, we aimed to deliver a holistic and user-centered experience that enhances both the medical and training support for Odysium's clients."
+      }
+    },
+    {
+      "id": "7",
+      "title": "Nuclear medicine centers",
+      "description": "The project involved creating the graphic identity and designing a user-friendly website for the nuclear medicine centers in Île-de-France, focusing on appointment scheduling, detailed procedure explanations, and clear presentation of institutional information for a predominantly elderly audience.",
+      "tags": ["all", "graphic", "uxui"],
+      "imageNumber": 15,
+      "section1": {
+        "title": "Developing",
+        "subtitle": " the Graphic Identity",
+        "description": "The project began with creating the graphic identity for the nuclear medicine centers in Île-de-France. This involved designing a cohesive visual identity that would be instantly recognizable and convey professionalism and trust. The design elements, such as the logo, color palette, typography, and imagery, were chosen to reflect the seriousness and precision of the medical field. The aim was to ensure that patients and their families, as well as medical professionals, could easily identify and feel confident in the centers' branding."
+      },
+      "section2": {
+        "title": "Designing the Website",
+        "subtitle": " for Accessibility and Clarity",
+        "description": "Following the graphic identity creation, the next step was to design a user-friendly website that addressed several key needs. The site was developed to facilitate appointment scheduling, providing detailed explanations of examination procedures, and presenting institutional information in a clear and organized manner. Given that the primary audience is predominantly elderly, the website's design focused on simplicity and readability, with intuitive navigation, larger text, and clear calls to action to ensure that users could easily access the information and services they needed."
       }
     }
   ]

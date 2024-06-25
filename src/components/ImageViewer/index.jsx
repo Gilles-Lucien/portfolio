@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import arrowRight from "../../assets/svg/arrow_right.svg";
 import close from "../../assets/svg/close.svg";
 import "./styles.css";
@@ -16,15 +16,34 @@ const ImageViewer = ({ images }) => {
     setViewerOpen(false);
   };
 
-  const goToNext = () => {
+  const goToNext = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
+  }, [images.length]);
 
-  const goToPrevious = () => {
+  const goToPrevious = useCallback(() => {
     setCurrentIndex(
       (prevIndex) => (prevIndex - 1 + images.length) % images.length
     );
-  };
+  }, [images.length]);
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === "ArrowRight") {
+        goToNext();
+      } else if (event.key === "ArrowLeft") {
+        goToPrevious();
+      }
+    };
+
+    if (viewerOpen) {
+      window.addEventListener("keydown", handleKeyDown);
+    }
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [viewerOpen, goToNext, goToPrevious]);
+
 
   return (
     <div className="viewerGallery">

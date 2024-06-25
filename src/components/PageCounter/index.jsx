@@ -4,8 +4,10 @@ import Button from "../Button";
 import arrow_right_long from "../../assets/svg/arrow_right_long.svg";
 
 const PageCounter = ({ currentPage, totalPage, next, previous }) => {
-    if (totalPage === 0) return null;
 
+
+
+  if (totalPage === 0) return null;
 
   return (
     <div className="pageCounterContainer">
@@ -18,7 +20,11 @@ const PageCounter = ({ currentPage, totalPage, next, previous }) => {
           />
         </Button>
       ) : (
-        <Button id="pagePrevious" className="paginationButton" onClick={previous}>
+        <Button
+          id="pagePrevious"
+          className="paginationButton"
+          onClick={previous}
+        >
           <img
             src={arrow_right_long}
             className="rotate180"
