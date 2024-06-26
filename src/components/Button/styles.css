@@ -121,7 +121,7 @@
 }
 
 .projectLinks--githubPages {
-  background-color: #b4b005;
+  background-color: #0b7764;
   color: #fff;
   display: flex;
   flex-direction: row;
@@ -137,6 +137,6 @@
   filter: brightness(0) invert(1);
 }
 .projectLinks--githubPages:hover {
-  background-color: rgba(180, 176, 5, 0.8);
+  background-color: rgba(11, 119, 100, 0.8);
   color: #fff;
 }/*# sourceMappingURL=styles.css.map */

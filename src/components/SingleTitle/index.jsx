@@ -63,24 +63,30 @@ export default function SingleTitle(project) {
           className="singleTitle__container__projectLinks"
           style={{ display: hasLinks ? "flex" : "none" }}
         >
-          <a href={project.figma} target="_blank" rel="noreferrer">
-            <Button className="projectLinks--figma">
-              Figma
-              <img src={figma} alt="figma logo" />
-            </Button>
-          </a>
-          <a href={project.repository} target="_blank" rel="noreferrer">
-            <Button className="projectLinks--github">
-              Github
-              <img src={github} alt="github logo" />
-            </Button>
-          </a>
-          <a href={project.gitPages} target="_blank" rel="noreferrer">
-            <Button className="projectLinks--githubPages">
-              Github Pages
-              <img src={github} alt="github logo" />
-            </Button>
-          </a>
+          {project.figma && (
+            <a href={project.figma} target="_blank" rel="noreferrer">
+              <Button className="projectLinks--figma">
+                Figma
+                <img src={figma} alt="figma logo" />
+              </Button>
+            </a>
+          )}
+          {project.repository && (
+            <a href={project.repository} target="_blank" rel="noreferrer">
+              <Button className="projectLinks--github">
+                Github
+                <img src={github} alt="github logo" />
+              </Button>
+            </a>
+          )}
+          {project.gitPages && (
+            <a href={project.gitPages} target="_blank" rel="noreferrer">
+              <Button className="projectLinks--githubPages">
+                Github Pages
+                <img src={github} alt="github logo" />
+              </Button>
+            </a>
+          )}
         </div>
       </div>
     </section>

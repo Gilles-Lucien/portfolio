@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import SingleTitle from "../../components/SingleTitle";
 import SingleContent from "../../components/SingleContent";
 import { fetchProjects } from "../../utils/api/api";
@@ -10,12 +10,12 @@ export default function Single() {
   const [isProjectLoaded, setIsProjectLoaded] = useState(false);
 
   const { id } = useParams();
+  const navigate = useNavigate();
 
   const matchingProject =
     projects.length > 0 ? projects.find((project) => project.id === id) : null;
 
   const totalProjects = projects.length;
-
 
   useEffect(() => {
     fetchProjects().then((data) => {
@@ -24,8 +24,16 @@ export default function Single() {
       }));
       setProjects(updatedProjects);
       setIsProjectLoaded(true);
+
+      // vérifie si l'id de params match avec le projet chargé. Si non on redirige vers la page d'erreur
+      const projectExists = updatedProjects.some(
+        (project) => project.id === id
+      );
+      if (!projectExists) {
+        navigate("/error");
+      }
     });
-  }, [id]);
+  }, [id, navigate]);
 
   if (!isProjectLoaded) {
     // Afficher le loader si le projet n'est pas encore chargé
@@ -35,7 +43,12 @@ export default function Single() {
   return (
     <main className="main">
       {matchingProject ? <SingleTitle {...matchingProject} /> : null}
-      {matchingProject && totalProjects > 0 ? <SingleContent project={matchingProject} totalProjects={totalProjects} /> : null}
+      {matchingProject && totalProjects > 0 ? (
+        <SingleContent
+          project={matchingProject}
+          totalProjects={totalProjects}
+        />
+      ) : null}
     </main>
   );
 }

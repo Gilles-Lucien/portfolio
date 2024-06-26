@@ -126,7 +126,7 @@
 
 .projectLinks--githubPages {
   @extend .button;
-  background-color: c.$yellow;
+  background-color: c.$green;
   color: c.$white;
   display: flex;
   flex-direction: row;
@@ -141,7 +141,7 @@
     filter: brightness(0) invert(1);
   }
   &:hover {
-    background-color: rgba(c.$yellow, $alpha: 0.8);
+    background-color: rgba(c.$green, $alpha: 0.8);
     color: c.$white;
   }
 }

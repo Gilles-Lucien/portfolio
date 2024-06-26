@@ -126,14 +126,15 @@
 }
 
 .bodyImg {
-  width: 100%;
+  max-width: 100%;
   object-fit: cover;
   border-radius: 10px;
   border: 1px dashed rgba(220, 220, 220, 0.6);
 }
 
 .bodyImg3 {
-  max-width: 50%;
+  max-width: 45%;
+  height: 100%;
 }
 @media screen and (max-width: 768px) {
   .bodyImg3 {
