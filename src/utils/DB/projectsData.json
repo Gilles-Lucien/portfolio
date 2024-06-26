@@ -402,6 +402,80 @@
         "subtitle": " and Career Relevance",
         "description": "Mastering React and React Router is crucial in modern web development, especially for creating dynamic and responsive web applications. Utilizing Sass to manage CSS and implementing CSS animations are also key skills that enhance the user experience. These skills enable me to develop interactive and visually appealing web applications. By gaining proficiency in React, React Router, Sass, and CSS animations, I am well-equipped to create sophisticated web applications that meet industry standards and user expectations."
       }
+    },
+    {
+      "id": "24",
+      "title": "Client Portfolio's SEO",
+      "description": "In this project, I optimized a website's SEO, performance, and accessibility, using tools like Lighthouse and Wave. These enhancements are crucial for improving visibility, user experience, and client satisfaction",
+      "tags": ["all", "frontend"],
+      "imageNumber": 4,
+      "repository": "https://github.com/Gilles-Lucien/ninacarducci---backup.git",
+      "gitPages": "https://gilles-lucien.github.io/ninacarducci---backup/",
+      "section1": {
+        "title": "Concept",
+        "subtitle": " and Learning Objectives",
+        "description": "In this training project, I worked as a freelance developer to optimize a website's SEO, performance, and accessibility. My initial task was to identify loading and SEO issues, followed by proposing recommendations to enhance loading speed, code structure, and SEO. I then implemented the suggested improvements by modifying the site’s code. The goal was to enhance the site’s performance and accessibility, thus improving its search engine ranking. I utilized tools such as Lighthouse and Wave to conduct these optimizations. Finally, I created a report showcasing the results before and after the modifications. This report included screenshots from the audits and detailed explanations of the changes made and their impact on the site’s SEO and accessibility."
+      },
+      "section2": {
+        "title": "Application",
+        "subtitle": " and Career Relevance",
+        "description": "Optimizing SEO and accessibility are critical skills in web development. These skills are essential for increasing a website’s visibility and accessibility, thereby boosting traffic and reach. The ability to analyze and improve a site's performance is highly sought after, as it directly contributes to user experience and client satisfaction. Mastering these competencies enhances my ability to deliver high-quality web solutions."
+      }
+    },
+    {
+      "id": "25",
+      "title": "724events",
+      "description": "In this project, I debugged and finalized a one-page website, utilizing tools like Chrome DevTools and React Developer Tools. This experience enhanced my debugging skills, test planning, and proficiency with tools like Yarn and Node.js.",
+      "tags": ["all", "frontend"],
+      "imageNumber": 4,
+      "repository": "https://github.com/Gilles-Lucien/Debuggez-une-application-React.JS.git",
+      "section1": {
+        "title": "Concept",
+        "subtitle": " and Learning Objectives",
+        "description": "In this training project, I focused on debugging and finalizing the development of a one-page website. My first task was to review the existing code using Chrome DevTools to identify and understand the reported issues and bugs. After identifying the problems, I resolved them using my JavaScript skills and tools specific to React, such as React Developer Tools. Additionally, I was responsible for completing the test plan, detailing all the test scenarios necessary to verify the site's functionality, including unit and functional tests. I utilized Yarn as the package manager and Node.js to run server-side JavaScript code, managing dependencies and running local tests effectively. Throughout the project, I versioned my work with GitHub and used Visual Studio Code as my development and debugging environment."
+      },
+      "section2": {
+        "title": "Application",
+        "subtitle": " and Career Relevance",
+        "description": "Debugging is a fundamental skill for any web developer, as it is crucial to identify and quickly resolve code issues. Writing a comprehensive test plan and conducting unit and functional tests are important practices to ensure the quality and reliability of a website. Mastering tools such as React Developer Tools, Yarn, and Node.js enriches my developer toolkit and prepares me to work on complex web projects. These skills are essential for maintaining high standards in web development and contributing to efficient, effective, and high-quality web solutions."
+      }
+    },
+    {
+      "id": "26",
+      "title": "ArgentBank, Redux",
+      "description": "In this project, I developed a banking application front-end using React and Redux, integrating it with the back-end via API calls. This experience enhanced my skills in creating dynamic user interfaces, managing global state, and documenting APIs.",
+      "tags": ["all", "frontend"],
+      "imageNumber": 5,
+      "repository": "https://github.com/Gilles-Lucien/ArgentBank-website.git",
+      "section1": {
+        "title": "Concept",
+        "subtitle": " and Learning Objectives",
+        "description": "In this training project, I worked on the front-end development of a banking application using React and Redux to create a dynamic and responsive user experience. My main task was to integrate the front-end with the back-end through API calls. I wrote REST API calls to ensure seamless communication between the client and the server. I used React to develop the user interface of the banking application, focusing on creating a comprehensive and responsive dashboard for users. Redux was employed to manage the application’s data, maintaining a consistent global state throughout the application. Additionally, I used Swagger to define API endpoints and model data interactions, providing a clear description of the various routes and actions needed for the API. Node.js was utilized to run JavaScript code on the server side, offering hands-on experience with full-stack application management."
+      },
+      "section2": {
+        "title": "Application",
+        "subtitle": " and Career Relevance",
+        "description": "Mastering React and Redux is crucial for any modern front-end developer, particularly for those working on complex web applications. These technologies enable the development of dynamic, efficient, and responsive user interfaces. Using Swagger to document APIs is also a valuable skill, ensuring clarity and maintainability of the programming interface. This project equipped me with practical experience in integrating front-end and back-end systems, managing global application state with Redux, and documenting APIs with Swagger."
+      }
+    },
+    {
+      "id": "27",
+      "title": "This portfolio",
+      "description": "In this project, I created and deployed my personal developer portfolio using Figma, React, SASS, Git, and GitHub. This experience enhanced my skills in responsive web design, project management, and online deployment",
+      "tags": ["all", "frontend", "graphic", "uxui"],
+      "imageNumber": 4,
+      "repository": "https://github.com/Gilles-Lucien/portfolio.git",
+      "figma": "https://www.figma.com/design/PtVepgfjlWL5bmIvVRcb90/Portfolio-p12",
+      "section1": {
+        "title": "Concept",
+        "subtitle": " and Learning Objectives",
+        "description": "In this project, I undertook the creation and online deployment of my personal developer portfolio, showcasing my journey, skills, and projects professionally. The first step involved designing a Figma mockup to plan the layout and structure of the site. Following the mockup, I developed the site from scratch using React for building dynamic components and SASS for styling, ensuring a modern and responsive design. Throughout the project, I used Git and GitHub for version control, managing the development process effectively. Ensuring the site displayed correctly across all devices was crucial, necessitating attention to responsive design principles for optimal user experience."
+      },
+      "section2": {
+        "title": "Application",
+        "subtitle": " and Career Relevance",
+        "description": "Creating an online portfolio is key for any developer seeking to stand out and secure professional opportunities. The skills gained from this project, such as deploying a website online and ensuring it is responsive, are fundamental in web development. Mastering React and SASS for building and styling the site, along with using Git and GitHub for version control, demonstrates my ability to handle comprehensive web development tasks."
+      }
     }
   ]
 }
