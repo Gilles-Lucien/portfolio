@@ -321,8 +321,8 @@
         "description": "Creating a travel agency's homepage using HTML and CSS provided me with practical experience in web development fundamentals. I learned to structure the HTML content effectively, organizing sections such as headers, navigation bars, content areas, and footers to ensure clarity and accessibility in the codebase. This process not only improved my understanding of semantic HTML but also reinforced the importance of structured coding practices for maintainability and scalability in larger projects.\n\nCSS played a critical role in styling the webpage to mirror the design mockups accurately. Implementing layout techniques like flexbox and grid allowed me to create responsive designs that adapt seamlessly across different screen sizes—from mobile phones to large desktop monitors. Learning to use media queries enabled me to optimize the layout and styling based on device-specific characteristics, enhancing user experience by ensuring readability and usability across all devices.\n\nMoreover, integrating custom interface components using HTML and CSS was instrumental in achieving design fidelity. From creating responsive navigation menus to implementing image carousels and interactive elements, I honed my skills in translating static design concepts into dynamic and functional web interfaces. This hands-on experience not only improved my proficiency in front-end development but also deepened my appreciation for the intricate balance between design aesthetics and technical implementation."
       },
       "section2": {
-        "title": "Importance for My Career",
-        "subtitle": ".",
+        "title": "Application",
+        "subtitle": " and Career Relevance",
         "description": "Mastering HTML and CSS integration for responsive web design is pivotal for advancing my career as a front-end developer. These foundational skills are essential for collaborating effectively with design teams and translating creative concepts into interactive web experiences that engage users across different devices.\n\nResponsive design principles, learned through this project, are critical in today's digital landscape where users access websites from diverse platforms. By ensuring that web pages render correctly on mobile, tablet, and desktop screens, I enhance usability and accessibility, thereby improving user satisfaction and retention. This capability not only demonstrates my technical proficiency but also underscores my commitment to delivering high-quality, user-centric solutions in web development projects.\n\nFurthermore, the ability to innovate with CSS frameworks and techniques underscores my adaptability and readiness to embrace new trends in web design. This agility is crucial for staying competitive in the fast-paced industry, where technological advancements continually redefine best practices and user expectations.\n\nIn conclusion, the skills acquired—HTML and CSS proficiency, responsive design expertise, and a meticulous approach to web development—are foundational for my career growth as a front-end developer. They empower me to create compelling, user-friendly web experiences that meet the demands of modern digital environments, positioning me for success in diverse roles within the web development ecosystem."
       }
     },
@@ -344,6 +344,63 @@
         "title": "Application",
         "subtitle": " and Career Relevance",
         "description": "The ability to create mobile-first web interfaces is increasingly in demand in modern web development. The skills I gained in integrating CSS animations not only enhance the visual appeal of websites but also improve user experience. Mastery of Sass for structuring and optimizing CSS is a valuable skill, as is the proficiency in using Git and GitHub for version control and project collaboration.\n\nThese combined skills strengthen my profile as a competent and versatile front-end developer. They enable me to deliver high-quality, user-centric web experiences that meet the expectations of today’s digital landscape, positioning me for success in various roles within the web development field. This project has equipped me with the practical knowledge and technical expertise needed to excel in my career and contribute effectively to any development team."
+      }
+    },
+    {
+      "id": "21",
+      "title": "Print it",
+      "description": "In this project, I learned JavaScript fundamentals by adding an interactive carousel to a static website, gaining essential skills for creating dynamic and engaging web experiences and enhancing my proficiency in modern web development.",
+      "tags": ["all", "frontend"],
+      "imageNumber": 4,
+      "repository": "https://github.com/Gilles-Lucien/Print-it-JS.git",
+      "gitPages": "https://gilles-lucien.github.io/Print-it-JS/",
+      "section1": {
+        "title": "Concept",
+        "subtitle": " and Learning Objectives",
+        "description": "In this training project, I learned the fundamentals of JavaScript by adding an interactive carousel to a static printing company's website. The project began with an exploration of JavaScript basics, a crucial programming language for developing interactive web features. I enhanced the website’s dynamism and user engagement by integrating the carousel functionality.\n\nMy main task was to update the existing HTML code and incorporate the JavaScript carousel, helping me understand how JavaScript interacts with HTML and CSS to create interactive web elements. I used Visual Studio Code to write and manage the code and GitHub for version control and storage. This hands-on experience provided valuable insights into programming with JavaScript in a real development environment."
+      },
+      "section2": {
+        "title": "Application",
+        "subtitle": " and Career Relevance",
+        "description": "Proficiency in JavaScript is essential for any web developer. This language is ubiquitous in modern web development, and mastering it is crucial for creating interactive and responsive websites. The ability to combine JavaScript with HTML and CSS enables the development of more dynamic and engaging websites, a highly valued skill in the industry.\n\nThrough this project, I acquired the ability to make static websites interactive, significantly enhancing user experience. These skills strengthen my profile as a front-end developer, equipping me with the technical expertise to build more engaging and user-friendly web applications, thereby advancing my career in web development."
+      }
+    },
+    {
+      "id": "22",
+      "title": "Architect's portfolio",
+      "description": "In this project, I developed a dynamic web page for an interior designer’s website using JavaScript and API communication. I enhanced my front-end development skills by handling user events, manipulating the DOM, and creating interactive features, preparing me for advanced web development projects.",
+      "tags": ["all", "frontend"],
+      "imageNumber": 3,
+      "repository": "https://github.com/Gilles-Lucien/Portfolio-architecte-sophie-bluel.git",
+      "figma": "https://www.figma.com/design/kfKHknHySoTibZfdolGAX6/Sophie-Bluel---Desktop",
+      "section1": {
+        "title": "Concept",
+        "subtitle": " and Learning Objectives",
+        "description": "In this training project, I learned to create a dynamic web page for an interior designer’s website using JavaScript and API communication. My work focused on the front-end development, where I developed the architect’s portfolio page from provided HTML, handling user events and manipulating DOM elements with JavaScript.\n\nAdditionally, I created an admin login page and a modal for uploading new media, all developed from scratch, allowing me to deeply apply my JavaScript skills. For the first time, I accessed back-end code to test functionalities, learning to communicate with an API, which is crucial for modern web applications. Throughout the project, I used Figma for accessing mockups, Visual Studio Code for development, and GitHub for version control."
+      },
+      "section2": {
+        "title": "Application",
+        "subtitle": " and Career Relevance",
+        "description": "The ability to create dynamic web pages with JavaScript is essential in web development. Learning to manage user interactions and communicate with APIs enables the creation of interactive and functional websites. Mastering these skills prepares me for more advanced web development projects and makes me a well-rounded and sought-after front-end developer.\n\nThis project equipped me with the technical expertise to build engaging and user-friendly web applications. By integrating JavaScript and API communication, I enhanced my ability to develop interactive web experiences, positioning myself for success in the evolving field of web development."
+      }
+    },
+    {
+      "id": "23",
+      "title": "Kasa",
+      "description": "In this project, I developed the front-end of an application using React and React Router, mastering data presentation, navigation management, and CSS enhancements.",
+      "tags": ["all", "frontend"],
+      "imageNumber": 6,
+      "repository": "https://github.com/Gilles-Lucien/kasa.git",
+      "figma": "https://www.figma.com/design/2BZEoBhyxt5IwZgRn0wGsL/Kasa_FR",
+      "section1": {
+        "title": "Concept",
+        "subtitle": " and Learning Objectives",
+        "description": "In this training project, I implemented the front-end of an application using React and React Router, aiming to create a modern and responsive user experience. I focused on the data presentation logic and React components, leveraging this popular JavaScript library to build user interfaces. I utilized React Router to set up navigation between different pages of the application, gaining a deep understanding of effective routing management in modern web applications. The project exclusively concentrated on front-end development, based on provided mockups and simulated data extracted from a JSON file. I began the project with Create React App, which simplifies the initial setup of a React application, and used Node.js to run JavaScript code outside the browser."
+      },
+      "section2": {
+        "title": "Application",
+        "subtitle": " and Career Relevance",
+        "description": "Mastering React and React Router is crucial in modern web development, especially for creating dynamic and responsive web applications. Utilizing Sass to manage CSS and implementing CSS animations are also key skills that enhance the user experience. These skills enable me to develop interactive and visually appealing web applications. By gaining proficiency in React, React Router, Sass, and CSS animations, I am well-equipped to create sophisticated web applications that meet industry standards and user expectations."
       }
     }
   ]
