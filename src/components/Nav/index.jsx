@@ -76,7 +76,7 @@ export default function Nav() {
       </nav>
 
       <nav id="navMobile">
-        <div id="nav" ref={navMobileRef} className="mobileNavContainer">
+        <div id="navClose" ref={navMobileRef}  className="mobileNavContainer">
           <div
             ref={logoContainerRef}
             className="mobileNavContainer__logoButton"
@@ -89,7 +89,7 @@ export default function Nav() {
               ref={LogoClose}
             />
           </div>
-          <div className="mobileNavContainer__navBar" ref={navBarRef}>
+          <div className="mobileNavContainer__navBar" id="navClose" ref={navBarRef}>
             <Link className="mobileNavContainer__navBar__name" to="/" onClick={handleLogoClick}>
               <p>
                 Lucien Peltier <br />
