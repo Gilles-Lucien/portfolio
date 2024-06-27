@@ -15,6 +15,8 @@ export default function Landing() {
   const handleTitleClick = () => {
     titleContainer.current.classList.add("clickedContainer");
     title.current.classList.add("clickedTitle");
+    overlayRef.current.classList.add("clickedOverlay");
+    overlayRef.current.classList.remove("overlay");
   };
 
   useEffect(() => {

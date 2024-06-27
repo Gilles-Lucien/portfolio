@@ -83,6 +83,43 @@
   }
 }
 
+.clickedOverlay {
+  position: absolute;
+  cursor: none;
+  z-index: -8;
+  background-image: radial-gradient(
+    circle,
+    hsl(266deg 23% 12%) 0%,
+    hsl(281deg 27% 20%) 1%,
+    hsl(295deg 33% 26%) 2%,
+    hsl(310deg 38% 32%) 3%,
+    hsl(325deg 45% 38%) 4%,
+    hsl(340deg 51% 43%) 5%,
+    hsl(344deg 59% 45%) 6%,
+    hsl(348deg 68% 47%) 7%,
+    hsl(352deg 77% 48%) 8%,
+    hsl(356deg 88% 49%) 9%,
+    hsl(0deg 100% 50%) 11%,
+    hsl(14deg 93% 58%) 13%,
+    hsl(28deg 84% 66%) 17%,
+    hsl(42deg 70% 73%) 23%,
+    hsl(56deg 47% 79%) 35%,
+    hsl(70deg 8% 85%) 85%
+  );
+  // background-size: 400% 400%;
+  mix-blend-mode: exclusion;
+  // animation: gradient 8s ease-in-out infinite;
+  animation: overlayScaleUp 1s ease-in-out forwards;
+  height: 230%;
+  width: 230%;
+  @media screen and (max-width: 430px) {
+    animation: breathing 5s ease-in-out infinite;
+    height: 120%;
+    width: 100%;
+  }
+  
+}
+
 .overlay {
   position: absolute;
   cursor: none;
@@ -175,6 +212,16 @@
     transform: translate(-50%, -50%) scale(1);
   }
 }
+
+@keyframes overlayScaleUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(4);
+  }
+}
+
 
 @keyframes scaleUp {
   0% {
