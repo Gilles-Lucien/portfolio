@@ -40,7 +40,7 @@
   }
 }
 .landingImgContainer__titleContainer:hover {
-  transform: translate(-50%, -50%) scale(0.95);
+  animation: pulsate-bck 0.4s ease-in-out infinite both;
 }
 .landingImgContainer__titleContainer.clickedContainer {
   transform: translate(-50%, -50%) scale(1);
@@ -112,6 +112,20 @@
     transform: scale(1);
   }
 }
+@keyframes gentleShake {
+  0% {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  33% {
+    transform: translate(-52%, -50%) scale(0.9);
+  }
+  66% {
+    transform: translate(-48%, -50%) scale(0.9);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+}
 @keyframes gradient {
   0% {
     background-position: 50% 0%;
@@ -127,6 +141,17 @@
   }
   100% {
     background-position: 50% 0%;
+  }
+}
+@keyframes pulsate-bck {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 @keyframes scaleUp {
