@@ -12,7 +12,7 @@ const PageCounter = ({ currentPage, totalPage, next, previous }) => {
   return (
     <div className="pageCounterContainer">
       {currentPage === 1 ? (
-        <Button id="pagePrevious" className="paginationButton invisibleButton">
+        <Button id="pagePrevious" className="paginationButton pagePrevious invisibleButton">
           <img
             src={arrow_right_long}
             className="rotate180"
@@ -22,7 +22,7 @@ const PageCounter = ({ currentPage, totalPage, next, previous }) => {
       ) : (
         <Button
           id="pagePrevious"
-          className="paginationButton"
+          className="paginationButton pagePrevious"
           onClick={previous}
           onTouchEnd={previous}
         >
@@ -37,17 +37,17 @@ const PageCounter = ({ currentPage, totalPage, next, previous }) => {
         {currentPage} / {totalPage}
       </div>
       {currentPage === totalPage ? (
-        <Button id="pageNext" className="paginationButton invisibleButton">
+        <Button id="pageNext" className="paginationButton pageNext invisibleButton">
           <img
             src={arrow_right_long}
-            alt="an arrow to the left, to click previous page"
+            alt="an arrow to the right, to click next page"
           />
         </Button>
       ) : (
-        <Button id="pageNext" className="paginationButton" onClick={next} onTouchEnd={next}>
+        <Button id="pageNext" className="paginationButton pageNext" onClick={next} onTouchEnd={next}>
           <img
             src={arrow_right_long}
-            alt="an arrow to the left, to click previous page"
+            alt="an arrow to the right, to click next page"
           />
         </Button>
       )}

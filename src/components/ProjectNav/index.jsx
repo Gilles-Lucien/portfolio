@@ -43,7 +43,7 @@ const ProjectNav = ({ projectId, totalProjects, next, previous }) => {
         <Button id="pageNext" className="paginationButton invisibleButton">
           <img
             src={arrow_right_long}
-            alt="an arrow to the left, to click previous page"
+            alt="an arrow to the right, to click next page"
           />
         </Button>
       ) : (
@@ -57,7 +57,7 @@ const ProjectNav = ({ projectId, totalProjects, next, previous }) => {
           >
             <img
               src={arrow_right_long}
-              alt="an arrow to the left, to click previous page"
+              alt="an arrow to the right, to click next page"
             />
           </Button>
         </div>
