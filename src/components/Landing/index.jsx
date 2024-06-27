@@ -8,6 +8,7 @@ export default function Landing() {
   const titleContainer = useRef(null);
   const title = useRef(null);
   const LandingLink = useRef(null);
+  const overlayRef = useRef(null);
 
   const [hrefValue, setHrefValue] = useState("#nav");
 
@@ -47,14 +48,58 @@ export default function Landing() {
       window.removeEventListener("resize", checkScreenSize);
     };
   }, []);
+  
+
+  useEffect(() => {
+    // Centrer l'overlay au chargement
+    const centerOverlay = () => {
+      const overlayWidth = overlayRef.current.offsetWidth;
+      const overlayHeight = overlayRef.current.offsetHeight;
+  
+      const xPositionOverlay = (window.innerWidth / 2) - (overlayWidth / 2);
+      let yPositionOverlay = (window.innerHeight / 2) - (overlayHeight / 2);
+
+          // Si la largeur de l'écran est supérieure à 430px, ajuster la position Y
+    if (window.innerWidth > 430) {
+      yPositionOverlay -= 63; // Décaler l'overlay de 63px vers le haut
+    }
+    else {
+      yPositionOverlay -= 0; // Décaler l'overlay de 50px vers le haut
+    }
+
+  
+      overlayRef.current.style.left = `${xPositionOverlay}px`;
+      overlayRef.current.style.top = `${yPositionOverlay}px`;
+    };
+  
+    centerOverlay();
+  
+    // Ajouter l'écouteur d'événement pour le redimensionnement
+    window.addEventListener("resize", centerOverlay);
+  
+    return () => {
+      window.removeEventListener("resize", centerOverlay);
+    };
+  }, []);
 
   useEffect(() => {
     const handleMouseMove = (e) => {
+
+      // Parallax effect
       const { clientX, clientY } = e;
       const xPosition = -clientX / 10; // adjust the divisor to control the backgroung speed
       const yPosition = -clientY / 10; 
       imgRef.current.style.transform = `translate(${xPosition}px, ${yPosition}px)`;
       
+      /// Overlay effect
+      const overlayWidth = overlayRef.current.offsetWidth;
+      const overlayHeight = overlayRef.current.offsetHeight;
+
+      const xPositionOverlay = e.clientX - overlayWidth / 2;
+      const yPositionOverlay = e.clientY - overlayHeight / 2;
+
+      overlayRef.current.style.left = `${xPositionOverlay}px`;
+      overlayRef.current.style.top = `${yPositionOverlay}px`;
     };
 
     if (window.innerWidth > 430) {
@@ -78,7 +123,7 @@ export default function Landing() {
             Bound<span>less</span>
           </h1>
 
-          <div className="overlay"></div>
+          <div className="overlay" ref={overlayRef}></div>
           <img src={gradient} ref={imgRef} alt="gradient landing" />
         </div>
       </a>
