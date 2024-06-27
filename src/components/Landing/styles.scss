@@ -31,14 +31,17 @@
     z-index: -6;
     // background-color: rgba($color: c.$white, $alpha: 0.4);
     transform: translate(-50%, -50%) scale(1);
-    transition: all 0.2s ease-in-out;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
     @media screen and (max-width: 768px) {
       padding: 2.5rem 9rem;
     }
     &:hover {
       // stroke button animation
       // animation: gentleShake 1s ease-in-out  infinite;
-      animation: pulsate-bck 0.4s ease-in-out infinite both;
+      // animation: scaleDown 5s ease-in-out forwards;
+      transform: translate(-50%, -50%) scale(0.95);
+      opacity: 0.3;
     }
     &.clickedContainer {
       transform: translate(-50%, -50%) scale(1);
@@ -67,7 +70,7 @@
         opacity: 1;
         animation: scaleDown 2s ease-in-out forwards;
         & span {
-          color: rgba($color: c.$white, $alpha: 1);
+          animation: spanFadeIn 0.3s ease-in-out forwards;
         }
       }
     }
@@ -109,7 +112,7 @@
   // background-size: 400% 400%;
   mix-blend-mode: exclusion;
   // animation: gradient 8s ease-in-out infinite;
-  animation: overlayScaleUp 1s ease-in-out forwards;
+  animation: overlayScaleUp 1.5s ease-in-out forwards;
   height: 230%;
   width: 230%;
   @media screen and (max-width: 430px) {
@@ -222,6 +225,15 @@
   }
 }
 
+@keyframes spanFadeIn {
+  0% {
+    color: rgba($color: c.$white, $alpha: 0.3)
+  }
+  100% {
+    color: rgba($color: c.$white, $alpha: 1)
+  }
+  
+}
 
 @keyframes scaleUp {
   0% {

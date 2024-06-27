@@ -32,7 +32,8 @@
   border-radius: 5px;
   z-index: -6;
   transform: translate(-50%, -50%) scale(1);
-  transition: all 0.2s ease-in-out;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
 }
 @media screen and (max-width: 768px) {
   .landingImgContainer__titleContainer {
@@ -40,7 +41,8 @@
   }
 }
 .landingImgContainer__titleContainer:hover {
-  animation: pulsate-bck 0.4s ease-in-out infinite both;
+  transform: translate(-50%, -50%) scale(0.95);
+  opacity: 0.3;
 }
 .landingImgContainer__titleContainer.clickedContainer {
   transform: translate(-50%, -50%) scale(1);
@@ -72,7 +74,7 @@
   animation: scaleDown 2s ease-in-out forwards;
 }
 .landingImgContainer__titleContainer__title.clickedTitle span {
-  color: white;
+  animation: spanFadeIn 0.3s ease-in-out forwards;
 }
 .landingImgContainer img {
   position: absolute;
@@ -89,7 +91,7 @@
   z-index: -8;
   background-image: radial-gradient(circle, hsl(266, 23%, 12%) 0%, hsl(281, 27%, 20%) 1%, hsl(295, 33%, 26%) 2%, hsl(310, 38%, 32%) 3%, hsl(325, 45%, 38%) 4%, hsl(340, 51%, 43%) 5%, hsl(344, 59%, 45%) 6%, hsl(348, 68%, 47%) 7%, hsl(352, 77%, 48%) 8%, hsl(356, 88%, 49%) 9%, hsl(0, 100%, 50%) 11%, hsl(14, 93%, 58%) 13%, hsl(28, 84%, 66%) 17%, hsl(42, 70%, 73%) 23%, hsl(56, 47%, 79%) 35%, hsl(70, 8%, 85%) 85%);
   mix-blend-mode: exclusion;
-  animation: overlayScaleUp 1s ease-in-out forwards;
+  animation: overlayScaleUp 1.5s ease-in-out forwards;
   height: 230%;
   width: 230%;
 }
@@ -178,6 +180,14 @@
   }
   100% {
     transform: scale(4);
+  }
+}
+@keyframes spanFadeIn {
+  0% {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    color: white;
   }
 }
 @keyframes scaleUp {
