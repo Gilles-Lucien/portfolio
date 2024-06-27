@@ -50,7 +50,7 @@ footer .footerContainer__logoContainer {
 }
 @media screen and (max-width: 430px) {
   footer .footerContainer__logoContainer {
-    margin: 60px 0 40px 0;
+    margin: 60px 0 60px 0;
     font-size: 0.9rem;
   }
 }
@@ -102,4 +102,12 @@ footer .footerContainer ul li p {
 }
 footer .footerContainer ul li p:hover {
   text-decoration: underline;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.7rem;
 }/*# sourceMappingURL=styles.css.map */

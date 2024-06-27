@@ -8,7 +8,6 @@ import github from "../../assets/svg/github.svg";
 import figma from "../../assets/svg/figma.svg";
 
 export default function SingleTitle(project) {
-  console.log(project);
   const hasLinks = project.figma || project.gitPages || project.repository;
 
   return (

@@ -38,6 +38,7 @@
 
 .invisibleButton {
   visibility: hidden;
+  z-index: -10;
 }
 
 .responsiveButton {

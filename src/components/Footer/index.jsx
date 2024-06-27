@@ -60,15 +60,12 @@ export default function Footer() {
           </li>
           <li>
             <Link to="/contact">
-            <Button
-                className="contactButton"
-              >
-                Contact
-              </Button>
+              <Button className="contactButton">Contact</Button>
             </Link>
           </li>
         </ul>
       </div>
+      <p className="copyright">© {new Date().getFullYear()} Lucien Peltier </p>
     </footer>
   );
 }

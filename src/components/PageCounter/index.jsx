@@ -24,6 +24,7 @@ const PageCounter = ({ currentPage, totalPage, next, previous }) => {
           id="pagePrevious"
           className="paginationButton"
           onClick={previous}
+          onTouchEnd={previous}
         >
           <img
             src={arrow_right_long}
@@ -43,7 +44,7 @@ const PageCounter = ({ currentPage, totalPage, next, previous }) => {
           />
         </Button>
       ) : (
-        <Button id="pageNext" className="paginationButton" onClick={next}>
+        <Button id="pageNext" className="paginationButton" onClick={next} onTouchEnd={next}>
           <img
             src={arrow_right_long}
             alt="an arrow to the left, to click previous page"
