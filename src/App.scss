@@ -37,7 +37,11 @@ body {
 
 p {
   font-weight: 400;
-  hyphens:auto;
+  hyphens:none;
+  @media screen and (max-width: 430px){
+    font-size: 0.9rem;
+  }
+
 }
 
 section {
