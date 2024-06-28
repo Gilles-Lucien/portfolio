@@ -17,6 +17,13 @@ export default function Landing() {
     title.current.classList.add("clickedTitle");
     overlayRef.current.classList.add("clickedOverlay");
     overlayRef.current.classList.remove("overlay");
+
+    setTimeout(() => {
+      titleContainer.current.classList.remove("clickedContainer");
+      title.current.classList.remove("clickedTitle");
+      overlayRef.current.classList.remove("clickedOverlay");
+      overlayRef.current.classList.add("overlay");
+    }, 3020);
   };
 
   useEffect(() => {
@@ -25,7 +32,7 @@ export default function Landing() {
       const handleClick = (e) => smoothScroll(e, hrefValue);
       link.addEventListener("click", handleClick);
   
-      // Cleanup function to remove the event listener when the component unmounts
+     
       return () => {
         link.removeEventListener("click", handleClick);
       };
@@ -43,7 +50,7 @@ export default function Landing() {
 
     checkScreenSize();
 
-    // Ajouter l'écouteur d'événement
+   
     window.addEventListener("resize", checkScreenSize);
 
     return () => {
