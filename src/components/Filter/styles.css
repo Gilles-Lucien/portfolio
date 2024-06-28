@@ -10,7 +10,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1275px) {
   .filter--all {
     white-space: nowrap;
   }
@@ -31,7 +31,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1275px) {
   .filter--all--active {
     white-space: nowrap;
   }
@@ -52,7 +52,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1275px) {
   .filter--graphic {
     white-space: nowrap;
   }
@@ -73,7 +73,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1275px) {
   .filter--graphic--active {
     white-space: nowrap;
   }
@@ -94,7 +94,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1275px) {
   .filter--uxui {
     white-space: nowrap;
   }
@@ -115,7 +115,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1275px) {
   .filter--uxui--active {
     white-space: nowrap;
   }
@@ -136,7 +136,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1275px) {
   .filter--frontend {
     white-space: nowrap;
   }
@@ -157,7 +157,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1275px) {
   .filter--frontend--active {
     white-space: nowrap;
   }

@@ -44,7 +44,7 @@
 .responsiveButton {
   display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1275px) {
   .responsiveButton {
     display: flex;
     position: absolute;
@@ -55,27 +55,27 @@
     box-shadow: 0.5px 0.5px 2.4px rgba(0, 0, 0, 0.11), 4px 4px 19px rgba(0, 0, 0, 0.22);
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 767px) {
   .responsiveButton {
     white-space: nowrap;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1275px) {
   .graphicMobileButton {
     color: #fff;
     background-color: #ae582b;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1275px) {
   .uxuiMobileButton {
     color: #fff;
     background-color: #1d7fd9;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1275px) {
   .frontendMobileButton {
     color: #fff;
     background-color: #b4b005;

@@ -22,12 +22,12 @@
   padding-bottom: 80px;
   gap: 44px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1275px) {
   .contactSection__container {
     width: 100%;
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 767px) {
   .contactSection__container {
     padding: 70px 30px;
     gap: 0px;
@@ -77,7 +77,7 @@
   width: 50%;
   align-items: flex-end;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1275px) {
   .contactSection__container__mailAndForm--form {
     width: 80%;
   }

@@ -22,7 +22,7 @@ nav .navContainer {
   border-image-repeat: round;
   border-image-source: url(../../assets/images/border_left_right.png);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1275px) {
   nav .navContainer {
     width: 100%;
   }
@@ -36,7 +36,7 @@ nav .navContainer .active p {
 nav .navContainer__logoContainer {
   margin-left: 100px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1275px) {
   nav .navContainer__logoContainer {
     margin-left: 30px;
     font-size: 0.8rem;
@@ -62,7 +62,7 @@ nav .navContainer ul {
   align-items: center;
   margin-right: 100px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1275px) {
   nav .navContainer ul {
     margin-right: 35px;
     font-size: 1rem;
@@ -71,7 +71,7 @@ nav .navContainer ul {
 nav .navContainer ul li {
   margin-left: 4rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1275px) {
   nav .navContainer ul li {
     margin-left: 1rem;
   }
@@ -84,19 +84,19 @@ nav .navContainer ul li p:hover {
   border-bottom: 1px solid;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1275px) {
   #navName {
     width: 80px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1275px) {
   #navJob {
     width: 170px;
   }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 767px) {
   #navDesktop {
     display: none;
   }
@@ -105,7 +105,7 @@ nav .navContainer ul li p:hover {
 #navMobile {
   display: none;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 767px) {
   #navMobile {
     display: flex;
     height: 0;

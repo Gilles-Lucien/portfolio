@@ -17,11 +17,11 @@
     padding-right: 104px;
     padding-bottom: 80px;
     gap: 44px;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1275px) {
       width: 100%;
       padding-bottom: 50px;
     }
-    @media screen and (max-width: 430px){
+    @media screen and (max-width: 767px){
       padding: 50px 30px 20px;
       
     }
@@ -29,7 +29,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1275px) {
         flex-direction: column;
       }
       & img {
@@ -40,7 +40,7 @@
         width: 330px;
         @include m.dashedBorder("left");
         padding-left: 41px;
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1275px) {
           @include m.dashedBorder("top");
           padding-top: 20px;
           margin-bottom: 40px;
@@ -67,7 +67,7 @@
       flex-direction:row;
       flex-wrap: wrap;
       text-transform: uppercase;
-      @media screen and (max-width: 430px){
+      @media screen and (max-width: 767px){
         white-space: nowrap;
       }
       & span {
@@ -75,7 +75,7 @@
         font-weight: 400;
         color: c.$blue;
         margin-left: 17px;
-        @media screen and (max-width: 430px){
+        @media screen and (max-width: 767px){
           margin-left: 0;
           
         }

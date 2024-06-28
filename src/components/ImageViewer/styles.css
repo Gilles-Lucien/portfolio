@@ -24,7 +24,7 @@
   top: 50%;
   z-index: 1001;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1275px) {
   .viewerButton--left {
     top: 94%;
   }
@@ -40,7 +40,7 @@
   top: 50%;
   z-index: 1001;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1275px) {
   .viewerButton--right {
     top: 94%;
   }
@@ -67,7 +67,7 @@
   box-sizing: border-box;
   break-inside: avoid;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1275px) {
   .viewerGallery {
     column-count: 2;
   }

@@ -26,12 +26,12 @@
   padding-right: 104px;
   padding-bottom: 80px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1275px) {
   .projectsArchive__container {
     width: 100%;
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 767px) {
   .projectsArchive__container {
     padding: 0px 30px 50px;
   }
@@ -44,7 +44,7 @@
   gap: 28px;
   margin-bottom: 80px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1275px) {
   .projectsArchive__container__filters {
     flex-wrap: wrap;
   }
@@ -59,7 +59,7 @@
   box-sizing: border-box;
   break-inside: avoid;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1275px) {
   .projectsArchive__container__cards {
     column-count: 1;
   }

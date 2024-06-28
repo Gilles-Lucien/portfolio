@@ -22,7 +22,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     @include m.dashedBorder("left_right");
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1275px) {
       width: 100%;
     }
     & .navLink p {
@@ -33,7 +33,7 @@ nav {
     }
     &__logoContainer {
       margin-left: 100px;
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1275px) {
         margin-left: 30px;
         font-size: 0.8rem;
       }
@@ -57,13 +57,13 @@ nav {
       list-style: none;
       align-items: center;
       margin-right: 100px;
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1275px) {
         margin-right: 35px;
         font-size: 1rem;
       }
       & li {
         margin-left: 4rem;
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1275px) {
           margin-left: 1rem;
         }
         & p {
@@ -79,26 +79,26 @@ nav {
 }
 
 #navName {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1275px) {
     width: 80px;
   }
 }
 
 #navJob {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1275px) {
     width: 170px;
   }
 }
 
 #navDesktop {
-  @media screen and (max-width: 430px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
 
 #navMobile {
   display: none;
-  @media screen and (max-width: 430px) {
+  @media screen and (max-width: 767px) {
     display: flex;
     height: 0;
     width: 0;

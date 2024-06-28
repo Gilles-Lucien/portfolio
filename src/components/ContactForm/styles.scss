@@ -19,10 +19,10 @@
     padding-right: 104px;
     padding-bottom: 80px;
     gap: 44px;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1275px) {
       width: 100%;
     }
-    @media screen and (max-width: 430px) {
+    @media screen and (max-width: 767px) {
       padding: 70px 30px;
       gap: 0px;
     }
@@ -68,7 +68,7 @@
       &--form {
         width: 50%;
         align-items: flex-end;
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1275px) {
           width: 80%;
         }
         & p {

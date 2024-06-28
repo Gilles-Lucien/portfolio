@@ -34,7 +34,7 @@ export default function Landing() {
 
   useEffect(() => {
     const checkScreenSize = () => {
-      if (window.innerWidth <= 430) {
+      if (window.innerWidth <= 768) {
         setHrefValue("#mobileLandingAnchor");
       } else {
         setHrefValue("#nav");
@@ -61,8 +61,8 @@ export default function Landing() {
       const xPositionOverlay = (window.innerWidth / 2) - (overlayWidth / 2);
       let yPositionOverlay = (window.innerHeight / 2) - (overlayHeight / 2);
 
-          // Si la largeur de l'écran est supérieure à 430px, ajuster la position Y
-    if (window.innerWidth > 430) {
+          // Si la largeur de l'écran est supérieure à 768px, ajuster la position Y
+    if (window.innerWidth > 768) {
       yPositionOverlay -= 63; // Décaler l'overlay de 63px vers le haut
     }
     else {
@@ -104,7 +104,7 @@ export default function Landing() {
       overlayRef.current.style.top = `${yPositionOverlay}px`;
     };
 
-    if (window.innerWidth > 430) {
+    if (window.innerWidth > 768) {
       document.addEventListener("mousemove", handleMouseMove);
       return () => {
         document.removeEventListener("mousemove", handleMouseMove);
