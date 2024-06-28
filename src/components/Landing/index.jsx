@@ -9,6 +9,7 @@ export default function Landing() {
   const title = useRef(null);
   const LandingLink = useRef(null);
   const overlayRef = useRef(null);
+  const LandingSection = useRef(null);
 
   const [hrefValue, setHrefValue] = useState("#nav");
 
@@ -19,11 +20,13 @@ export default function Landing() {
     overlayRef.current.classList.remove("overlay");
 
     setTimeout(() => {
+      LandingSection.current.style.display = "none";
       titleContainer.current.classList.remove("clickedContainer");
       title.current.classList.remove("clickedTitle");
       overlayRef.current.classList.remove("clickedOverlay");
       overlayRef.current.classList.add("overlay");
-    }, 3020);
+      LandingSection.current.style.display = "block";
+    }, 3100);
   };
 
   useEffect(() => {
@@ -120,7 +123,7 @@ export default function Landing() {
   }, []);
 
   return (
-    <section className="landingSection">
+    <section className="landingSection" ref={LandingSection}>
       <a href={hrefValue} ref={LandingLink}>
         <div className="landingImgContainer">
           <div
