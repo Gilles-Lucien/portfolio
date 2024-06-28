@@ -19,14 +19,17 @@ export default function Landing() {
     overlayRef.current.classList.add("clickedOverlay");
     overlayRef.current.classList.remove("overlay");
 
-    setTimeout(() => {
-      LandingSection.current.style.display = "none";
-      titleContainer.current.classList.remove("clickedContainer");
-      title.current.classList.remove("clickedTitle");
-      overlayRef.current.classList.remove("clickedOverlay");
-      overlayRef.current.classList.add("overlay");
-      LandingSection.current.style.display = "block";
-    }, 3100);
+    // setTimeout(() => {
+    //   LandingSection.current.style.display = "none";
+    // }, 3100);
+
+    // setTimeout(() => {
+    //   titleContainer.current.classList.remove("clickedContainer");
+    //   title.current.classList.remove("clickedTitle");
+    //   overlayRef.current.classList.remove("clickedOverlay");
+    //   overlayRef.current.classList.add("overlay");
+    //   LandingSection.current.style.display = "block";
+    // }, 3200);
   };
 
   useEffect(() => {
@@ -34,8 +37,7 @@ export default function Landing() {
     if (link) {
       const handleClick = (e) => smoothScroll(e, hrefValue);
       link.addEventListener("click", handleClick);
-  
-     
+
       return () => {
         link.removeEventListener("click", handleClick);
       };
@@ -53,42 +55,38 @@ export default function Landing() {
 
     checkScreenSize();
 
-   
     window.addEventListener("resize", checkScreenSize);
 
     return () => {
       window.removeEventListener("resize", checkScreenSize);
     };
   }, []);
-  
 
   useEffect(() => {
     // Centrer l'overlay au chargement
     const centerOverlay = () => {
       const overlayWidth = overlayRef.current.offsetWidth;
       const overlayHeight = overlayRef.current.offsetHeight;
-  
-      const xPositionOverlay = (window.innerWidth / 2) - (overlayWidth / 2);
-      let yPositionOverlay = (window.innerHeight / 2) - (overlayHeight / 2);
 
-          // Si la largeur de l'écran est supérieure à 768px, ajuster la position Y
-    if (window.innerWidth > 768) {
-      yPositionOverlay -= 63; // Décaler l'overlay de 63px vers le haut
-    }
-    else {
-      yPositionOverlay -= 0; // Décaler l'overlay de 50px vers le haut
-    }
+      const xPositionOverlay = window.innerWidth / 2 - overlayWidth / 2;
+      let yPositionOverlay = window.innerHeight / 2 - overlayHeight / 2;
 
-  
+      // Si la largeur de l'écran est supérieure à 768px, ajuster la position Y
+      if (window.innerWidth > 768) {
+        yPositionOverlay -= 63; // Décaler l'overlay de 63px vers le haut
+      } else {
+        yPositionOverlay -= 0; // Décaler l'overlay de 50px vers le haut
+      }
+
       overlayRef.current.style.left = `${xPositionOverlay}px`;
       overlayRef.current.style.top = `${yPositionOverlay}px`;
     };
-  
+
     centerOverlay();
-  
+
     // Ajouter l'écouteur d'événement pour le redimensionnement
     window.addEventListener("resize", centerOverlay);
-  
+
     return () => {
       window.removeEventListener("resize", centerOverlay);
     };
@@ -96,13 +94,12 @@ export default function Landing() {
 
   useEffect(() => {
     const handleMouseMove = (e) => {
-
       // Parallax effect
       const { clientX, clientY } = e;
       const xPosition = -clientX / 10; // adjust the divisor to control the backgroung speed
-      const yPosition = -clientY / 10; 
+      const yPosition = -clientY / 10;
       imgRef.current.style.transform = `translate(${xPosition}px, ${yPosition}px)`;
-      
+
       /// Overlay effect
       const overlayWidth = overlayRef.current.offsetWidth;
       const overlayHeight = overlayRef.current.offsetHeight;
@@ -131,7 +128,10 @@ export default function Landing() {
             className="landingImgContainer__titleContainer"
             onClick={handleTitleClick}
           ></div>
-          <h1 ref={title} className="landingImgContainer__titleContainer__title">
+          <h1
+            ref={title}
+            className="landingImgContainer__titleContainer__title"
+          >
             Bound<span>less</span>
           </h1>
 
