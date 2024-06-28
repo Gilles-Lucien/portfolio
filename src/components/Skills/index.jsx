@@ -9,6 +9,8 @@ import git from "../../assets/svg/git.svg";
 import github from "../../assets/svg/github.svg";
 import vscode from "../../assets/svg/visual-studio.svg";
 import react from "../../assets/svg/react.svg";
+import redux from "../../assets/svg/redux.svg";
+
 
 export default function Skills() {
   return (
@@ -25,6 +27,7 @@ export default function Skills() {
               <li>CSS3 <img src={css3} alt="CSS3" /></li>
               <li>JavaScript <img src={javascript} alt="JavaScript" /></li>
               <li>React <img className="rotateAnimation" src={react} alt="React" /></li>
+              <li>Redux <img src={redux} alt="Redux" /></li>
             </ul>
           </div>
           <div className="skillsSection__container__skills--skill">
