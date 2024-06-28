@@ -156,7 +156,6 @@
     animation: overlayScaleUp 2s ease-in-out forwards;
     height: 120%;
     width: 100%;
-    
   }
 }
 
@@ -169,7 +168,7 @@
   height: 80px;
   z-index: 1;
   cursor: pointer;
-  pointer-events:fill;
+  pointer-events: fill;
   border: 1px solid c.$white;
   border-radius: 6px;
   padding: 20px;
@@ -187,7 +186,7 @@
   height: calc(100vh - 127px);
   background-color: c.$white;
   z-index: 2;
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px) {
     height: 100vh;
   }
 }
@@ -200,12 +199,10 @@
   height: calc(100vh - 127px);
   background-color: c.$white;
   z-index: 2;
-  
   animation: transitionMaskAnimation 1s ease-in-out forwards;
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px) {
     height: 100vh;
   }
-
 }
 
 @keyframes transitionMaskAnimation {
@@ -222,8 +219,6 @@
     width: 0;
   }
 }
-
-
 
 @keyframes breathing {
   0% {
