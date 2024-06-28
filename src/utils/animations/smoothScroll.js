@@ -20,12 +20,6 @@ export function smoothScroll(e, href, duration = 3000) {
     if (progress < duration) window.requestAnimationFrame(step);
   }
 
-//   function easeInOutCubic(t, b, c, d) {
-//     t /= d / 2;
-//     if (t < 1) return (c / 2) * t * t * t + b;
-//     t -= 2;
-//     return (c / 2) * (t * t * t + 2) + b;
-//   }
 
 function customEaseInOut(t, b, c, d) {
     t /= d/2;

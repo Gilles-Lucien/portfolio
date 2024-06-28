@@ -19,19 +19,10 @@ export default function Landing() {
     overlayRef.current.classList.add("clickedOverlay");
     overlayRef.current.classList.remove("overlay");
 
-    // setTimeout(() => {
-    //   LandingSection.current.style.display = "none";
-    // }, 3100);
-
-    // setTimeout(() => {
-    //   titleContainer.current.classList.remove("clickedContainer");
-    //   title.current.classList.remove("clickedTitle");
-    //   overlayRef.current.classList.remove("clickedOverlay");
-    //   overlayRef.current.classList.add("overlay");
-    //   LandingSection.current.style.display = "block";
-    // }, 3200);
   };
 
+
+  // useEffect pour le smooth scroll
   useEffect(() => {
     const link = LandingLink.current;
     if (link) {
@@ -44,6 +35,8 @@ export default function Landing() {
     }
   }, [hrefValue, LandingLink]);
 
+
+  // useEffect pour le changement de href en fonction de la taille de l'écran
   useEffect(() => {
     const checkScreenSize = () => {
       if (window.innerWidth <= 768) {
@@ -62,6 +55,8 @@ export default function Landing() {
     };
   }, []);
 
+
+  // useEffect pour centrer l'overlay
   useEffect(() => {
     // Centrer l'overlay au chargement
     const centerOverlay = () => {
@@ -92,6 +87,8 @@ export default function Landing() {
     };
   }, []);
 
+
+  // useEffect pour le parallax et le tracking du curseur pour l'overlay
   useEffect(() => {
     const handleMouseMove = (e) => {
       // Parallax effect
