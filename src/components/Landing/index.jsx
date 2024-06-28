@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { smoothScroll } from "../../utils/animations/smoothScroll";
 import "./styles.css";
 import gradient from "../../assets/images/gradient_hero.avif";
+import redo from "../../assets/svg/redo.svg";
 
 export default function Landing() {
   const imgRef = useRef(null);
@@ -10,6 +11,8 @@ export default function Landing() {
   const LandingLink = useRef(null);
   const overlayRef = useRef(null);
   const LandingSection = useRef(null);
+  const redoRef = useRef(null);
+  const transitionMaskRef = useRef(null);
 
   const [hrefValue, setHrefValue] = useState("#nav");
 
@@ -19,7 +22,33 @@ export default function Landing() {
     overlayRef.current.classList.add("clickedOverlay");
     overlayRef.current.classList.remove("overlay");
 
+    setTimeout(() => {
+      redoRef.current.style.display = "block";
+    }, 3100);
   };
+
+  const handleRedoClick = (event) => {
+    event.stopPropagation(event);
+
+    transitionMaskRef.current.style.display = "block";
+    transitionMaskRef.current.classList.add("transitionMask--animation");
+
+    setTimeout(() => {
+      titleContainer.current.classList.remove("clickedContainer");
+      title.current.classList.remove("clickedTitle");
+      overlayRef.current.classList.remove("clickedOverlay");
+      overlayRef.current.classList.add("overlay");
+      redoRef.current.style.display = "none";
+    }, 500);
+
+    setTimeout(() => {
+      transitionMaskRef.current.classList.remove("transitionMask--animation");
+      transitionMaskRef.current.style.display = "none";
+
+    }, 1000);
+
+  };
+
 
 
   // useEffect pour le smooth scroll
@@ -34,7 +63,6 @@ export default function Landing() {
       };
     }
   }, [hrefValue, LandingLink]);
-
 
   // useEffect pour le changement de href en fonction de la taille de l'écran
   useEffect(() => {
@@ -54,7 +82,6 @@ export default function Landing() {
       window.removeEventListener("resize", checkScreenSize);
     };
   }, []);
-
 
   // useEffect pour centrer l'overlay
   useEffect(() => {
@@ -87,7 +114,6 @@ export default function Landing() {
     };
   }, []);
 
-
   // useEffect pour le parallax et le tracking du curseur pour l'overlay
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -118,6 +144,20 @@ export default function Landing() {
 
   return (
     <section className="landingSection" ref={LandingSection}>
+      <div
+        className="transitionMask"
+        ref={transitionMaskRef}
+        style={{ display: "none" }}
+      ></div>
+      <img
+        src={redo}
+        alt="redo"
+        id="redo"
+        ref={redoRef}
+        style={{ display: "none" }}
+        onClick={handleRedoClick}
+      />
+
       <a href={hrefValue} ref={LandingLink}>
         <div className="landingImgContainer">
           <div

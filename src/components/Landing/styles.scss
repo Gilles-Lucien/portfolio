@@ -5,6 +5,7 @@
   z-index: -10;
   height: calc(100vh - 127px);
   width: 100%;
+  position: relative;
   @media screen and (max-width: 767px) {
     height: 100vh;
   }
@@ -124,7 +125,7 @@
 
 .clickedOverlay {
   position: absolute;
-  cursor: none;
+  cursor: default;
   z-index: -8;
   background-image: radial-gradient(
     circle,
@@ -155,8 +156,74 @@
     animation: overlayScaleUp 2s ease-in-out forwards;
     height: 120%;
     width: 100%;
+    
   }
 }
+
+#redo {
+  position: fixed;
+  top: calc(50% - 68px);
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 80px;
+  height: 80px;
+  z-index: 1;
+  cursor: pointer;
+  pointer-events:fill;
+  border: 1px solid c.$white;
+  border-radius: 6px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+.transitionMask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1vw;
+  height: calc(100vh - 127px);
+  background-color: c.$white;
+  z-index: 2;
+  @media screen and (max-width: 767px){
+    height: 100vh;
+  }
+}
+
+.transitionMask--animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1vw;
+  height: calc(100vh - 127px);
+  background-color: c.$white;
+  z-index: 2;
+  
+  animation: transitionMaskAnimation 1s ease-in-out forwards;
+  @media screen and (max-width: 767px){
+    height: 100vh;
+  }
+
+}
+
+@keyframes transitionMaskAnimation {
+  0% {
+    left: 0;
+    width: 1vw;
+  }
+  50% {
+    left: 0;
+    width: 100vw;
+  }
+  100% {
+    left: 100vw;
+    width: 0;
+  }
+}
+
+
 
 @keyframes breathing {
   0% {
@@ -245,7 +312,7 @@
   100% {
     transform: translate(-50%, -50%) scale(3);
     border: 1px solid rgba($color: c.$white, $alpha: 0);
-    cursor: none;
+    cursor: default;
   }
 }
 

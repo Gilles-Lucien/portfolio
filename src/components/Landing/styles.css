@@ -2,6 +2,7 @@
   z-index: -10;
   height: calc(100vh - 127px);
   width: 100%;
+  position: relative;
 }
 @media screen and (max-width: 767px) {
   .landingSection {
@@ -105,7 +106,7 @@
 
 .clickedOverlay {
   position: absolute;
-  cursor: none;
+  cursor: default;
   z-index: -8;
   background-image: radial-gradient(circle, hsl(266, 23%, 12%) 0%, hsl(281, 27%, 20%) 1%, hsl(295, 33%, 26%) 2%, hsl(310, 38%, 32%) 3%, hsl(325, 45%, 38%) 4%, hsl(340, 51%, 43%) 5%, hsl(344, 59%, 45%) 6%, hsl(348, 68%, 47%) 7%, hsl(352, 77%, 48%) 8%, hsl(356, 88%, 49%) 9%, hsl(0, 100%, 50%) 11%, hsl(14, 93%, 58%) 13%, hsl(28, 84%, 66%) 17%, hsl(42, 70%, 73%) 23%, hsl(56, 47%, 79%) 35%, hsl(70, 8%, 85%) 85%);
   mix-blend-mode: exclusion;
@@ -121,6 +122,70 @@
   }
 }
 
+#redo {
+  position: fixed;
+  top: calc(50% - 68px);
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 80px;
+  height: 80px;
+  z-index: 1;
+  cursor: pointer;
+  pointer-events: fill;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+#redo:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.transitionMask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1vw;
+  height: calc(100vh - 127px);
+  background-color: #fff;
+  z-index: 2;
+}
+@media screen and (max-width: 767px) {
+  .transitionMask {
+    height: 100vh;
+  }
+}
+
+.transitionMask--animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1vw;
+  height: calc(100vh - 127px);
+  background-color: #fff;
+  z-index: 2;
+  animation: transitionMaskAnimation 1s ease-in-out forwards;
+}
+@media screen and (max-width: 767px) {
+  .transitionMask--animation {
+    height: 100vh;
+  }
+}
+
+@keyframes transitionMaskAnimation {
+  0% {
+    left: 0;
+    width: 1vw;
+  }
+  50% {
+    left: 0;
+    width: 100vw;
+  }
+  100% {
+    left: 100vw;
+    width: 0;
+  }
+}
 @keyframes breathing {
   0% {
     transform: scale(1);
@@ -202,7 +267,7 @@
   100% {
     transform: translate(-50%, -50%) scale(3);
     border: 1px solid rgba(255, 255, 255, 0);
-    cursor: none;
+    cursor: default;
   }
 }
 @keyframes scaleDown {
