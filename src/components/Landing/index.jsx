@@ -14,13 +14,23 @@ export default function Landing() {
   const redoRef = useRef(null);
   const transitionMaskRef = useRef(null);
 
-  const [hrefValue, setHrefValue] = useState("#nav");
+  let [hrefValue, setHrefValue] = useState("#nav");
 
   const handleTitleClick = () => {
+
+    const redoElement = redoRef.current;
+    if (redoElement.style.display === "block") {
+      return;
+    }
+
     titleContainer.current.classList.add("clickedContainer");
     title.current.classList.add("clickedTitle");
     overlayRef.current.classList.add("clickedOverlay");
     overlayRef.current.classList.remove("overlay");
+
+    setTimeout(() => {
+      setHrefValue("#");
+    }, 500);
 
     setTimeout(() => {
       redoRef.current.style.display = "block";
@@ -29,7 +39,7 @@ export default function Landing() {
 
   const handleRedoClick = (event) => {
     event.stopPropagation(event);
-
+    setHrefValue("#nav");
     transitionMaskRef.current.style.display = "block";
     transitionMaskRef.current.classList.add("transitionMask--animation");
 
@@ -44,12 +54,8 @@ export default function Landing() {
     setTimeout(() => {
       transitionMaskRef.current.classList.remove("transitionMask--animation");
       transitionMaskRef.current.style.display = "none";
-
     }, 1000);
-
   };
-
-
 
   // useEffect pour le smooth scroll
   useEffect(() => {
@@ -141,6 +147,7 @@ export default function Landing() {
       };
     }
   }, []);
+
 
   return (
     <section className="landingSection" ref={LandingSection}>
