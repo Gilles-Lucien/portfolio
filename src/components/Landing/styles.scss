@@ -176,6 +176,9 @@
   &:hover {
     transform: translate(-50%, -50%) scale(1.1);
   }
+  @media screen and (max-width: 767px){
+    top: 50%;
+  }
 }
 
 .transitionMask {
