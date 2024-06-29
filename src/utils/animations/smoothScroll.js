@@ -1,7 +1,9 @@
 export function smoothScroll(e, href, duration = 3000) {
   e.preventDefault();
-
+  if (href === "#") return;
   const targetElement = document.querySelector(href);
+
+
 
   const topOffset = targetElement.getBoundingClientRect().top;
   const startPosition = window.pageYOffset;
