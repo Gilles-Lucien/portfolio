@@ -476,6 +476,23 @@
         "subtitle": " and Career Relevance",
         "description": "Creating an online portfolio is key for any developer seeking to stand out and secure professional opportunities. The skills gained from this project, such as deploying a website online and ensuring it is responsive, are fundamental in web development. Mastering React and SASS for building and styling the site, along with using Git and GitHub for version control, demonstrates my ability to handle comprehensive web development tasks."
       }
+    },
+    {
+      "id": "28",
+      "title": "Boréo",
+      "description": "In this project, I redesigned Boréo's home page for UX and UI improvements, focusing on user engagement and visual appeal.",
+      "tags": ["all", "uxui"],
+      "imageNumber": 6,
+      "section1": {
+        "title": "Visual Enhancement",
+        "subtitle": " and Information Hierarchy",
+        "description": "In the UX redesign of Boréo's homepage, my work primarily focused on enhancing the visual aspect of the site and creating a better information hierarchy. I ensured that the site's aesthetics were not only modern and appealing but also consistent with Boréo's brand identity. By redefining the layout of visual elements and optimizing the use of space, I made the interface more enjoyable and intuitive for users. The goal was to ensure that visitors could immediately understand Boréo's offerings and easily find the essential information at a glance."
+      },
+      "section2": {
+        "title": "Simplifying the User Journey",
+        "subtitle": " to Products",
+        "description": "Another key aspect of my work was to shorten and simplify the user journey to the products. By analyzing user behavior and identifying friction points in their journey, I reorganized the elements on the homepage so that users could quickly access the products they are interested in. I also reduced the number of steps required to complete key actions, such as purchasing or searching for specific products. This simplification of the user journey aims to increase engagement and improve conversion rates while providing a smooth and satisfying experience on the Boréo platform."
+      }
     }
   ]
 }

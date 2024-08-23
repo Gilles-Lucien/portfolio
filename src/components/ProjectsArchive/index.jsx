@@ -8,7 +8,7 @@ import PageCounter from "../PageCounter";
 /// import et map des images sans backend
 const imageMap = {};
 
-for (let i = 0; i <= 26; i++) {
+for (let i = 0; i <= 27; i++) {
   const key = `pictureCard${i}`;
   imageMap[key] = require(`../../assets/cards_pictures/pictureCard-${i}.avif`);
 }

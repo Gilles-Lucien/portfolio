@@ -215,6 +215,14 @@
       "tags": [ "all", "frontend", "graphic", "uxui"],
       "image": "pictureCard26",
       "link": "/single/27"
+    },
+    {
+      "id": "28",
+      "title": "Boréo",
+      "description": "UX and UI redesign of Boréo's home page",
+      "tags": [ "all", "uxui"],
+      "image": "pictureCard27",
+      "link": "/single/28"
     }
   ]
 }
